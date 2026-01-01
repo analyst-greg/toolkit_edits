@@ -1,0 +1,144 @@
+From ChatGPT:
+
+Here is the **same breakdown of the relationship between data brokers, financial intelligence services, and niche fundraising tools** — with a **References section including plaintext URLs** at the end so you can follow the sources yourself.
+
+---
+
+# Overview: Data Flow and Actors
+
+## **1. Data Brokers**
+
+**What they are:**
+Data brokers collect, clean, link, standardize, and resell data about people and businesses to third parties. They pull from public records, commercial databases, and other sources and package the information for clients. ([Wikipedia][1])
+
+**What they provide:**
+
+* Aggregated datasets
+* Identity attributes
+* Employment histories
+* Wealth proxies
+* Proprietary linkages used for analytics
+  Clients include marketers, compliance teams, financial institutions, and software vendors. ([Wikipedia][1])
+
+**Academic perspective:**
+Studies on data marketplaces show how brokers function as **intermediaries in commoditized information markets**, pricing and trading data between owners and consumers. ([arXiv][2])
+
+---
+
+## **2. Financial Intelligence Services (FIUs & Private FININT Vendors)**
+
+**What they are:**
+Financial intelligence services include government Financial Intelligence Units (FIUs) and private FININT vendors that analyze data for purposes such as anti–money-laundering (AML), sanctions screening, risk assessment, and compliance.
+
+**How they use data:**
+They ingest:
+
+* Transaction records
+* Watchlists
+* Proprietary and open source intelligence
+* Broker data
+
+to produce actionable intelligence.
+Open-source intelligence (OSINT) — including public records and some broker data — is explicitly used to support investigations. ([Egmont Group][3])
+
+**FIUs and OSINT:**
+The Egmont Group, which coordinates global FIU collaboration, reports that OSINT contributes to operational and strategic analysis by helping identify links, patterns, and risks not visible in transaction data alone. ([Egmont Group][3])
+
+---
+
+## **3. Niche Fundraising Tools (e.g., ResearchPoint & LiveAlumni)**
+
+These products are **end-user applications** built for nonprofit development, advancement, and alumni relations. They **consume data from brokers and other sources** to help fundraising professionals prioritize prospects and manage engagement.
+
+### **Blackbaud ResearchPoint**
+
+* A donor prospect research platform that integrates multiple data feeds (including wealth, philanthropic history, biographical, and asset data). ([Blackbaud Help][4])
+* It supports bulk lists, wealth screening, and rich prospect profiles used to guide major gift fundraising. ([Blackbaud Help][4])
+
+### **LiveAlumni**
+
+* A niche provider focused on **verified alumni and donor employment data**, job changes, industry and employer details. ([LiveAlumni][5])
+* Useful in fundraising to identify job changes, matching gift eligibility, and engagement signals.
+
+These platforms often **license or embed multiple broker data feeds** to enrich constituent records and analytics.
+
+---
+
+# **Information Flow: Conceptual Lineage**
+
+1. **Primary data sources**
+
+   * Public records, corporate filings, SEC data, social media, professional profiles.
+
+2. **Data brokers**
+
+   * Aggregate, cleanse, link the data, and append identifiers.
+
+3. **Enrichment & analytics**
+
+   * Brokers or specialist services create derived values like wealth scores, inferred likelihood to give, risk indicators.
+
+4. **Downstream consumers**
+
+   * *Financial intelligence teams*: ingest enriched feeds into compliance workflows.
+   * *Fundraising/prospect platforms*: import broker feeds to build profiles.
+
+5. **End users**
+
+   * Compliance officers use intelligence to detect risk.
+   * Fundraisers use enriched donor profiles for segmentation and cultivation.
+
+---
+
+# **Key Differences Across Actors**
+
+| Actor             | Primary Goal                    | Core Data Use                       |
+| ----------------- | ------------------------------- | ----------------------------------- |
+| Data brokers      | Sell/licence data               | Broad aggregated data sets          |
+| FIUs / FININT     | Detect risk and illicit finance | OSINT + transaction + watchlists    |
+| Fundraising tools | Aid donor research              | Profile enrichment + wealth signals |
+
+---
+
+# **References (with plaintext URLs)**
+
+**About Data Brokers**
+
+* Wikipedia — *Data broker*: description of who brokers are and the type of data they collect and resell.
+  [https://en.wikipedia.org/wiki/Data_broker](https://en.wikipedia.org/wiki/Data_broker) ([Wikipedia][1])
+
+**OSINT and Financial Intelligence**
+
+* Egmont Group report — *Use of Open-Source in FIU analysis*: FIUs use OSINT sources to augment analysis.
+  [https://egmontgroup.org/wp-content/uploads/2023/07/202302-IEWG-Report-Use-of-OSINT-in-FIU-Operational-and-Strategic-Analysis-Sanitized-Version_FINAL3.pdf](https://egmontgroup.org/wp-content/uploads/2023/07/202302-IEWG-Report-Use-of-OSINT-in-FIU-Operational-and-Strategic-Analysis-Sanitized-Version_FINAL3.pdf) ([Egmont Group][3])
+
+* Wikipedia — *Open-source intelligence*: overview of OSINT collection and use.
+  [https://en.wikipedia.org/wiki/Open-source_intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence) ([Wikipedia][6])
+
+**Fundraising Tools**
+
+* Blackbaud — *Prospect Research Software | Blackbaud ResearchPoint*: vendor description of the platform.
+  [https://www.blackbaud.com/products/blackbaud-researchpoint](https://www.blackbaud.com/products/blackbaud-researchpoint) ([Blackbaud][7])
+
+* Blackbaud quick start guide (RP Quickstart PDF) — details on data sources and integration.
+  [https://help.blackbaud.com/docs/0/assets/guides/researchpoint/rpquickstart.pdf](https://help.blackbaud.com/docs/0/assets/guides/researchpoint/rpquickstart.pdf) ([Blackbaud Help][4])
+
+* LiveAlumni official site — description of data services for alumni/donor employment and engagement.
+  [https://www.livealumni.com/](https://www.livealumni.com/) ([LiveAlumni][5])
+
+**Academic Literature**
+
+* *A Survey of Data Pricing for Data Marketplaces* — explains empirical patterns of data marketplaces that include brokers.
+  [https://arxiv.org/abs/2303.04810](https://arxiv.org/abs/2303.04810) ([arXiv][2])
+
+---
+
+If you want, I can **expand this into a visual data lineage diagram** or show **specific examples of data passed from brokers into ResearchPoint profiles** with sample attributes.
+
+[1]: https://en.wikipedia.org/wiki/Data_broker?utm_source=chatgpt.com "Data broker"
+[2]: https://arxiv.org/abs/2303.04810?utm_source=chatgpt.com "A Survey of Data Pricing for Data Marketplaces"
+[3]: https://egmontgroup.org/wp-content/uploads/2023/07/202302-IEWG-Report-Use-of-OSINT-in-FIU-Operational-and-Strategic-Analysis-Sanitized-Version_FINAL3.pdf?utm_source=chatgpt.com "USE OF OPEN SOURCE IN FIUS’ OPERATIONAL & STRATEGIC ANALYSIS"
+[4]: https://help.blackbaud.com/docs/0/assets/guides/researchpoint/rpquickstart.pdf?utm_source=chatgpt.com "Getting Started with ResearchPoint - Blackbaud"
+[5]: https://www.livealumni.com/?utm_source=chatgpt.com "LiveAlumni | Verified Donor & Alumni Data | Seattle, Washington"
+[6]: https://en.wikipedia.org/wiki/Open-source_intelligence?utm_source=chatgpt.com "Open-source intelligence"
+[7]: https://www.blackbaud.com/products/blackbaud-researchpoint?utm_source=chatgpt.com "u2028Prospect Research Software | Blackbaud ResearchPoint™u2028"
