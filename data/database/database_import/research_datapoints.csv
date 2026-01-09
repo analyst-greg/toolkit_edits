@@ -34,7 +34,7 @@ They are sometimes compared to a social security number for a company but the co
 25,"""Domestic Parent Name""","""CompanyDatapoints""",,,
 26,"""Minority Owned Indicator""","""CompanyDatapoints""",,,
 27,"""Manufacturing Indicator""","""CompanyDatapoints""",,,
-28,,,,,
+28,"""Company Financial Strength""","""CompanyDatapoints""","This is not a well-defined metric, but with the Valueline tool, they use a letter grading system in their company financial health analysis (e.g. B+) which could be useful when glancing at a public company, or writing an overview.",,
 29,,,,,
 30,,,,,
 31,,,,,
