@@ -226,15 +226,32 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="database-erd-draft" class="level1">
 <h1>Database ERD draft</h1>
-<p><em>2025-12-9</em></p>
+<p><em>2025-12-9</em> <a href="https://mermaid.js.org/syntax/entityRelationshipDiagram.html">Mermaid documentation for ERDs</a></p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
-A --&gt; B 
-B --&gt; C
+<pre class="mermaid mermaid-js">---
+title: Prospect Research Toolkit ERD
+---
+erDiagram
+
+%% ===TOOLS===
+  tools{
+    int id PK
+    str name
+    str type
+    int cost
+    str integrations
+    str notes
+    int company_id FK
+    numeric created_at
+  }
+  companies{}
+  university_tools{}
+  universities{}
+
 
 </pre>
 </div>

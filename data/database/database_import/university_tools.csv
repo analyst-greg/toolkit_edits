@@ -1,5 +1,5 @@
 id, university_id, tool_id, access_type, date_created, notes,tool_name,
-1, 1,91,Login,,,ValueLine,
+1,1,91,Login,,,ValueLine,
 2,1,44,Login,,,Factiva,"""https://snapshot-factiva-com.ezproxy.lib.utah.edu/Pages/Index"""
-,,,,,,,
-,,,,,,,
+3,1,48,Login,,,PrivCo,
+4,1,47,Login,,,PitchBook,

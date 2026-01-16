@@ -2,6 +2,9 @@ project:
   type: website
   output-dir: docs
 
+variables:
+  author_default: Greg Brooks
+
 website:
   title: "Prospect Research Toolkit"
   description: A prospect research resource library created by Greg Brooks and Apra Utah
