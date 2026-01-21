@@ -132,5 +132,3 @@ With the board membership example, a strong internal data contract that provides
 Of course, if you aren't tracking your efficiency, then it would be hard to know for sure.
 
 ---
-
-Related to Obstacle what?

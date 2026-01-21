@@ -31,7 +31,7 @@ There are plenty of excellent paid resources available: Apra, private consultant
 
 ## Who is this guy anyway?
 
-I come from a psychology background and am largely self-taught in data analytics, information science, data science, etc. So keep an eye out for mistakes, and feel free to let me by [raising an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) on our (Github issue page)[https://github.com/ApraUtah/ProspectResearchToolkit/issues].
+I come from a psychology background and am largely self-taught in data analytics, information science, data science, etc. This website is guaranteed to have some bugs.
 
 ## How often is the website updated?
 
@@ -39,5 +39,5 @@ In small ways, frequently! Larger changes and resources are on a slower schedule
 
 ## How is Apra Utah involved?
 
-I started this website as part of my education initiative for 2025 while I'm serving on the Apra Utah board. In the future (e.g. when I figure out how to do it without breaking too many things) the repository and website name will be changed to a more general one, with participating Apra chapters listed on the website's About page. The dream would be to have an open-source collective of contributors / volunteers who help maintain the project and add to its longevity, since right now it is almost entirely a one-man show. 
+I started this website as part of my education initiative for 2025 while I'm serving on the Apra Utah board, and hope to keep collaborating with Apra Utah after my term ends. The opinions expressed on this website are my own and do not necessarily reflect those of Apra Utah or my employer.
 

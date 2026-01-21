@@ -12,7 +12,7 @@ Howdy, partner. Welcome to camp!
 
 You know how they say, "there's gold in them thar hills?" - well, I've set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice. 
 
-I hope this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a'clankin'!
+Hopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a'clankin'! In the meantime, it's just a hobby project with big dreams.
 
 For more info about the who, what, where, and why...feel free to check out the [About](about.qmd) page.
 

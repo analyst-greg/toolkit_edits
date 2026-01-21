@@ -46,7 +46,7 @@
     "href": "toolkit_blog/datacontracts/index.html",
     "title": "Internal Data Contracts",
     "section": "",
-    "text": "As organizations grow, data becomes increasingly complex and distributed across multiple teams and systems. Without clear agreements on how data is structured, maintained, and shared, teams risk miscommunication, broken pipelines, and unreliable analytics. Internal data contracts solve this problem by formalizing expectations between data producers and consumers—similar to API contracts, but for data.\nThis post will cover: - What internal data contracts are - A sample contract template - Best practices for implementation - How they can apply to fundraising analysis teams\n\n\n\n\nAn internal data contract is a documented agreement that defines: - Schema: The structure and types of data fields - Quality guarantees: Rules for completeness, accuracy, and freshness - Ownership: Who is responsible for producing and consuming the data - Access and security: Permissions and compliance requirements - Change management: How updates are communicated and versioned\nThese contracts reduce breakages, improve trust, and enable scalable data sharing across teams.\n\n\n\n\nTitle: Customer Data Contract\nVersion: 1.0\nOwner: Data Engineering Team\nEffective Date: 2025-11-12\n\n\n\nThis contract defines the structure, quality, and governance of the customer dataset shared between the CRM system (producer) and Analytics team (consumer).\n\n\n\n\n\n\n\n\n\n\n\n\n\nField Name\nData Type\nNullable\nDescription\n\n\n\n\ncustomer_id\nSTRING\nNo\nUnique customer identifier\n\n\nname\nSTRING\nNo\nFull name of the customer\n\n\nemail\nSTRING\nNo\nCustomer email address\n\n\nsignup_date\nDATE\nNo\nDate of account creation\n\n\nstatus\nSTRING\nYes\nActive, Inactive, Pending\n\n\n\nVersioning:\n- Backward-compatible changes allowed (adding new nullable fields).\n- Breaking changes require 30-day notice and version increment.\n\n\n\n\n\nFreshness: Data updated within 15 minutes of CRM changes.\n\nCompleteness: 99% of records must have email populated.\n\nAccuracy: status must match CRM system values.\n\n\n\n\n\n\nProducer: CRM Engineering Team\n\nConsumer: Analytics Team\n\nEscalation: Contact data-support@company.com for issues.\n\n\n\n\n\n\nData accessible via internal data warehouse with role-based permissions.\n\nPII fields (e.g., email) must comply with GDPR and internal privacy policies.\n\n\n\n\n\n\nAll schema changes documented in the internal data catalog.\n\nBreaking changes require approval from both producer and consumer teams.\n\n\n\n\n\n\n\nStart Simple, Iterate Begin with critical datasets and expand as adoption grows.\nUse Versioning Always version schemas to avoid breaking downstream systems.\nAutomate Validation Implement automated checks for schema compliance and data quality.\nCentralize Documentation Maintain contracts in a shared repository or data catalog for visibility.\nDefine SLAs Include clear expectations for freshness, completeness, and uptime.\nCommunicate Changes Early Use automated alerts or Slack notifications for schema updates.\nEnforce Ownership Assign clear owners for both producer and consumer sides.\nIntegrate with CI/CD Validate data contracts during deployment to catch issues before production.\nMonitor & Audit Track compliance and log violations for continuous improvement.\nAlign with Governance Ensure contracts comply with regulatory and internal security standards.\n\n\n\n\n\nPlaceholder: Explain how prospect research and development teams can use data contracts to ensure donor data consistency and reliability across CRM, wealth screening tools, and analytics platforms.\nOne obstacle when writing profiles is getting accurate information from your own institution. If you have many internal boards, the chairs and members of those boards are always in flux, and there isn’t necessarily accurate information in the database or websites to verify the reality on the ground. In theory, it makes sense to have board memberships strictly tracked in your CRM. But like with anything, it all depends on the people responsible for maintaining and providing the data in the first place.\nOld or inacurrate information in your internal systems is a constant battle, and there may be some areas where you know the information tends to be more inaccurate than others, a “quirk of the system” that you’ve just learned to deal with, and one where a fix is not necessarily going to happen soon.\nHowever, if you are ever in the position to try and fix some of these data problems, at a director-level, you can advocate for creating internal data contracts specifically to benefit your prospect development and research teams.\nWith the board membership example, a strong internal data contract that provides accurate, timely board information means that profiles get done faster, obvious mistakes are avoided, and researchers can spend less time spinning their wheels trying to find information that the institution already knows. Ideally, the goal of a prospect research team should be to get the most efficient process possible for highly accurate profiles, so there is more time for proactive research and expanding the prospect pool. The amount of money that is lost every year is staggering: any given team is being paid for their time, and expanding the prospect pool actually increases campaign revenues, while fiddling around with verifications can run counter to the overall momentum needed to meet fundraising goals.\nOf course, if you aren’t tracking your efficiency, then it would be hard to know for sure.\n\nRelated to Obstacle what?"
+    "text": "As organizations grow, data becomes increasingly complex and distributed across multiple teams and systems. Without clear agreements on how data is structured, maintained, and shared, teams risk miscommunication, broken pipelines, and unreliable analytics. Internal data contracts solve this problem by formalizing expectations between data producers and consumers—similar to API contracts, but for data.\nThis post will cover: - What internal data contracts are - A sample contract template - Best practices for implementation - How they can apply to fundraising analysis teams\n\n\n\n\nAn internal data contract is a documented agreement that defines: - Schema: The structure and types of data fields - Quality guarantees: Rules for completeness, accuracy, and freshness - Ownership: Who is responsible for producing and consuming the data - Access and security: Permissions and compliance requirements - Change management: How updates are communicated and versioned\nThese contracts reduce breakages, improve trust, and enable scalable data sharing across teams.\n\n\n\n\nTitle: Customer Data Contract\nVersion: 1.0\nOwner: Data Engineering Team\nEffective Date: 2025-11-12\n\n\n\nThis contract defines the structure, quality, and governance of the customer dataset shared between the CRM system (producer) and Analytics team (consumer).\n\n\n\n\n\n\n\n\n\n\n\n\n\nField Name\nData Type\nNullable\nDescription\n\n\n\n\ncustomer_id\nSTRING\nNo\nUnique customer identifier\n\n\nname\nSTRING\nNo\nFull name of the customer\n\n\nemail\nSTRING\nNo\nCustomer email address\n\n\nsignup_date\nDATE\nNo\nDate of account creation\n\n\nstatus\nSTRING\nYes\nActive, Inactive, Pending\n\n\n\nVersioning:\n- Backward-compatible changes allowed (adding new nullable fields).\n- Breaking changes require 30-day notice and version increment.\n\n\n\n\n\nFreshness: Data updated within 15 minutes of CRM changes.\n\nCompleteness: 99% of records must have email populated.\n\nAccuracy: status must match CRM system values.\n\n\n\n\n\n\nProducer: CRM Engineering Team\n\nConsumer: Analytics Team\n\nEscalation: Contact data-support@company.com for issues.\n\n\n\n\n\n\nData accessible via internal data warehouse with role-based permissions.\n\nPII fields (e.g., email) must comply with GDPR and internal privacy policies.\n\n\n\n\n\n\nAll schema changes documented in the internal data catalog.\n\nBreaking changes require approval from both producer and consumer teams.\n\n\n\n\n\n\n\nStart Simple, Iterate Begin with critical datasets and expand as adoption grows.\nUse Versioning Always version schemas to avoid breaking downstream systems.\nAutomate Validation Implement automated checks for schema compliance and data quality.\nCentralize Documentation Maintain contracts in a shared repository or data catalog for visibility.\nDefine SLAs Include clear expectations for freshness, completeness, and uptime.\nCommunicate Changes Early Use automated alerts or Slack notifications for schema updates.\nEnforce Ownership Assign clear owners for both producer and consumer sides.\nIntegrate with CI/CD Validate data contracts during deployment to catch issues before production.\nMonitor & Audit Track compliance and log violations for continuous improvement.\nAlign with Governance Ensure contracts comply with regulatory and internal security standards.\n\n\n\n\n\nPlaceholder: Explain how prospect research and development teams can use data contracts to ensure donor data consistency and reliability across CRM, wealth screening tools, and analytics platforms.\nOne obstacle when writing profiles is getting accurate information from your own institution. If you have many internal boards, the chairs and members of those boards are always in flux, and there isn’t necessarily accurate information in the database or websites to verify the reality on the ground. In theory, it makes sense to have board memberships strictly tracked in your CRM. But like with anything, it all depends on the people responsible for maintaining and providing the data in the first place.\nOld or inacurrate information in your internal systems is a constant battle, and there may be some areas where you know the information tends to be more inaccurate than others, a “quirk of the system” that you’ve just learned to deal with, and one where a fix is not necessarily going to happen soon.\nHowever, if you are ever in the position to try and fix some of these data problems, at a director-level, you can advocate for creating internal data contracts specifically to benefit your prospect development and research teams.\nWith the board membership example, a strong internal data contract that provides accurate, timely board information means that profiles get done faster, obvious mistakes are avoided, and researchers can spend less time spinning their wheels trying to find information that the institution already knows. Ideally, the goal of a prospect research team should be to get the most efficient process possible for highly accurate profiles, so there is more time for proactive research and expanding the prospect pool. The amount of money that is lost every year is staggering: any given team is being paid for their time, and expanding the prospect pool actually increases campaign revenues, while fiddling around with verifications can run counter to the overall momentum needed to meet fundraising goals.\nOf course, if you aren’t tracking your efficiency, then it would be hard to know for sure."
   },
   {
     "objectID": "toolkit_blog/datacontracts/index.html#introduction",
@@ -81,7 +81,7 @@
     "href": "toolkit_blog/datacontracts/index.html#applying-internal-data-contracts-to-fundraising-analysis-teams",
     "title": "Internal Data Contracts",
     "section": "",
-    "text": "Placeholder: Explain how prospect research and development teams can use data contracts to ensure donor data consistency and reliability across CRM, wealth screening tools, and analytics platforms.\nOne obstacle when writing profiles is getting accurate information from your own institution. If you have many internal boards, the chairs and members of those boards are always in flux, and there isn’t necessarily accurate information in the database or websites to verify the reality on the ground. In theory, it makes sense to have board memberships strictly tracked in your CRM. But like with anything, it all depends on the people responsible for maintaining and providing the data in the first place.\nOld or inacurrate information in your internal systems is a constant battle, and there may be some areas where you know the information tends to be more inaccurate than others, a “quirk of the system” that you’ve just learned to deal with, and one where a fix is not necessarily going to happen soon.\nHowever, if you are ever in the position to try and fix some of these data problems, at a director-level, you can advocate for creating internal data contracts specifically to benefit your prospect development and research teams.\nWith the board membership example, a strong internal data contract that provides accurate, timely board information means that profiles get done faster, obvious mistakes are avoided, and researchers can spend less time spinning their wheels trying to find information that the institution already knows. Ideally, the goal of a prospect research team should be to get the most efficient process possible for highly accurate profiles, so there is more time for proactive research and expanding the prospect pool. The amount of money that is lost every year is staggering: any given team is being paid for their time, and expanding the prospect pool actually increases campaign revenues, while fiddling around with verifications can run counter to the overall momentum needed to meet fundraising goals.\nOf course, if you aren’t tracking your efficiency, then it would be hard to know for sure.\n\nRelated to Obstacle what?"
+    "text": "Placeholder: Explain how prospect research and development teams can use data contracts to ensure donor data consistency and reliability across CRM, wealth screening tools, and analytics platforms.\nOne obstacle when writing profiles is getting accurate information from your own institution. If you have many internal boards, the chairs and members of those boards are always in flux, and there isn’t necessarily accurate information in the database or websites to verify the reality on the ground. In theory, it makes sense to have board memberships strictly tracked in your CRM. But like with anything, it all depends on the people responsible for maintaining and providing the data in the first place.\nOld or inacurrate information in your internal systems is a constant battle, and there may be some areas where you know the information tends to be more inaccurate than others, a “quirk of the system” that you’ve just learned to deal with, and one where a fix is not necessarily going to happen soon.\nHowever, if you are ever in the position to try and fix some of these data problems, at a director-level, you can advocate for creating internal data contracts specifically to benefit your prospect development and research teams.\nWith the board membership example, a strong internal data contract that provides accurate, timely board information means that profiles get done faster, obvious mistakes are avoided, and researchers can spend less time spinning their wheels trying to find information that the institution already knows. Ideally, the goal of a prospect research team should be to get the most efficient process possible for highly accurate profiles, so there is more time for proactive research and expanding the prospect pool. The amount of money that is lost every year is staggering: any given team is being paid for their time, and expanding the prospect pool actually increases campaign revenues, while fiddling around with verifications can run counter to the overall momentum needed to meet fundraising goals.\nOf course, if you aren’t tracking your efficiency, then it would be hard to know for sure."
   },
   {
     "objectID": "toolkit_blog/technical_field_guide/index.html",
@@ -401,14 +401,14 @@
     "href": "index.html",
     "title": "Prospect Research Toolkit",
     "section": "",
-    "text": "…\n\n\nVersion: 0.1.1-alpha\n\nHowdy, partner. Welcome to camp!\nYou know how they say, “there’s gold in them thar hills?” - well, I’ve set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice.\nI hope this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a’clankin’!\nFor more info about the who, what, where, and why…feel free to check out the About page.\nThanks for reading and happy trails.\n\n\n\n\n Back to top"
+    "text": "…\n\n\nVersion: 0.1.1-alpha\n\nHowdy, partner. Welcome to camp!\nYou know how they say, “there’s gold in them thar hills?” - well, I’ve set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice.\nHopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a’clankin’! In the meantime, it’s just a hobby project with big dreams.\nFor more info about the who, what, where, and why…feel free to check out the About page.\nThanks for reading and happy trails.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "tutorials.html",
     "href": "tutorials.html",
     "title": "Tutorials & How-to",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAnalysis of Cars - an example from quarto\n\n\n\n\n\n\nn/a\n\n\nJan 16, 2026\n\n\n\n\n\n\n\n\n\n\n\nObsidian as a Research Notebook\n\n\n\n\n\n\nGreg Brooks\n\n\nDec 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nUsing PowerQuery\n\n\n\nPaid tool\n\nExcel\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAnalysis of Cars - an example from quarto\n\n\n\n\n\n\nn/a\n\n\nJan 21, 2026\n\n\n\n\n\n\n\n\n\n\n\nObsidian as a Research Notebook\n\n\n\n\n\n\nGreg Brooks\n\n\nDec 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nUsing PowerQuery\n\n\n\nPaid tool\n\nExcel\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "Education",
@@ -434,7 +434,7 @@
     "href": "about.html#who-is-this-guy-anyway",
     "title": "About",
     "section": "Who is this guy anyway?",
-    "text": "Who is this guy anyway?\nI come from a psychology background and am largely self-taught in data analytics, information science, data science, etc. So keep an eye out for mistakes, and feel free to let me by raising an issue on our (Github issue page)[https://github.com/ApraUtah/ProspectResearchToolkit/issues]."
+    "text": "Who is this guy anyway?\nI come from a psychology background and am largely self-taught in data analytics, information science, data science, etc. This website is guaranteed to have some bugs."
   },
   {
     "objectID": "about.html#how-often-is-the-website-updated",
@@ -448,14 +448,14 @@
     "href": "about.html#how-is-apra-utah-involved",
     "title": "About",
     "section": "How is Apra Utah involved?",
-    "text": "How is Apra Utah involved?\nI started this website as part of my education initiative for 2025 while I’m serving on the Apra Utah board. In the future (e.g. when I figure out how to do it without breaking too many things) the repository and website name will be changed to a more general one, with participating Apra chapters listed on the website’s About page. The dream would be to have an open-source collective of contributors / volunteers who help maintain the project and add to its longevity, since right now it is almost entirely a one-man show."
+    "text": "How is Apra Utah involved?\nI started this website as part of my education initiative for 2025 while I’m serving on the Apra Utah board, and hope to keep collaborating with Apra Utah after my term ends. The opinions expressed on this website are my own and do not necessarily reflect those of Apra Utah or my employer."
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Toolkit Blog",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nInternal Data Contracts\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 14, 2025\n\n\n\n\n\n\n\n\n\n\n\nQuarto Resources\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 14, 2025\n\n\n\n\n\n\n\n\n\n\n\nCreating the Fundraising Jobs Dataset (round 1)\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 13, 2025\n\n\n\n\n\n\n\n\n\n\n\nLibrary Databases for University Advancement Staffers\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nunfinished PRSPCT-L Roundup\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nHelpful Technical Documentation\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nTechnical Field Guide\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\n\n\n\n\n\nTool Reviews\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 9, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nLibrary Databases for University Advancement Staffers\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nTool Reviews\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nInternal Data Contracts\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 14, 2025\n\n\n\n\n\n\n\n\n\n\n\nCreating the Fundraising Jobs Dataset (round 1)\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 13, 2025\n\n\n\n\n\n\n\n\n\n\n\nunfinished PRSPCT-L Roundup\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nHelpful Technical Documentation\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nTechnical Field Guide\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
     "crumbs": [
       "Home",
       "Education",
@@ -711,5 +711,84 @@
     "title": "Helpful Technical Documentation",
     "section": "VS-Code",
     "text": "VS-Code\n\nMarkdown All-in-One commands"
+  },
+  {
+    "objectID": "toolkit_blog/HelpfulTechDocumentation/index.html#database",
+    "href": "toolkit_blog/HelpfulTechDocumentation/index.html#database",
+    "title": "Helpful Technical Documentation",
+    "section": "Database",
+    "text": "Database\n\nRSQLite"
+  },
+  {
+    "objectID": "toolkit_dashboard1.html",
+    "href": "toolkit_dashboard1.html",
+    "title": "Toolkit Dashboard",
+    "section": "",
+    "text": "# save data to object\n# softwarecompare_data &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/data/pr_tool_comparisons.csv\"))\n# software_term_data &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/data/pr_jobs_dataset_softwarefreq_10-9-25.csv\"))\n# prompt_library &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/tools/ApraUtahTools/ProspectResearch_PromptLibrary/PR_PromptLibrary_v3.csv))\n\n# jobs &lt;- 22\n\n# jobtitle_pr_dataset &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/data/job_titles/CMAP/cleanCMAP_dataset/PRSPDEV_JobTitles_CMAP_2017_ALLSECTORS.csv\"))",
+    "crumbs": [
+      "Home",
+      "Tools",
+      "Toolkit Dashboard"
+    ]
+  },
+  {
+    "objectID": "toolkit_dashboard1.html#row",
+    "href": "toolkit_dashboard1.html#row",
+    "title": "Toolkit Dashboard",
+    "section": "Row",
+    "text": "Row\n\ndatatable(softwarecompare_data)",
+    "crumbs": [
+      "Home",
+      "Tools",
+      "Toolkit Dashboard"
+    ]
+  },
+  {
+    "objectID": "toolkit_dashboard1.html#row-1",
+    "href": "toolkit_dashboard1.html#row-1",
+    "title": "Toolkit Dashboard",
+    "section": "Row",
+    "text": "Row\n\ncat(\"title=\", \"Software terms metioned in 22 analyst job descriptions gathered starting 7/2024\")\n\ndatatable(software_term_data)\n\n\ncat(\"title=\", \"Software term chart\")\n\nggplot(data = software_term_data, aes(x = Term, y= Frequency)) + \ngeom_bar(stat = \"identity\", fill = \"blue\") +\ntheme(axis.text.x = element_text(angle = 45, hjust = 1))",
+    "crumbs": [
+      "Home",
+      "Tools",
+      "Toolkit Dashboard"
+    ]
+  },
+  {
+    "objectID": "toolkit_dashboard1.html#row-2",
+    "href": "toolkit_dashboard1.html#row-2",
+    "title": "Toolkit Dashboard",
+    "section": "Row",
+    "text": "Row\n\ncat(\"title=\", \"Prospect Dev job titles / frequency from public CMAP dataset\")\ndatatable(jobtitle_pr_dataset)\n\n\ncat(\"title=\", \"Job title chart (&gt;10 instances)\")\n\ntop_PR_titles &lt;- jobtitle_pr_dataset[jobtitle_pr_dataset$frequency_cleaned&gt;10,]\n\nggplot(data = top_PR_titles, aes(x = title_cleaned, y= frequency_cleaned)) + \ngeom_bar(stat = \"identity\", fill = \"red\") +\ntheme(axis.text.x = element_text(angle = 45, hjust = 1))",
+    "crumbs": [
+      "Home",
+      "Tools",
+      "Toolkit Dashboard"
+    ]
+  },
+  {
+    "objectID": "toolkit_dashboard1.html#row-1-1",
+    "href": "toolkit_dashboard1.html#row-1-1",
+    "title": "Toolkit Dashboard",
+    "section": "Row 1",
+    "text": "Row 1\n\nlist(\n  icon = \"pencil\",\n  color = \"danger\",\n  value = jobs\n)\n\n\nlist(\n  icon = \"trash\",\n  color = \"danger\",\n  value = jobs\n)\n\n\nlist(\n  icon = \"chat\",\n  color = \"danger\",\n  value = jobs\n)",
+    "crumbs": [
+      "Home",
+      "Tools",
+      "Toolkit Dashboard"
+    ]
+  },
+  {
+    "objectID": "toolkit_dashboard1.html#row-3",
+    "href": "toolkit_dashboard1.html#row-3",
+    "title": "Toolkit Dashboard",
+    "section": "Row",
+    "text": "Row\n\ncat(\"title=\", \"Prospect Research prompt library\")\n\ndatatable(prompt_library)",
+    "crumbs": [
+      "Home",
+      "Tools",
+      "Toolkit Dashboard"
+    ]
   }
 ]
