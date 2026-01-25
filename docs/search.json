@@ -229,18 +229,140 @@
     "text": "3. Niche Fundraising Tools (e.g., ResearchPoint & LiveAlumni)\nThese products are end-user applications built for nonprofit development, advancement, and alumni relations. They consume data from brokers and other sources to help fundraising professionals prioritize prospects and manage engagement.\n\nBlackbaud ResearchPoint\n\nA donor prospect research platform that integrates multiple data feeds (including wealth, philanthropic history, biographical, and asset data). (Blackbaud Help)\nIt supports bulk lists, wealth screening, and rich prospect profiles used to guide major gift fundraising. (Blackbaud Help)\n\n\n\nLiveAlumni\n\nA niche provider focused on verified alumni and donor employment data, job changes, industry and employer details. (LiveAlumni)\nUseful in fundraising to identify job changes, matching gift eligibility, and engagement signals.\n\nThese platforms often license or embed multiple broker data feeds to enrich constituent records and analytics."
   },
   {
-    "objectID": "data/industry_data/job_titles/readme.html",
-    "href": "data/industry_data/job_titles/readme.html",
-    "title": "Prospect Research Toolkit",
+    "objectID": "data/database/gregs_mermaid_db_experiment.html",
+    "href": "data/database/gregs_mermaid_db_experiment.html",
+    "title": "Database ERD draft",
     "section": "",
-    "text": "Working on expanding the fundraising sector job titles dataset, using data gathered myself, and cross-comparing with public datasets like CMap\n\n\n\n Back to top"
+    "text": "Database ERD draft\n2025-12-9 Mermaid documentation for ERDs\n\n\n\n\n\n---\ntitle: Prospect Research Toolkit ERD\n---\nerDiagram\n\n%% ===TOOLS===\n  tools{\n    int id PK\n    str name\n    str type\n    int cost\n    str integrations\n    str notes\n    int company_id FK\n    numeric created_at\n  }\n  companies{}\n  university_tools{}\n  universities{}\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "data/industry_data/job_titles/CMAP/figure_4.html",
-    "href": "data/industry_data/job_titles/CMAP/figure_4.html",
+    "objectID": "data/industry_data/job_titles/CMAP/readme.html",
+    "href": "data/industry_data/job_titles/CMAP/readme.html",
+    "title": "Greg’s Overview",
+    "section": "",
+    "text": "I’ve attempted to subset Prospect Development and Major Gift Officer job titles from the 2025 Career Map (CMap) dataset released in July 2025 (citation below) from the CMAP readme:\n\nQuoting from the (paper)[https://www.nature.com/articles/s41597-025-05526-3#Abs1]: # Career Map Dataset (CMap)\n“We generated our dataset by utilizing a collection of 220 million anonymized and publicly available user curriculum vitae (CVs), collected from LinkedIn via DataHut24. These CVs encompass a total of 546 million job experiences spanning 197 countries and 24 industry sectors. While the dataset itself was collected in 2017, the career histories recorded within these CVs extend as far back as 1970, capturing job trajectories of individuals whose professional experiences span multiple decades, up to December 2017. However, given the noisy nature of the data, substantial pre-processing was required to ensure consistency and usability. The job titles appeared in a variety of formats, often containing spelling variations, abbreviations, or redundant information. Furthermore, sector classifications were inferred rather than explicitly provided, requiring additional processing to associate each job experience with a standardized industry category” This repository provides a comprehensive and scalable dataset for analyzing job titles, promotions, and sector specialization across 24 major industry sectors and 197 countries. It is designed for research in career mobility, labor economics, workforce analytics, and computational social science.\n\nSo there are some major caveats to both my datasets created: the Prospect Development job title one, and the Major Gift Officer one. Namely, I was struggling to filter the specific titles that match both of those niche’s, something especially difficult given the variety of titles especially for Major Gift Officers.\nI have included the PowerQuery M code in this repository, in case folks want to see my clumsy attempts to subset CMAP.\nI created a smaller dataset for the MGO niche, that only includes the non-profit sector. If you sort by frequency, you’ll see familiar titles at the top. The “title_generalized” column is arguably the most helpful, because it attempts to standardize the highly variable development officer roles into several categories.\nIn my dataset filenames, I have been calling this CMAP 2017, to remind me that this is somewhat old data. But because of how comprehensive this data is, and because the methods and code are open-source, future dataset creation could follow in the same vein: the main limiting factor being the cost of purchasing public and anonymized CV data. There may be more recent public sector-specific datasets out there that could be appended to this one, or transformed to match their unique standardization system, and potentially avoid this cost.\nI have not uploaded the sector files or massive original dataset, to save on repo space, but they can be downloaded here. ## Archive Overview\nCitation: Subhani, S., Memon, S.A. & AlShebli, B. CMap: a database for mapping job titles, sector specialization, and promotions across 24 sectors. Sci Data 12, 1214 (2025). https://doi.org/10.1038/s41597-025-05526-3 The dataset is split into three downloadable archives, each serving a different purpose:"
+  },
+  {
+    "objectID": "data/industry_data/job_titles/CMAP/readme.html#job-promotions-and-titles-dataset",
+    "href": "data/industry_data/job_titles/CMAP/readme.html#job-promotions-and-titles-dataset",
+    "title": "Greg’s Overview",
+    "section": "Job Promotions and Titles Dataset",
+    "text": "Job Promotions and Titles Dataset\n\n1. dataset.zip\nContains the core dataset, structured into the following directories:\nThis repository contains structured datasets related to job promotions, title mappings, and sector specializations across various industries. The data is organized into directories based on its purpose and validation status. #### titles/ - map/: Cleaned and generalized job title mappings for each of the 24 sectors. - si/: Specialization Index (SI) scores for job titles by sector, decomposed into: - Sector Breadth (SB): Measures how widely a job title is distributed across sectors. - Sector Depth (SD): Measures how dominant a job title is within a sector."
+  },
+  {
+    "objectID": "data/industry_data/job_titles/CMAP/readme.html#directory-structure",
+    "href": "data/industry_data/job_titles/CMAP/readme.html#directory-structure",
+    "title": "Greg’s Overview",
+    "section": "Directory Structure",
+    "text": "Directory Structure\n\npromotions/\n\nvalidated/: Empirically validated job promotions across sectors in the US and UK.\nunvalidated/: Statistically inferred promotions across six regions, unvalidated manually.\nnodes/: Title-level job counts associated with promotion movements.\nedges/: Directed job transitions labeled with promotion probabilities.\n\ndataset/ │── promotions/ │ │── validated/ # Contains validated job promotion data │ │── unvalidated/ # Contains unvalidated job promotion data │── titles/ │ │── map/ # Contains mappings of job titles before and after standardization │ │── si/ # Contains specialization index (SI) scores for job titles #### network/ - Interactive HTML visualizations of sector-specific job promotion networks by country/region.\n\n\n1. promotions/\nThis directory contains job movements identified as promotions. The data is divided into: - validated/: Contains human-validated promotions for job movements across different sectors in the United States and United Kingdom. - unvalidated/: Contains statistically inferred promotions for job movements across six continents, but without manual validation. —\nEach CSV file follows the naming convention: ### 2. dataset_ext.zip Provides an extended dataset for advanced modeling and custom data cleaning applications.\n&lt;REGION&gt;_\\&lt;sector&gt;.csv #### map-raw/ - Contains a step-by-step mapping of 56.4 million titles (after processing step J2) to 126 thousand standardized titles (as in step J7 of the manuscript). - The files are split into 100 parts for scalability. - This extended mapping is ideal for: - Matching messy job titles in external datasets (e.g., LinkedIn, Glassdoor, Indeed). - Training supervised learning models for job title normalization using techniques such as: - Logistic regression - Support Vector Machines (SVM) - Transformer-based models (e.g., BERT, RoBERTa)\n\n\n2. titles/"
+  },
+  {
+    "objectID": "data/industry_data/job_titles/CMAP/readme.html#this-directory-contains-information-about-job-titles-their-frequencies-and-sector-specialization.",
+    "href": "data/industry_data/job_titles/CMAP/readme.html#this-directory-contains-information-about-job-titles-their-frequencies-and-sector-specialization.",
+    "title": "Greg’s Overview",
+    "section": "This directory contains information about job titles, their frequencies, and sector specialization.",
+    "text": "This directory contains information about job titles, their frequencies, and sector specialization.\n\nmap/: Contains mappings of job titles before and after cleaning and standardization for different sectors.\nsi/: Contains Specialization Index (SI) scores, which quantify how unique or general a job title is within a sector. ### 3. examples.zip Includes hand-picked examples used throughout the manuscript for:\nAnnotated Prolific validation tasks\nVisual illustrations of SI distributions and promotion transitions\nComparative examples between US and UK sectors"
+  },
+  {
+    "objectID": "data/industry_data/job_titles/CMAP/readme.html#dataset-highlights",
+    "href": "data/industry_data/job_titles/CMAP/readme.html#dataset-highlights",
+    "title": "Greg’s Overview",
+    "section": "Dataset Highlights",
+    "text": "Dataset Highlights\n\nSource: 227 million anonymized CVs across 197 countries (1970–2017)\nScope: 572 million job experiences, 691,000+ unique cleaned job titles\nSector Coverage: 24 industry sectors, from Health Care to Information Technology\nPromotion Records: Over 310,000 transitions labeled with promotion probabilities\nO*NET Integration: Titles are mapped to standardized O*NET SOC occupation codes\n\n\nEach CSV file in the above folders follows the naming convention: ## Suggested Applications\n&lt;sector&gt;.csv - Labor market segmentation, job taxonomy construction, promotion inequality analysis - Creation of custom job title cleaning models - Enrichment of external datasets using structured title mappings and SI scores"
+  },
+  {
+    "objectID": "data/industry_data/job_titles/CMAP/readme.html#usage",
+    "href": "data/industry_data/job_titles/CMAP/readme.html#usage",
+    "title": "Greg’s Overview",
+    "section": "Usage",
+    "text": "Usage\nThis dataset can be used for various research purposes, including: - Analyzing career progression trends across sectors and regions. - Understanding job title variations and sector specializations. - Developing machine learning models for job transition predictions. - Developng generalized models for cleaning job titles. For implementation examples and integration tips, refer to the Usage Notes section in the accompanying manuscript.\n\nLast updated: 4/22/25"
+  },
+  {
+    "objectID": "data/industry_data/job_titles/CMAP/cleanCMAP_dataset/readme.html",
+    "href": "data/industry_data/job_titles/CMAP/cleanCMAP_dataset/readme.html",
     "title": "Prospect Research Toolkit",
     "section": "",
-    "text": "import numpy as np\nimport pandas as pd\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport os\nimport glob\nimport matplotlib.gridspec as gridspec\n\nfrom tqdm import tqdm\ntqdm.pandas()\n\n\ndef read_files(folder, add_file_column=False, **kwargs):\n    def read_file(path, add_file_column=False, **kwargs):\n        file = os.path.basename(path)\n        try:\n            df = pd.read_csv(path, low_memory=False, **kwargs)\n        except pd.errors.EmptyDataError:\n            print(f\"{file} is empty\")\n            return pd.DataFrame()\n\n        if add_file_column:\n            df['file'] = file\n\n        return df\n\n    return pd.concat([read_file(path, add_file_column, **kwargs) for path in tqdm(glob.glob(os.path.join(folder, '*.csv')))], ignore_index=True)\n\n\ndf_titles_map = read_files('dataset/titles/map')\ndf_titles_si = read_files('dataset/titles/si')\ndf_promotions_unvalidated = pd.concat([read_files('dataset/promotions/unvalidated/edges')], ignore_index=True)\ndf_promotions_validated = pd.concat([read_files('dataset/promotions/validated/edges')], ignore_index=True)\n\n100%|██████████| 24/24 [00:10&lt;00:00,  2.33it/s]\n100%|██████████| 24/24 [00:00&lt;00:00, 27.58it/s]\n100%|██████████| 144/144 [00:00&lt;00:00, 480.33it/s]\n100%|██████████| 48/48 [00:00&lt;00:00, 480.23it/s]\n\n\n\n# Recreate df_sector_counts\ndf_sector_counts = df_titles_map.groupby('sector')['title_generalized'].nunique().reset_index().rename(columns={'title_generalized': 'count'})\ndf_sector_counts['percentage'] = (df_sector_counts['count'] / df_sector_counts['count'].sum()) * 100\n\n# Recreate df_sector_promotions\ndf_sector_promotions_unvalidated = df_promotions_unvalidated.groupby('sector').size().reset_index(name='count')\ndf_sector_promotions_unvalidated['percentage'] = (df_sector_promotions_unvalidated['count'] / df_sector_promotions_unvalidated['count'].sum()) * 100\n\ndf_sector_promotions_validated = df_promotions_validated.groupby('sector').size().reset_index(name='count')\ndf_sector_promotions_validated['percentage'] = (df_sector_promotions_validated['count'] / df_sector_promotions_validated['count'].sum()) * 100\n\n# Recreate df_grouped (for world map)\ndf_grouped = df_promotions_unvalidated.groupby('country_binned').size().reset_index(name='count')\ndf_grouped['percentage'] = (df_grouped['count'] / df_grouped['count'].sum()) * 100\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport matplotlib.gridspec as gridspec\n\n# Create a figure with a gridspec layout\nfig = plt.figure(figsize=(10, 16))\ngs = gridspec.GridSpec(4, 1, height_ratios=[2, 3, 2, 2], figure=fig)\n\n# Create axes for each subplot using gridspec\nax1 = fig.add_subplot(gs[0])  # Bar plot of unique titles per sector\nax2 = fig.add_subplot(gs[1])  # Boxplot of SI per sector\nax3 = fig.add_subplot(gs[2])  # Bar plot of promotions (unvalidated)\nax4 = fig.add_subplot(gs[3])  # Bar plot of promotions (validated)\n\n# --- Plot 1: Bar plot of unique titles per sector ---\nsns.barplot(data=df_sector_counts, x='sector', y='count', ax=ax1, color='tab:blue')\nax1.set_ylabel(\"Number of titles\", fontsize=10)\n\n# Add percentage labels on top of each bar\nfor index, row in enumerate(df_sector_counts.itertuples()):\n    percentage_text = f\"{int(row.percentage)}%\" if row.percentage &gt; 9 else f\"{row.percentage:.1f}%\"\n    ax1.text(index, row.count + 2500, percentage_text, ha='center', fontsize=9)\n\n# Format y-axis to show count in thousands (K format)\nax1.set_yticks(ax1.get_yticks())\nax1.set_yticklabels([f\"{int(y/1e3)}K\" for y in ax1.get_yticks()])\n\n# Remove x-axis labels and ticks completely\nax1.set_xticklabels([])\nax1.set_xticks([])\n\nsns.despine(ax=ax1)\nax1.set_xlabel(\"\")\n\n# --- Plot 2: Boxplot of Specialization Index (SI) per sector ---\nsns.boxplot(\n    data=df_titles_si, x='sector', y='SI', ax=ax2, showmeans=True,\n    meanline=False, meanprops={'marker': 'D', 'markerfacecolor': 'black', 'markeredgecolor': 'black', 'markersize': 4},\n    whis=[0, 100]\n)\n\n# Draw the horizontal mean line\noverall_mean = df_titles_si['SI'].mean()\nax2.axhline(overall_mean, linestyle='dotted', color='red', linewidth=1.5)\nax2.set_ylabel(\"Specialization Index (SI)\\n\", fontsize=10)\n\n# Rotate x-axis labels for readability\nax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')\nax2.set_xlabel(\"\")\n\nsns.despine(ax=ax2)\n\n# --- Plot 3: Bar plot of promotions (Validated) ---\nsns.barplot(data=df_sector_promotions_validated, x='sector', y='count', ax=ax3, color='tab:blue')\nax3.set_ylabel(\"Number of promotions\\n\", fontsize=10)\n\n# Add percentage labels on top of each bar\nfor index, row in enumerate(df_sector_promotions_validated.itertuples()):\n    percentage_text = f\"{int(row.percentage)}%\" if row.percentage &gt; 9 else f\"{row.percentage:.1f}%\"\n    ax3.text(index, row.count + 400, percentage_text, ha='center', fontsize=9)\n\n# Format y-axis to show count in thousands (K format)\nax3.set_yticks(ax3.get_yticks())\nax3.set_yticklabels([f\"{int(y/1e3)}K\" for y in ax3.get_yticks()])\n\n# Remove x-axis labels and ticks completely\nax3.set_xticklabels([])\nax3.set_xticks([])\n\nsns.despine(ax=ax3)\nax3.set_xlabel(\"\")\n\n# --- Plot 4: Bar plot of promotions (Unvalidated) ---\nsns.barplot(data=df_sector_promotions_unvalidated, x='sector', y='count', ax=ax4, color='tab:blue')\nax4.set_ylabel(\"Number of promotions\\n\", fontsize=10)\n\n# Add percentage labels on top of each bar\nfor index, row in enumerate(df_sector_promotions_unvalidated.itertuples()):\n    percentage_text = f\"{int(row.percentage)}%\" if row.percentage &gt; 9 else f\"{row.percentage:.1f}%\"\n    ax4.text(index, row.count + 1500, percentage_text, ha='center', fontsize=9)\n\n# Format y-axis to show count in thousands (K format)\nax4.set_yticks(ax4.get_yticks())\nax4.set_yticklabels([f\"{int(y/1e3)}K\" for y in ax4.get_yticks()])\n\n# Rotate x-axis labels for readability\nax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\n\n# Rotate x-axis labels for readability\nax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\n\nsns.despine(ax=ax4)\nax4.set_xlabel(\"\")\n\n# Adjust layout\nplt.tight_layout()\n\n# Show the combined plot\nplt.show()\n\n# Save in high resolution\nfig.savefig('figure_4.png', dpi=600)\n\nC:\\Users\\Shehryar\\AppData\\Local\\Temp\\ipykernel_39828\\2159619807.py:48: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.\n  ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')\nC:\\Users\\Shehryar\\AppData\\Local\\Temp\\ipykernel_39828\\2159619807.py:87: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.\n  ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\nC:\\Users\\Shehryar\\AppData\\Local\\Temp\\ipykernel_39828\\2159619807.py:90: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.\n  ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "Used PowerQuery to attempt to filter out various fundraising specific job titles from the CMAP data (Nature paper on this dataset was published in 2025).\n\n3500+ instances of 100+ job titles in the prospect development dataset, across all sectors. Curious how close that is to an actual workforce estimate for prospect dev as a field in 2017. Almost certainly an undercount, but by how much? And how has that changed in 2025?\nGoing to add a front-line fundraiser dataset soon\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "data/industry_data/NA_donation_sample.html",
+    "href": "data/industry_data/NA_donation_sample.html",
+    "title": "Donated Money Trends (from Gallup)",
+    "section": "",
+    "text": "Donated Money Trends (from Gallup)\n(example of data, I think this was asking people about willingness to donate, it could be interesting to visualize some of these results - though I don’t think we can publish the full datasets? just the charts? not high priority though)\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeography\nTime\nDemographic\nDemographic Value\nYes\nNo\nDK/RF\nN Size\n\n\n\n\nNorthern America\n2024\nAggregate\nAggregate\n55%\n45%\n0%\n2,024\n\n\nNorthern America\n2023\nAggregate\nAggregate\n61%\n39%\n0%\n2,009\n\n\nNorthern America\n2022\nAggregate\nAggregate\n62%\n38%\n0%\n2,017\n\n\nNorthern America\n2021\nAggregate\nAggregate\n61%\n39%\n0%\n2,013\n\n\nNorthern America\n2020\nAggregate\nAggregate\n45%\n55%\n0%\n2,013\n\n\nNorthern America\n2019\nAggregate\nAggregate\n56%\n44%\n0%\n2,057\n\n\nNorthern America\n2018\nAggregate\nAggregate\n53%\n47%\n0%\n2,013\n\n\nNorthern America\n2017\nAggregate\nAggregate\n61%\n39%\n0%\n2,018\n\n\nNorthern America\n2016\nAggregate\nAggregate\n56%\n44%\n0%\n2,048\n\n\nNorthern America\n2015\nAggregate\nAggregate\n63%\n37%\n0%\n1,281\n\n\nNorthern America\n2014\nAggregate\nAggregate\n63%\n36%\n0%\n2,048\n\n\nNorthern America\n2013\nAggregate\nAggregate\n68%\n31%\n0%\n1,092\n\n\nNorthern America\n2012\nAggregate\nAggregate\n63%\n37%\n0%\n2,076\n\n\nNorthern America\n2011\nAggregate\nAggregate\n58%\n42%\n0%\n1,274\n\n\nNorthern America\n2010\nAggregate\nAggregate\n65%\n35%\n—\n2,012\n\n\nNorthern America\n2009\nAggregate\nAggregate\n60%\n39%\n1%\n2,014\n\n\nNorthern America\n2008\nAggregate\nAggregate\n66%\n34%\n0%\n2,009\n\n\nNorthern America\n2007\nAggregate\nAggregate\n61%\n39%\n0%\n2,235\n\n\nNorthern America\n2006\nAggregate\nAggregate\n64%\n36%\n—\n1,355\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Toolkit Blog",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nTool & Company Incidents\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLibrary Databases for University Advancement Staffers\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nTool Reviews\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nInternal Data Contracts\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 14, 2025\n\n\n\n\n\n\n\n\n\n\n\nCreating the Fundraising Jobs Dataset (round 1)\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 13, 2025\n\n\n\n\n\n\n\n\n\n\n\nunfinished PRSPCT-L Roundup\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nHelpful Technical Documentation\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nTechnical Field Guide\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "crumbs": [
+      "Home",
+      "Education",
+      "Toolkit Blog"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This toolkit is maintained by Greg Brooks in collaboration with Apra Utah.\nOther contributors include: - Kensuke Uma (add linkedin here)"
+  },
+  {
+    "objectID": "about.html#why-does-this-exist",
+    "href": "about.html#why-does-this-exist",
+    "title": "About",
+    "section": "Why does this exist?",
+    "text": "Why does this exist?\nThere are plenty of excellent paid resources available: Apra, private consultants, subscription tools, books, but not everyone has the budget to access them. This toolkit is being created to bridge that gap, or supplement what’s already out there, not to replace any of those things. The goal is to keep it simple, open-source, community-driven, free and regularly updated."
+  },
+  {
+    "objectID": "about.html#how-accurate-is-this-website",
+    "href": "about.html#how-accurate-is-this-website",
+    "title": "About",
+    "section": "How accurate is this website?",
+    "text": "How accurate is this website?\nThere will be an entire write-up explaining how I source pricing information, but generally speaking, the prices on this website will be prone to errors and should be understood as estimates. The incidents, however, given their public nature, are a more reliable metric to contribute to the overall rating scheme of the software tools. I am most confident, of course, in the subjective articles and tutorials. However, since I am not an advanced data engineer or devops guy - there are almost certainly easier ways to gather, clean, and filter the data I’m sharing on this website. For website bugs or accuracy questions, feel free to open a new issue on the Github project page! (add link here, Greg)\nIn order of most to least accuracy (probably):\n\nGeneral tool or feature information\nTutorials\nData breaches reported publicly by the press\nService outages reported by users to public websites or from the companies themselves\nPricing information"
+  },
+  {
+    "objectID": "about.html#who-is-this-guy-anyway",
+    "href": "about.html#who-is-this-guy-anyway",
+    "title": "About",
+    "section": "Who is this guy anyway?",
+    "text": "Who is this guy anyway?\nI come from a psychology background and am largely self-taught in data analytics, information science, data science, etc. This website is guaranteed to have some bugs."
+  },
+  {
+    "objectID": "about.html#how-often-is-the-website-updated",
+    "href": "about.html#how-often-is-the-website-updated",
+    "title": "About",
+    "section": "How often is the website updated?",
+    "text": "How often is the website updated?\nIn small ways, frequently! Larger changes and resources are on a slower schedule, since I’m doing this in my free time. I expect to have more tutorials, resources, and tools online by 2026. Click here to see the features / goals currently being worked on!"
+  },
+  {
+    "objectID": "about.html#how-is-apra-utah-involved",
+    "href": "about.html#how-is-apra-utah-involved",
+    "title": "About",
+    "section": "How is Apra Utah involved?",
+    "text": "How is Apra Utah involved?\nI started this website as part of my education initiative for 2025 while I’m serving on the Apra Utah board, and hope to keep collaborating with Apra Utah after my term ends. The opinions expressed on this website are my own and do not necessarily reflect those of Apra Utah or my employer."
+  },
+  {
+    "objectID": "tutorials.html",
+    "href": "tutorials.html",
+    "title": "Tutorials & How-to",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAnalysis of Cars - an example from quarto\n\n\n\n\n\n\nn/a\n\n\nJan 25, 2026\n\n\n\n\n\n\n\n\n\n\n\nObsidian as a Research Notebook\n\n\n\n\n\n\nGreg Brooks\n\n\nDec 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nUsing PowerQuery\n\n\n\nPaid tool\n\nExcel\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
+    "crumbs": [
+      "Home",
+      "Education",
+      "Tutorials & How-to"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Prospect Research Toolkit",
+    "section": "",
+    "text": "…\n\n\nVersion: 0.1.1-alpha\n\nHowdy, partner. Welcome to camp!\nYou know how they say, “there’s gold in them thar hills?” - well, I’ve set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice.\nHopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a’clankin’! In the meantime, it’s just a hobby project with big dreams.\nFor more info about the who, what, where, and why…feel free to check out the About page.\nThanks for reading and happy trails.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "data/industry_data/FundraisingDataMarketplace.html",
@@ -397,133 +519,25 @@
     "text": "One sentence synthesis\nYou are not writing a paper about fundraising tools; you are building the first empirical window into a hidden data market, and the paper is simply how that window eventually gets formal recognition.\n\nNo peer reviewed paper that I can find systematically catalogs the exact data fields provided by prospect research / fundraising vendors (e.g., WealthEngine DonorSearch iWave ResearchPoint LiveAlumni) and maps them side-by-side. What does exist are vendor data dictionaries product datasheets KB articles and practitioner guides that together let you construct the field-level map yourself. (Blackbaud Web Files)\nBelow I’ll give a compact evidence-backed plan for how to build that mapping the typical field set you’ll find across vendors and a recommended data model so you can start collecting or estimating pricing and coverage in parallel."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "data/industry_data/job_titles/CMAP/figure_4.html",
+    "href": "data/industry_data/job_titles/CMAP/figure_4.html",
     "title": "Prospect Research Toolkit",
     "section": "",
-    "text": "…\n\n\nVersion: 0.1.1-alpha\n\nHowdy, partner. Welcome to camp!\nYou know how they say, “there’s gold in them thar hills?” - well, I’ve set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice.\nHopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a’clankin’! In the meantime, it’s just a hobby project with big dreams.\nFor more info about the who, what, where, and why…feel free to check out the About page.\nThanks for reading and happy trails.\n\n\n\n\n Back to top"
+    "text": "import numpy as np\nimport pandas as pd\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport os\nimport glob\nimport matplotlib.gridspec as gridspec\n\nfrom tqdm import tqdm\ntqdm.pandas()\n\n\ndef read_files(folder, add_file_column=False, **kwargs):\n    def read_file(path, add_file_column=False, **kwargs):\n        file = os.path.basename(path)\n        try:\n            df = pd.read_csv(path, low_memory=False, **kwargs)\n        except pd.errors.EmptyDataError:\n            print(f\"{file} is empty\")\n            return pd.DataFrame()\n\n        if add_file_column:\n            df['file'] = file\n\n        return df\n\n    return pd.concat([read_file(path, add_file_column, **kwargs) for path in tqdm(glob.glob(os.path.join(folder, '*.csv')))], ignore_index=True)\n\n\ndf_titles_map = read_files('dataset/titles/map')\ndf_titles_si = read_files('dataset/titles/si')\ndf_promotions_unvalidated = pd.concat([read_files('dataset/promotions/unvalidated/edges')], ignore_index=True)\ndf_promotions_validated = pd.concat([read_files('dataset/promotions/validated/edges')], ignore_index=True)\n\n100%|██████████| 24/24 [00:10&lt;00:00,  2.33it/s]\n100%|██████████| 24/24 [00:00&lt;00:00, 27.58it/s]\n100%|██████████| 144/144 [00:00&lt;00:00, 480.33it/s]\n100%|██████████| 48/48 [00:00&lt;00:00, 480.23it/s]\n\n\n\n# Recreate df_sector_counts\ndf_sector_counts = df_titles_map.groupby('sector')['title_generalized'].nunique().reset_index().rename(columns={'title_generalized': 'count'})\ndf_sector_counts['percentage'] = (df_sector_counts['count'] / df_sector_counts['count'].sum()) * 100\n\n# Recreate df_sector_promotions\ndf_sector_promotions_unvalidated = df_promotions_unvalidated.groupby('sector').size().reset_index(name='count')\ndf_sector_promotions_unvalidated['percentage'] = (df_sector_promotions_unvalidated['count'] / df_sector_promotions_unvalidated['count'].sum()) * 100\n\ndf_sector_promotions_validated = df_promotions_validated.groupby('sector').size().reset_index(name='count')\ndf_sector_promotions_validated['percentage'] = (df_sector_promotions_validated['count'] / df_sector_promotions_validated['count'].sum()) * 100\n\n# Recreate df_grouped (for world map)\ndf_grouped = df_promotions_unvalidated.groupby('country_binned').size().reset_index(name='count')\ndf_grouped['percentage'] = (df_grouped['count'] / df_grouped['count'].sum()) * 100\n\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\nimport matplotlib.gridspec as gridspec\n\n# Create a figure with a gridspec layout\nfig = plt.figure(figsize=(10, 16))\ngs = gridspec.GridSpec(4, 1, height_ratios=[2, 3, 2, 2], figure=fig)\n\n# Create axes for each subplot using gridspec\nax1 = fig.add_subplot(gs[0])  # Bar plot of unique titles per sector\nax2 = fig.add_subplot(gs[1])  # Boxplot of SI per sector\nax3 = fig.add_subplot(gs[2])  # Bar plot of promotions (unvalidated)\nax4 = fig.add_subplot(gs[3])  # Bar plot of promotions (validated)\n\n# --- Plot 1: Bar plot of unique titles per sector ---\nsns.barplot(data=df_sector_counts, x='sector', y='count', ax=ax1, color='tab:blue')\nax1.set_ylabel(\"Number of titles\", fontsize=10)\n\n# Add percentage labels on top of each bar\nfor index, row in enumerate(df_sector_counts.itertuples()):\n    percentage_text = f\"{int(row.percentage)}%\" if row.percentage &gt; 9 else f\"{row.percentage:.1f}%\"\n    ax1.text(index, row.count + 2500, percentage_text, ha='center', fontsize=9)\n\n# Format y-axis to show count in thousands (K format)\nax1.set_yticks(ax1.get_yticks())\nax1.set_yticklabels([f\"{int(y/1e3)}K\" for y in ax1.get_yticks()])\n\n# Remove x-axis labels and ticks completely\nax1.set_xticklabels([])\nax1.set_xticks([])\n\nsns.despine(ax=ax1)\nax1.set_xlabel(\"\")\n\n# --- Plot 2: Boxplot of Specialization Index (SI) per sector ---\nsns.boxplot(\n    data=df_titles_si, x='sector', y='SI', ax=ax2, showmeans=True,\n    meanline=False, meanprops={'marker': 'D', 'markerfacecolor': 'black', 'markeredgecolor': 'black', 'markersize': 4},\n    whis=[0, 100]\n)\n\n# Draw the horizontal mean line\noverall_mean = df_titles_si['SI'].mean()\nax2.axhline(overall_mean, linestyle='dotted', color='red', linewidth=1.5)\nax2.set_ylabel(\"Specialization Index (SI)\\n\", fontsize=10)\n\n# Rotate x-axis labels for readability\nax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')\nax2.set_xlabel(\"\")\n\nsns.despine(ax=ax2)\n\n# --- Plot 3: Bar plot of promotions (Validated) ---\nsns.barplot(data=df_sector_promotions_validated, x='sector', y='count', ax=ax3, color='tab:blue')\nax3.set_ylabel(\"Number of promotions\\n\", fontsize=10)\n\n# Add percentage labels on top of each bar\nfor index, row in enumerate(df_sector_promotions_validated.itertuples()):\n    percentage_text = f\"{int(row.percentage)}%\" if row.percentage &gt; 9 else f\"{row.percentage:.1f}%\"\n    ax3.text(index, row.count + 400, percentage_text, ha='center', fontsize=9)\n\n# Format y-axis to show count in thousands (K format)\nax3.set_yticks(ax3.get_yticks())\nax3.set_yticklabels([f\"{int(y/1e3)}K\" for y in ax3.get_yticks()])\n\n# Remove x-axis labels and ticks completely\nax3.set_xticklabels([])\nax3.set_xticks([])\n\nsns.despine(ax=ax3)\nax3.set_xlabel(\"\")\n\n# --- Plot 4: Bar plot of promotions (Unvalidated) ---\nsns.barplot(data=df_sector_promotions_unvalidated, x='sector', y='count', ax=ax4, color='tab:blue')\nax4.set_ylabel(\"Number of promotions\\n\", fontsize=10)\n\n# Add percentage labels on top of each bar\nfor index, row in enumerate(df_sector_promotions_unvalidated.itertuples()):\n    percentage_text = f\"{int(row.percentage)}%\" if row.percentage &gt; 9 else f\"{row.percentage:.1f}%\"\n    ax4.text(index, row.count + 1500, percentage_text, ha='center', fontsize=9)\n\n# Format y-axis to show count in thousands (K format)\nax4.set_yticks(ax4.get_yticks())\nax4.set_yticklabels([f\"{int(y/1e3)}K\" for y in ax4.get_yticks()])\n\n# Rotate x-axis labels for readability\nax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\n\n# Rotate x-axis labels for readability\nax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\n\nsns.despine(ax=ax4)\nax4.set_xlabel(\"\")\n\n# Adjust layout\nplt.tight_layout()\n\n# Show the combined plot\nplt.show()\n\n# Save in high resolution\nfig.savefig('figure_4.png', dpi=600)\n\nC:\\Users\\Shehryar\\AppData\\Local\\Temp\\ipykernel_39828\\2159619807.py:48: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.\n  ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')\nC:\\Users\\Shehryar\\AppData\\Local\\Temp\\ipykernel_39828\\2159619807.py:87: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.\n  ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\nC:\\Users\\Shehryar\\AppData\\Local\\Temp\\ipykernel_39828\\2159619807.py:90: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.\n  ax4.set_xticklabels(ax4.get_xticklabels(), rotation=45, ha='right')\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "tutorials.html",
-    "href": "tutorials.html",
-    "title": "Tutorials & How-to",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nAnalysis of Cars - an example from quarto\n\n\n\n\n\n\nn/a\n\n\nJan 21, 2026\n\n\n\n\n\n\n\n\n\n\n\nObsidian as a Research Notebook\n\n\n\n\n\n\nGreg Brooks\n\n\nDec 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nUsing PowerQuery\n\n\n\nPaid tool\n\nExcel\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
-    "crumbs": [
-      "Home",
-      "Education",
-      "Tutorials & How-to"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "…\nThis toolkit is maintained by Greg Brooks in association with Apra Utah."
-  },
-  {
-    "objectID": "about.html#why-does-this-exist",
-    "href": "about.html#why-does-this-exist",
-    "title": "About",
-    "section": "Why does this exist?",
-    "text": "Why does this exist?\nThere are plenty of excellent paid resources available: Apra, private consultants, subscription tools, books, but not everyone has the budget to access them. This toolkit is being created to bridge that gap, or supplement what’s already out there, not to replace any of those things. The goal is to keep it simple, open-source, community-driven, free and regularly updated."
-  },
-  {
-    "objectID": "about.html#who-is-this-guy-anyway",
-    "href": "about.html#who-is-this-guy-anyway",
-    "title": "About",
-    "section": "Who is this guy anyway?",
-    "text": "Who is this guy anyway?\nI come from a psychology background and am largely self-taught in data analytics, information science, data science, etc. This website is guaranteed to have some bugs."
-  },
-  {
-    "objectID": "about.html#how-often-is-the-website-updated",
-    "href": "about.html#how-often-is-the-website-updated",
-    "title": "About",
-    "section": "How often is the website updated?",
-    "text": "How often is the website updated?\nIn small ways, frequently! Larger changes and resources are on a slower schedule, since I’m doing this in my free time. I expect to have more tutorials, resources, and tools online by 2026. Click here to see the features / goals currently being worked on!"
-  },
-  {
-    "objectID": "about.html#how-is-apra-utah-involved",
-    "href": "about.html#how-is-apra-utah-involved",
-    "title": "About",
-    "section": "How is Apra Utah involved?",
-    "text": "How is Apra Utah involved?\nI started this website as part of my education initiative for 2025 while I’m serving on the Apra Utah board, and hope to keep collaborating with Apra Utah after my term ends. The opinions expressed on this website are my own and do not necessarily reflect those of Apra Utah or my employer."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Toolkit Blog",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nLibrary Databases for University Advancement Staffers\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nTool Reviews\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nInternal Data Contracts\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 14, 2025\n\n\n\n\n\n\n\n\n\n\n\nCreating the Fundraising Jobs Dataset (round 1)\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 13, 2025\n\n\n\n\n\n\n\n\n\n\n\nunfinished PRSPCT-L Roundup\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nHelpful Technical Documentation\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nTechnical Field Guide\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top",
-    "crumbs": [
-      "Home",
-      "Education",
-      "Toolkit Blog"
-    ]
-  },
-  {
-    "objectID": "data/industry_data/NA_donation_sample.html",
-    "href": "data/industry_data/NA_donation_sample.html",
-    "title": "Donated Money Trends (from Gallup)",
-    "section": "",
-    "text": "Donated Money Trends (from Gallup)\n(example of data, I think this was asking people about willingness to donate, it could be interesting to visualize some of these results - though I don’t think we can publish the full datasets? just the charts? not high priority though)\n\n\n\n\n\n\n\n\n\n\n\n\n\nGeography\nTime\nDemographic\nDemographic Value\nYes\nNo\nDK/RF\nN Size\n\n\n\n\nNorthern America\n2024\nAggregate\nAggregate\n55%\n45%\n0%\n2,024\n\n\nNorthern America\n2023\nAggregate\nAggregate\n61%\n39%\n0%\n2,009\n\n\nNorthern America\n2022\nAggregate\nAggregate\n62%\n38%\n0%\n2,017\n\n\nNorthern America\n2021\nAggregate\nAggregate\n61%\n39%\n0%\n2,013\n\n\nNorthern America\n2020\nAggregate\nAggregate\n45%\n55%\n0%\n2,013\n\n\nNorthern America\n2019\nAggregate\nAggregate\n56%\n44%\n0%\n2,057\n\n\nNorthern America\n2018\nAggregate\nAggregate\n53%\n47%\n0%\n2,013\n\n\nNorthern America\n2017\nAggregate\nAggregate\n61%\n39%\n0%\n2,018\n\n\nNorthern America\n2016\nAggregate\nAggregate\n56%\n44%\n0%\n2,048\n\n\nNorthern America\n2015\nAggregate\nAggregate\n63%\n37%\n0%\n1,281\n\n\nNorthern America\n2014\nAggregate\nAggregate\n63%\n36%\n0%\n2,048\n\n\nNorthern America\n2013\nAggregate\nAggregate\n68%\n31%\n0%\n1,092\n\n\nNorthern America\n2012\nAggregate\nAggregate\n63%\n37%\n0%\n2,076\n\n\nNorthern America\n2011\nAggregate\nAggregate\n58%\n42%\n0%\n1,274\n\n\nNorthern America\n2010\nAggregate\nAggregate\n65%\n35%\n—\n2,012\n\n\nNorthern America\n2009\nAggregate\nAggregate\n60%\n39%\n1%\n2,014\n\n\nNorthern America\n2008\nAggregate\nAggregate\n66%\n34%\n0%\n2,009\n\n\nNorthern America\n2007\nAggregate\nAggregate\n61%\n39%\n0%\n2,235\n\n\nNorthern America\n2006\nAggregate\nAggregate\n64%\n36%\n—\n1,355\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "data/industry_data/job_titles/CMAP/cleanCMAP_dataset/readme.html",
-    "href": "data/industry_data/job_titles/CMAP/cleanCMAP_dataset/readme.html",
+    "objectID": "data/industry_data/job_titles/readme.html",
+    "href": "data/industry_data/job_titles/readme.html",
     "title": "Prospect Research Toolkit",
     "section": "",
-    "text": "Used PowerQuery to attempt to filter out various fundraising specific job titles from the CMAP data (Nature paper on this dataset was published in 2025).\n\n3500+ instances of 100+ job titles in the prospect development dataset, across all sectors. Curious how close that is to an actual workforce estimate for prospect dev as a field in 2017. Almost certainly an undercount, but by how much? And how has that changed in 2025?\nGoing to add a front-line fundraiser dataset soon\n\n\n\n\n\n Back to top"
+    "text": "Working on expanding the fundraising sector job titles dataset, using data gathered myself, and cross-comparing with public datasets like CMap\n\n\n\n Back to top"
   },
   {
-    "objectID": "data/industry_data/job_titles/CMAP/readme.html",
-    "href": "data/industry_data/job_titles/CMAP/readme.html",
-    "title": "Greg’s Overview",
+    "objectID": "data/database/firebase_scripts/firebase_read.html",
+    "href": "data/database/firebase_scripts/firebase_read.html",
+    "title": "firebase-read",
     "section": "",
-    "text": "I’ve attempted to subset Prospect Development and Major Gift Officer job titles from the 2025 Career Map (CMap) dataset released in July 2025 (citation below) from the CMAP readme:\n\nQuoting from the (paper)[https://www.nature.com/articles/s41597-025-05526-3#Abs1]: # Career Map Dataset (CMap)\n“We generated our dataset by utilizing a collection of 220 million anonymized and publicly available user curriculum vitae (CVs), collected from LinkedIn via DataHut24. These CVs encompass a total of 546 million job experiences spanning 197 countries and 24 industry sectors. While the dataset itself was collected in 2017, the career histories recorded within these CVs extend as far back as 1970, capturing job trajectories of individuals whose professional experiences span multiple decades, up to December 2017. However, given the noisy nature of the data, substantial pre-processing was required to ensure consistency and usability. The job titles appeared in a variety of formats, often containing spelling variations, abbreviations, or redundant information. Furthermore, sector classifications were inferred rather than explicitly provided, requiring additional processing to associate each job experience with a standardized industry category” This repository provides a comprehensive and scalable dataset for analyzing job titles, promotions, and sector specialization across 24 major industry sectors and 197 countries. It is designed for research in career mobility, labor economics, workforce analytics, and computational social science.\n\nSo there are some major caveats to both my datasets created: the Prospect Development job title one, and the Major Gift Officer one. Namely, I was struggling to filter the specific titles that match both of those niche’s, something especially difficult given the variety of titles especially for Major Gift Officers.\nI have included the PowerQuery M code in this repository, in case folks want to see my clumsy attempts to subset CMAP.\nI created a smaller dataset for the MGO niche, that only includes the non-profit sector. If you sort by frequency, you’ll see familiar titles at the top. The “title_generalized” column is arguably the most helpful, because it attempts to standardize the highly variable development officer roles into several categories.\nIn my dataset filenames, I have been calling this CMAP 2017, to remind me that this is somewhat old data. But because of how comprehensive this data is, and because the methods and code are open-source, future dataset creation could follow in the same vein: the main limiting factor being the cost of purchasing public and anonymized CV data. There may be more recent public sector-specific datasets out there that could be appended to this one, or transformed to match their unique standardization system, and potentially avoid this cost.\nI have not uploaded the sector files or massive original dataset, to save on repo space, but they can be downloaded here. ## Archive Overview\nCitation: Subhani, S., Memon, S.A. & AlShebli, B. CMap: a database for mapping job titles, sector specialization, and promotions across 24 sectors. Sci Data 12, 1214 (2025). https://doi.org/10.1038/s41597-025-05526-3 The dataset is split into three downloadable archives, each serving a different purpose:"
-  },
-  {
-    "objectID": "data/industry_data/job_titles/CMAP/readme.html#job-promotions-and-titles-dataset",
-    "href": "data/industry_data/job_titles/CMAP/readme.html#job-promotions-and-titles-dataset",
-    "title": "Greg’s Overview",
-    "section": "Job Promotions and Titles Dataset",
-    "text": "Job Promotions and Titles Dataset\n\n1. dataset.zip\nContains the core dataset, structured into the following directories:\nThis repository contains structured datasets related to job promotions, title mappings, and sector specializations across various industries. The data is organized into directories based on its purpose and validation status. #### titles/ - map/: Cleaned and generalized job title mappings for each of the 24 sectors. - si/: Specialization Index (SI) scores for job titles by sector, decomposed into: - Sector Breadth (SB): Measures how widely a job title is distributed across sectors. - Sector Depth (SD): Measures how dominant a job title is within a sector."
-  },
-  {
-    "objectID": "data/industry_data/job_titles/CMAP/readme.html#directory-structure",
-    "href": "data/industry_data/job_titles/CMAP/readme.html#directory-structure",
-    "title": "Greg’s Overview",
-    "section": "Directory Structure",
-    "text": "Directory Structure\n\npromotions/\n\nvalidated/: Empirically validated job promotions across sectors in the US and UK.\nunvalidated/: Statistically inferred promotions across six regions, unvalidated manually.\nnodes/: Title-level job counts associated with promotion movements.\nedges/: Directed job transitions labeled with promotion probabilities.\n\ndataset/ │── promotions/ │ │── validated/ # Contains validated job promotion data │ │── unvalidated/ # Contains unvalidated job promotion data │── titles/ │ │── map/ # Contains mappings of job titles before and after standardization │ │── si/ # Contains specialization index (SI) scores for job titles #### network/ - Interactive HTML visualizations of sector-specific job promotion networks by country/region.\n\n\n1. promotions/\nThis directory contains job movements identified as promotions. The data is divided into: - validated/: Contains human-validated promotions for job movements across different sectors in the United States and United Kingdom. - unvalidated/: Contains statistically inferred promotions for job movements across six continents, but without manual validation. —\nEach CSV file follows the naming convention: ### 2. dataset_ext.zip Provides an extended dataset for advanced modeling and custom data cleaning applications.\n&lt;REGION&gt;_\\&lt;sector&gt;.csv #### map-raw/ - Contains a step-by-step mapping of 56.4 million titles (after processing step J2) to 126 thousand standardized titles (as in step J7 of the manuscript). - The files are split into 100 parts for scalability. - This extended mapping is ideal for: - Matching messy job titles in external datasets (e.g., LinkedIn, Glassdoor, Indeed). - Training supervised learning models for job title normalization using techniques such as: - Logistic regression - Support Vector Machines (SVM) - Transformer-based models (e.g., BERT, RoBERTa)\n\n\n2. titles/"
-  },
-  {
-    "objectID": "data/industry_data/job_titles/CMAP/readme.html#this-directory-contains-information-about-job-titles-their-frequencies-and-sector-specialization.",
-    "href": "data/industry_data/job_titles/CMAP/readme.html#this-directory-contains-information-about-job-titles-their-frequencies-and-sector-specialization.",
-    "title": "Greg’s Overview",
-    "section": "This directory contains information about job titles, their frequencies, and sector specialization.",
-    "text": "This directory contains information about job titles, their frequencies, and sector specialization.\n\nmap/: Contains mappings of job titles before and after cleaning and standardization for different sectors.\nsi/: Contains Specialization Index (SI) scores, which quantify how unique or general a job title is within a sector. ### 3. examples.zip Includes hand-picked examples used throughout the manuscript for:\nAnnotated Prolific validation tasks\nVisual illustrations of SI distributions and promotion transitions\nComparative examples between US and UK sectors"
-  },
-  {
-    "objectID": "data/industry_data/job_titles/CMAP/readme.html#dataset-highlights",
-    "href": "data/industry_data/job_titles/CMAP/readme.html#dataset-highlights",
-    "title": "Greg’s Overview",
-    "section": "Dataset Highlights",
-    "text": "Dataset Highlights\n\nSource: 227 million anonymized CVs across 197 countries (1970–2017)\nScope: 572 million job experiences, 691,000+ unique cleaned job titles\nSector Coverage: 24 industry sectors, from Health Care to Information Technology\nPromotion Records: Over 310,000 transitions labeled with promotion probabilities\nO*NET Integration: Titles are mapped to standardized O*NET SOC occupation codes\n\n\nEach CSV file in the above folders follows the naming convention: ## Suggested Applications\n&lt;sector&gt;.csv - Labor market segmentation, job taxonomy construction, promotion inequality analysis - Creation of custom job title cleaning models - Enrichment of external datasets using structured title mappings and SI scores"
-  },
-  {
-    "objectID": "data/industry_data/job_titles/CMAP/readme.html#usage",
-    "href": "data/industry_data/job_titles/CMAP/readme.html#usage",
-    "title": "Greg’s Overview",
-    "section": "Usage",
-    "text": "Usage\nThis dataset can be used for various research purposes, including: - Analyzing career progression trends across sectors and regions. - Understanding job title variations and sector specializations. - Developing machine learning models for job transition predictions. - Developng generalized models for cleaning job titles. For implementation examples and integration tips, refer to the Usage Notes section in the accompanying manuscript.\n\nLast updated: 4/22/25"
-  },
-  {
-    "objectID": "data/database/gregs_mermaid_db_experiment.html",
-    "href": "data/database/gregs_mermaid_db_experiment.html",
-    "title": "Database ERD draft",
-    "section": "",
-    "text": "Database ERD draft\n2025-12-9 Mermaid documentation for ERDs\n\n\n\n\n\n---\ntitle: Prospect Research Toolkit ERD\n---\nerDiagram\n\n%% ===TOOLS===\n  tools{\n    int id PK\n    str name\n    str type\n    int cost\n    str integrations\n    str notes\n    int company_id FK\n    numeric created_at\n  }\n  companies{}\n  university_tools{}\n  universities{}\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+    "text": "library(firebase)\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.6\n✔ forcats   1.0.1     ✔ stringr   1.6.0\n✔ ggplot2   4.0.1     ✔ tibble    3.3.0\n✔ lubridate 1.9.4     ✔ tidyr     1.3.2\n✔ purrr     1.2.0     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "toolkit_tutorials/toolkit_templates/obsidian_toolkit/readme.html",
@@ -671,32 +685,39 @@
     "text": "I’ve attempted to subset Prospect Development and Major Gift Officer job titles from the 2025 Career Map (CMap) dataset released in July 2025 (citation below) from the CMAP readme.\nQuoting from the paper:\n“We generated our dataset by utilizing a collection of 220 million anonymized and publicly available user curriculum vitae (CVs), collected from LinkedIn via DataHut24. These CVs encompass a total of 546 million job experiences spanning 197 countries and 24 industry sectors. While the dataset itself was collected in 2017, the career histories recorded within these CVs extend as far back as 1970, capturing job trajectories of individuals whose professional experiences span multiple decades, up to December 2017.\nHowever, given the noisy nature of the data, substantial pre-processing was required to ensure consistency and usability. The job titles appeared in a variety of formats, often containing spelling variations, abbreviations, or redundant information. Furthermore, sector classifications were inferred rather than explicitly provided, requiring additional processing to associate each job experience with a standardized industry category This repository provides a comprehensive and scalable dataset for analyzing job titles, promotions, and sector specialization across 24 major industry sectors and 197 countries. It is designed for research in career mobility, labor economics, workforce analytics, and computational social science.”\nTangent: You’ll notice that “Prospect Researcher” is the most common job title, by far, for that niche, and ends up becoming their standardized term for that role at a junior level. However, as soon as you add the word “analyst” to the title (e.g. Senior Prospect Research Analyst), that word becomes the standard - so Senior Prospect Research Analysts become standardized into Senior Analysts. This was useful for their analysis, but to properly understand how many “Prospect Researchers” there are - those aggregates will have to be recalculated using a more ecclectic definition. However, given the massive overlap between these niche Prospect Dev roles, perhaps the best aggregate is actually “Prospect Development Professional” to get more accurate totals from the dataset.\n\n\n\n\nThere are some major caveats to both my datasets created: the Prospect Development job title one, and the Major Gift Officer one. Namely, I was struggling to filter the specific titles that match both of those niche’s, something especially difficult given the variety of titles especially for Major Gift Officers.\nI have included the PowerQuery M code in this repository, in case folks want to see my clumsy attempts to subset CMAP.\nI created a smaller dataset for the MGO niche, that only includes the non-profit sector. If you sort by frequency, you’ll see familiar titles at the top. The “title_generalized” column is arguably the most helpful, because it attempts to standardize the highly variable development officer roles into several categories.\nIn my dataset filenames, I have been calling this CMAP 2017, to remind me that this is somewhat old data. But because of how comprehensive this data is, and because the methods and code are open-source, future dataset creation could follow in the same vein: the main limiting factor being the cost of purchasing public and anonymized CV data. There may be more recent public sector-specific datasets out there that could be appended to this one, or transformed to match their unique standardization system, and potentially avoid this cost.\nI have not uploaded the sector files or massive original dataset, to save on repo space, but they can be downloaded here.\n\n\n\n\nDirect links, if you want to download my filtered data from GitHub as .csv: - Prospect Development job titles - Major Gift Officer nonprofit sector titles - Major Gift Officer all sector titles - full of irrelevant titles right now, until I filter it better\n\n\n\n\nCitation: Subhani, S., Memon, S.A. & AlShebli, B. CMap: a database for mapping job titles, sector specialization, and promotions across 24 sectors. Sci Data 12, 1214 (2025). https://doi.org/10.1038/s41597-025-05526-3"
   },
   {
-    "objectID": "toolkit_blog/first_blog/index.html",
-    "href": "toolkit_blog/first_blog/index.html",
-    "title": "Quarto Resources",
+    "objectID": "toolkit_blog/Tool_Incidents/index.html",
+    "href": "toolkit_blog/Tool_Incidents/index.html",
+    "title": "Tool & Company Incidents",
     "section": "",
-    "text": "I wanted to explore a few issues of data privacy as they affect your average prospect development, management, or research professional.\nThis toolkit, at least in the alpha stages, will be focused on tools that are available / compliant in the USA, simply because that’s where I am based. Some resources mentioned here may not be available internationally, or may be subject to stricter privacy laws.\nProspect researchers take ethics very seriously, and some of the tools or methods that are available in America - or some of the more experimental proactive research I prototype in this toolkit - may not be appropriate for every organization.\nThese days, donor trust on an institutional level can be hard to gain and easy to lose. We exist in a difficult data privacy environment, where many competing interests are involved. I once had a job where leadership jokingly started referring to us prospect research and dev folks as “stalkers”, including, to my horror, in the presence of donors that happened to be touring the building.\nI had to eventually step up in a meeting and attempt to explain that it was really a short-sighted way of getting a laugh, considering the damage it could cause to morale and with donor relations. Being a lowly analyst, I tried to be diplomatic - and hopefully succeeded. But the incident stands out in my mind as a good example of the natural tension that exists in prospect research: we need to be experts on donors, which means having an expert handle on donor data. We must use our expertise that complies with institutional bylaws, legal requirements, and the standards spelled out by our professional organizations.\nEven when we are doing our best, however, those efforts may be perceived as invasive or inappropriate. It’s easy to reframe the conversation with ourselves, of course, because we believe in the mission of our organization. Philanthropy benefits many stakeholders, but we also exist in a competitive funding environment, which means we have to chase down leads to a certain extent - before passing them on to front-line fundraisers.\nStill, there is a natural tension in our jobs - and one that merits discussion every year, as technology and laws change.\n\n\nIn May 2025, LexisNexis had a data breach that originated from an attacker accessing their Github account. Data breaches are unfortunately common, but they are also a smaller issue compared to the larger questions they tend to evoke: what info IS ethical to gather about individuals? Just because something is available, does not mean that it is ethical to use… of course, there is an interesting wrinkle to the digital ecosystem in which prospect researchers attempt to apply ethics: data brokers are not just vulnerable to breaches, they actively purchase or scrape breach data themselves.\nBreach data is sometimes considered “public”, but that definition is used loosely by companies, similar to how AI companies have scraped both copywrighted works and public items on the internet - through a variety of means - with the argument that their final product is transformative enough to dodge legal challenges.\nOne fascinating aspect of the fundraising industry is the fact that many of us tend to use tools (like LexisNexis) that live somewhat in the heart of an unfolding controversy - an ongoing worldwide conversation that can get quite heated. Don’t get me wrong, I love using LexisNexis, but it’s important to understand the technology we use, and to vet how data is curated. Ultimately, we don’t have much power as analysts to impact these discussions, but it can help us gain fidelity in our understanding of the waters in which we swim - and when there is less mystery, even if we don’t always like what we find, I think it can give a measure of confidence when making decisions.\nThere are countless round tables and think pieces and meetings about compliance, of course, that dig deeper into these issues - but I think it’s important to point out the tensions or stressors that exist in a job.\n\n\n\nIt’s hard to be a circumspect prospect researcher and abide by the ethos of “data minimalism” - the minimum viable amount of data to complete a research project on a prospective donor - when we swim in an ocean of tools and companies that rely on data maximalism as their core business model.\n\n\n\nFor prospect researchers, they may feel conflicted about using AI tools or platforms that collate information from data brokers with black box methods that are subject to legal scrutiny (e.g. data privacy laws in California, or Europe).\nResearch is not always a cold, logical, straightforward deal. I mean, when I first started as a prospect development analyst…I would find that reading too many obituaries in one day would make me feel kinda rough, especially if they were for individuals near my own age.\nWhat we research, and how we research, can have downstream effects on our moods– positive or negative. Curiosity, for example, is an example of a positive trait that I think can accompany positive moods while researching - research can be quite fun! Alternatively, getting bogged down in a research rabbit hole without finding the answer to your key research question…while competing deadlines threaten to derail the session…not fun.\nSome folks are better at managing the “research posture”, the way one mentally approaches the job, and I think it’s one of the key skills that blends both hard and soft skills.\nWhat does this have to do with data privacy? Well, being compliant and training in ethics affects our research posture and how we react to different tools, use-cases, requests, or situations.\nIn some cases, you may be put in a position where you are requested to find information about a donor that crosses a line - a request that often happens by accident - and it’s important to understand your job well enough to educate others, even your supervisors sometimes, about the lines in the sand."
+    "text": "Incidents include events like data breaches, service outages, and any press about abandoned features. This website gathers ad hoc data reported publicly online, focused primarily on fundraising software relating to prospect research. As far as I’m aware, this is the first repository of fundraising software niche information of its kind - intended to be a transparent and independent collation of incidents for research purposes. These incidents contribute to the rating of any given software tool, with more severe incidents having a bigger impact on the score. The methodology for the tool ratings will be published in a different blog post.\nThe goal is to make this incident reporting useful especially for shops that are evaluating new tools, so they can make an educated decision on where they place their budgetary resources."
   },
   {
-    "objectID": "toolkit_blog/first_blog/index.html#data-breaches",
-    "href": "toolkit_blog/first_blog/index.html#data-breaches",
-    "title": "Quarto Resources",
-    "section": "",
-    "text": "In May 2025, LexisNexis had a data breach that originated from an attacker accessing their Github account. Data breaches are unfortunately common, but they are also a smaller issue compared to the larger questions they tend to evoke: what info IS ethical to gather about individuals? Just because something is available, does not mean that it is ethical to use… of course, there is an interesting wrinkle to the digital ecosystem in which prospect researchers attempt to apply ethics: data brokers are not just vulnerable to breaches, they actively purchase or scrape breach data themselves.\nBreach data is sometimes considered “public”, but that definition is used loosely by companies, similar to how AI companies have scraped both copywrighted works and public items on the internet - through a variety of means - with the argument that their final product is transformative enough to dodge legal challenges.\nOne fascinating aspect of the fundraising industry is the fact that many of us tend to use tools (like LexisNexis) that live somewhat in the heart of an unfolding controversy - an ongoing worldwide conversation that can get quite heated. Don’t get me wrong, I love using LexisNexis, but it’s important to understand the technology we use, and to vet how data is curated. Ultimately, we don’t have much power as analysts to impact these discussions, but it can help us gain fidelity in our understanding of the waters in which we swim - and when there is less mystery, even if we don’t always like what we find, I think it can give a measure of confidence when making decisions.\nThere are countless round tables and think pieces and meetings about compliance, of course, that dig deeper into these issues - but I think it’s important to point out the tensions or stressors that exist in a job."
+    "objectID": "toolkit_blog/Tool_Incidents/index.html#data-breaches",
+    "href": "toolkit_blog/Tool_Incidents/index.html#data-breaches",
+    "title": "Tool & Company Incidents",
+    "section": "Data breaches",
+    "text": "Data breaches\n…"
   },
   {
-    "objectID": "toolkit_blog/first_blog/index.html#data-minimalism-vs.-data-maximalism",
-    "href": "toolkit_blog/first_blog/index.html#data-minimalism-vs.-data-maximalism",
-    "title": "Quarto Resources",
-    "section": "",
-    "text": "It’s hard to be a circumspect prospect researcher and abide by the ethos of “data minimalism” - the minimum viable amount of data to complete a research project on a prospective donor - when we swim in an ocean of tools and companies that rely on data maximalism as their core business model."
+    "objectID": "toolkit_blog/Tool_Incidents/index.html#service-outages",
+    "href": "toolkit_blog/Tool_Incidents/index.html#service-outages",
+    "title": "Tool & Company Incidents",
+    "section": "Service Outages",
+    "text": "Service Outages\n…"
   },
   {
-    "objectID": "toolkit_blog/first_blog/index.html#research-and-emotions",
-    "href": "toolkit_blog/first_blog/index.html#research-and-emotions",
-    "title": "Quarto Resources",
-    "section": "",
-    "text": "For prospect researchers, they may feel conflicted about using AI tools or platforms that collate information from data brokers with black box methods that are subject to legal scrutiny (e.g. data privacy laws in California, or Europe).\nResearch is not always a cold, logical, straightforward deal. I mean, when I first started as a prospect development analyst…I would find that reading too many obituaries in one day would make me feel kinda rough, especially if they were for individuals near my own age.\nWhat we research, and how we research, can have downstream effects on our moods– positive or negative. Curiosity, for example, is an example of a positive trait that I think can accompany positive moods while researching - research can be quite fun! Alternatively, getting bogged down in a research rabbit hole without finding the answer to your key research question…while competing deadlines threaten to derail the session…not fun.\nSome folks are better at managing the “research posture”, the way one mentally approaches the job, and I think it’s one of the key skills that blends both hard and soft skills.\nWhat does this have to do with data privacy? Well, being compliant and training in ethics affects our research posture and how we react to different tools, use-cases, requests, or situations.\nIn some cases, you may be put in a position where you are requested to find information about a donor that crosses a line - a request that often happens by accident - and it’s important to understand your job well enough to educate others, even your supervisors sometimes, about the lines in the sand."
+    "objectID": "toolkit_blog/Tool_Incidents/index.html#feature-timeline-issues",
+    "href": "toolkit_blog/Tool_Incidents/index.html#feature-timeline-issues",
+    "title": "Tool & Company Incidents",
+    "section": "Feature Timeline issues",
+    "text": "Feature Timeline issues\n…"
+  },
+  {
+    "objectID": "toolkit_blog/Tool_Incidents/index.html#privacy-and-transparency",
+    "href": "toolkit_blog/Tool_Incidents/index.html#privacy-and-transparency",
+    "title": "Tool & Company Incidents",
+    "section": "Privacy and Transparency",
+    "text": "Privacy and Transparency\nDonors also have a right to know about the logistics of fundraising, in detail, so they can make decisions about where they place their money and more to the point: their information. A foundation’s choice of software is relevant to the overall mission of philanthropy, and is part of the ongoing conversation about how fundraising resources are deployed in service of the institution’s mission.\nFor some countries, like those in the European Union, there are laws that help protect citizens from incidents like data breaches. However, this Prospect Research Toolkit is focused on the USA, where the laws vary by state, and tech companies are given wide leeway to innovate - occasionally at the cost of user safety.\nThe tech world moves fast, and the engineers are not always on the same page as their front line sales people. Rapid changes in the industry can alter the feature catalog, the data storage, structure, and dissemination practices of any given tool. It would be an impossible and tangential task for any given prospect dev shop to try and keep up with it all on their own.\nSimilarly, fundraising institutions do not share pricing information with each other and many fundraising-niche software companies are highly secretive about pricing tiers - preferring to negotiate with clients individually. However, I believe that transparency can actually drive prices down while improving quality of service - which is why these incidents are carefully evaluated to make sure they are accurate."
   },
   {
     "objectID": "toolkit_blog/HelpfulTechDocumentation/index.html",
@@ -706,6 +727,13 @@
     "text": "This list is mostly for Greg as he maintains this website."
   },
   {
+    "objectID": "toolkit_blog/HelpfulTechDocumentation/index.html#database-architecture",
+    "href": "toolkit_blog/HelpfulTechDocumentation/index.html#database-architecture",
+    "title": "Helpful Technical Documentation",
+    "section": "Database Architecture",
+    "text": "Database Architecture\n\nRSQLite\nSQLite mobile editing\nBaserow docs"
+  },
+  {
     "objectID": "toolkit_blog/HelpfulTechDocumentation/index.html#vs-code",
     "href": "toolkit_blog/HelpfulTechDocumentation/index.html#vs-code",
     "title": "Helpful Technical Documentation",
@@ -713,82 +741,10 @@
     "text": "VS-Code\n\nMarkdown All-in-One commands"
   },
   {
-    "objectID": "toolkit_blog/HelpfulTechDocumentation/index.html#database",
-    "href": "toolkit_blog/HelpfulTechDocumentation/index.html#database",
+    "objectID": "toolkit_blog/HelpfulTechDocumentation/index.html#quarto",
+    "href": "toolkit_blog/HelpfulTechDocumentation/index.html#quarto",
     "title": "Helpful Technical Documentation",
-    "section": "Database",
-    "text": "Database\n\nRSQLite"
-  },
-  {
-    "objectID": "toolkit_dashboard1.html",
-    "href": "toolkit_dashboard1.html",
-    "title": "Toolkit Dashboard",
-    "section": "",
-    "text": "# save data to object\n# softwarecompare_data &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/data/pr_tool_comparisons.csv\"))\n# software_term_data &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/data/pr_jobs_dataset_softwarefreq_10-9-25.csv\"))\n# prompt_library &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/tools/ApraUtahTools/ProspectResearch_PromptLibrary/PR_PromptLibrary_v3.csv))\n\n# jobs &lt;- 22\n\n# jobtitle_pr_dataset &lt;- data.frame(read_csv(\"../ProspectResearchToolkit/data/job_titles/CMAP/cleanCMAP_dataset/PRSPDEV_JobTitles_CMAP_2017_ALLSECTORS.csv\"))",
-    "crumbs": [
-      "Home",
-      "Tools",
-      "Toolkit Dashboard"
-    ]
-  },
-  {
-    "objectID": "toolkit_dashboard1.html#row",
-    "href": "toolkit_dashboard1.html#row",
-    "title": "Toolkit Dashboard",
-    "section": "Row",
-    "text": "Row\n\ndatatable(softwarecompare_data)",
-    "crumbs": [
-      "Home",
-      "Tools",
-      "Toolkit Dashboard"
-    ]
-  },
-  {
-    "objectID": "toolkit_dashboard1.html#row-1",
-    "href": "toolkit_dashboard1.html#row-1",
-    "title": "Toolkit Dashboard",
-    "section": "Row",
-    "text": "Row\n\ncat(\"title=\", \"Software terms metioned in 22 analyst job descriptions gathered starting 7/2024\")\n\ndatatable(software_term_data)\n\n\ncat(\"title=\", \"Software term chart\")\n\nggplot(data = software_term_data, aes(x = Term, y= Frequency)) + \ngeom_bar(stat = \"identity\", fill = \"blue\") +\ntheme(axis.text.x = element_text(angle = 45, hjust = 1))",
-    "crumbs": [
-      "Home",
-      "Tools",
-      "Toolkit Dashboard"
-    ]
-  },
-  {
-    "objectID": "toolkit_dashboard1.html#row-2",
-    "href": "toolkit_dashboard1.html#row-2",
-    "title": "Toolkit Dashboard",
-    "section": "Row",
-    "text": "Row\n\ncat(\"title=\", \"Prospect Dev job titles / frequency from public CMAP dataset\")\ndatatable(jobtitle_pr_dataset)\n\n\ncat(\"title=\", \"Job title chart (&gt;10 instances)\")\n\ntop_PR_titles &lt;- jobtitle_pr_dataset[jobtitle_pr_dataset$frequency_cleaned&gt;10,]\n\nggplot(data = top_PR_titles, aes(x = title_cleaned, y= frequency_cleaned)) + \ngeom_bar(stat = \"identity\", fill = \"red\") +\ntheme(axis.text.x = element_text(angle = 45, hjust = 1))",
-    "crumbs": [
-      "Home",
-      "Tools",
-      "Toolkit Dashboard"
-    ]
-  },
-  {
-    "objectID": "toolkit_dashboard1.html#row-1-1",
-    "href": "toolkit_dashboard1.html#row-1-1",
-    "title": "Toolkit Dashboard",
-    "section": "Row 1",
-    "text": "Row 1\n\nlist(\n  icon = \"pencil\",\n  color = \"danger\",\n  value = jobs\n)\n\n\nlist(\n  icon = \"trash\",\n  color = \"danger\",\n  value = jobs\n)\n\n\nlist(\n  icon = \"chat\",\n  color = \"danger\",\n  value = jobs\n)",
-    "crumbs": [
-      "Home",
-      "Tools",
-      "Toolkit Dashboard"
-    ]
-  },
-  {
-    "objectID": "toolkit_dashboard1.html#row-3",
-    "href": "toolkit_dashboard1.html#row-3",
-    "title": "Toolkit Dashboard",
-    "section": "Row",
-    "text": "Row\n\ncat(\"title=\", \"Prospect Research prompt library\")\n\ndatatable(prompt_library)",
-    "crumbs": [
-      "Home",
-      "Tools",
-      "Toolkit Dashboard"
-    ]
+    "section": "Quarto",
+    "text": "Quarto\n\nIn Posit Cloud clicking the render button on a specific page works, but on some devices when I try “quarto preview” from the terminal it doesn’t load anything - potentially due to some default setting I don’t know about in terms of rendering the preview to a browser."
   }
 ]

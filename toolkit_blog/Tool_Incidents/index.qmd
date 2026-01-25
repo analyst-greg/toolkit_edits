@@ -1,0 +1,48 @@
+---
+title: "Tool & Company Incidents"
+format: html
+---
+
+# Overview
+Incidents include events like data breaches, service outages, and any press about abandoned features. This website gathers ad hoc data reported publicly online, focused primarily on fundraising software relating to prospect research. As far as I'm aware, this is the first repository of fundraising software niche information of its kind - intended to be a transparent and independent collation of incidents for research purposes. These incidents contribute to the rating of any given software tool, with more severe incidents having a bigger impact on the score. The methodology for the tool ratings will be published in a different blog post. 
+
+The goal is to make this incident reporting useful especially for shops that are evaluating new tools, so they can make an educated decision on where they place their budgetary resources.
+
+# Incident Types
+I am focusing, for now, on two incident types, with plans for a more complex third. 
+
+1. Data breaches
+2. Service Outages
+3. Feature Timeline delays or abandonment (in the future)
+
+## Data breaches
+...
+
+## Service Outages
+...
+
+## Feature Timeline issues
+...
+
+---
+
+# Rationale & Details
+Most prospect development shops do not have the knowledge or the time to fully evaluate the tools they are buying, and often turn to PRSPCT-L forums for word of mouth information. There does not seem to be an agreed-upon rubric for evaluating these various tools, which has led some shops to sign expensive contracts only to receive less features than promised or experience various other frustrating issues they did not anticipate. This leads to wasted time and money, and in some cases, tax payer dollars.
+
+## Privacy and Transparency
+Donors also have a right to know about the logistics of fundraising, in detail, so they can make decisions about where they place their money and more to the point: their information. A foundation's choice of software is relevant to the overall mission of philanthropy, and is part of the ongoing conversation about how fundraising resources are deployed in service of the institution's mission. 
+
+For some countries, like those in the European Union, there are laws that help protect citizens from incidents like data breaches. However, this Prospect Research Toolkit is focused on the USA, where the laws vary by state, and tech companies are given wide leeway to innovate - occasionally at the cost of user safety.
+
+The tech world moves fast, and the engineers are not always on the same page as their front line sales people. Rapid changes in the industry can alter the feature catalog, the data storage, structure, and dissemination practices of any given tool. It would be an impossible and tangential task for any given prospect dev shop to try and keep up with it all on their own.
+
+Similarly, fundraising institutions do not share pricing information with each other and many fundraising-niche software companies are highly secretive about pricing tiers - preferring to negotiate with clients individually. However, I believe that transparency can actually drive prices down while improving quality of service - which is why these incidents are carefully evaluated to make sure they are accurate. 
+
+
+# Conclusion
+I'm hoping prospect development managers see the value in potentially using the toolkit's articles and data for contract negotiations or budget planning meetings. 
+
+---
+
+As always, the opinions expressed here are solely my own, and don't reflect those of my employer or the boards I am serving on.
+

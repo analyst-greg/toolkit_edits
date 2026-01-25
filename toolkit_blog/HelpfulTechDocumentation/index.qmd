@@ -10,8 +10,11 @@ This list is mostly for Greg as he maintains this website.
 ## Database Architecture
 - [RSQLite](https://ecorepsci.github.io/reproducible-science/rsqlite.html#a-note-on-reproducibility)
 - [SQLite mobile editing](https://sqliteonline.com/)
+- [Baserow docs](https://baserow.io/user-docs/database-api)
 
 ## VS-Code
-
 - [Markdown All-in-One commands](https://markdown-all-in-one.github.io/docs/guide/#features)
+
+## Quarto
+- In Posit Cloud clicking the render button on a specific page works, but on some devices when I try "quarto preview" from the terminal it doesn't load anything - potentially due to some default setting I don't know about in terms of rendering the preview to a browser.
 
