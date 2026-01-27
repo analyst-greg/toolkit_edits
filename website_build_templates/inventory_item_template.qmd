@@ -9,17 +9,40 @@ execute:
 ::: {.column-margin}
 ![](/images/tool_logos/_logo.png)
 :::
-
 # Overview
 
+# Features
+
+# Obstacles
+
+# Conclusion
+
+---
+
+
+# Latest Export Info
+
 ```{r}
-library(tidyverse)
-
 #| echo: false
+#| message: false
+#| warning: false
 
-inventory_list <- read.csv("tool_inventory/inventory_exports/library_tool_export.csv", header = TRUE, sep = ",")
+source(here::here("_libraries1.R"))
 
-filtered_item <- filter(inventory_list, ToolName = "Nexis Uni")
+# Works regardless of where the script is run from within the project
+inventory_list <- read.csv(here::here("tool_inventory", "inventory_exports", "library_tool_export.csv"))
+
+filtered_nexisuni <- inventory_list %>% 
+  filter(ToolName == "Nexis Uni") %>% 
+  select(-id, -ToolDescription_long, -URL)
+
+
+
+```
+
+```{r}
+#| echo: false
+datatable(filtered_nexisuni)
 
 ```
 

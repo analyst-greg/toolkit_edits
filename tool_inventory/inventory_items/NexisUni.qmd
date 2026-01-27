@@ -14,7 +14,9 @@ One of the many LexisNexis [variants (product page link)](https://www.lexisnexis
 
 Nexis Uni is an affiliate database scoped for college-level research and emphasizes the breadth of its legal sources, making it popular with law libraries. However, given it's 15,000+ sources, there are a variety of categories, including business.
 
-# Limitations
+# Features
+
+# Obstacles
 Unlike Nexis for Development Professionals, you cannot look up the personal info of specific people. It's a good choice, otherwise students may be looking up other students, or professors. It may be drawing from many of the same sources as ProQuest for its news articles, though how they stack up against each other has not yet been explored in this toolkit. 
 
 # Conclusion
@@ -28,9 +30,7 @@ Nexis Uni is a good choice if you are a small shop or individual researcher with
 #| message: false
 #| warning: false
 
-library(tidyverse)
-library(here)
-library(DT)
+source(here::here("_libraries1.R"))
 
 # Works regardless of where the script is run from within the project
 inventory_list <- read.csv(here::here("tool_inventory", "inventory_exports", "library_tool_export.csv"))

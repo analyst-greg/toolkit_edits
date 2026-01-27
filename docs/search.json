@@ -396,7 +396,7 @@
     "href": "website_build_templates/inventory_item_template.html",
     "title": "inventory item template",
     "section": "",
-    "text": "Overview\n\nlibrary(tidyverse)\n\n#| echo: false\n\ninventory_list &lt;- read.csv(\"tool_inventory/inventory_exports/library_tool_export.csv\", header = TRUE, sep = \",\")\n\nfiltered_item &lt;- filter(inventory_list, ToolName = \"Nexis Uni\")\n\n\n\n\n\n Back to top"
+    "text": "Overview\n\n\nFeatures\n\n\nObstacles\n\n\nConclusion\n\n\n\nLatest Export Info\n\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html",
@@ -641,7 +641,7 @@
     "href": "tool_inventory/inventory_items/NexisUni.html",
     "title": "Nexis Uni",
     "section": "",
-    "text": "“”\n\n\n\nOverview\nOne of the many LexisNexis variants (product page link), alongside Nexis for Development Professionals and Dilligence+, which may be more familiar to prospect researchers.\nNexis Uni is an affiliate database scoped for college-level research and emphasizes the breadth of its legal sources, making it popular with law libraries. However, given it’s 15,000+ sources, there are a variety of categories, including business.\n\n\n\n\ndatatable(filtered_nexisuni)\n\n\n\n\n\n\n\nLimitations\nUnlike Nexis for Development Professionals, you cannot look up the personal info of specific people. It’s a good choice, otherwise students may be looking up other students, or professors. It may be drawing from many of the same sources as ProQuest for its news articles, though how they stack up against each other has not yet been explored in this toolkit.\n\n\nConclusion\nNexis Uni is a good choice if you are a small shop or individual researcher with access to a public library with a subscription. However, if your team has the resources to pay for Nexis for Development Professionals, it has all of the features of Nexis Uni plus ones more relevant to writing bios, confirming company information, etc.\n\n\n\n\n Back to top"
+    "text": "“”\n\n\n\nOverview\nOne of the many LexisNexis variants (product page link), alongside Nexis for Development Professionals and Dilligence+, which may be more familiar to prospect researchers.\nNexis Uni is an affiliate database scoped for college-level research and emphasizes the breadth of its legal sources, making it popular with law libraries. However, given it’s 15,000+ sources, there are a variety of categories, including business.\n\n\nFeatures\n\n\nObstacles\nUnlike Nexis for Development Professionals, you cannot look up the personal info of specific people. It’s a good choice, otherwise students may be looking up other students, or professors. It may be drawing from many of the same sources as ProQuest for its news articles, though how they stack up against each other has not yet been explored in this toolkit.\n\n\nConclusion\nNexis Uni is a good choice if you are a small shop or individual researcher with access to a public library with a subscription. However, if your team has the resources to pay for Nexis for Development Professionals, it has all of the features of Nexis Uni plus ones more relevant to writing bios, confirming company information, etc.\n\n\n\nLatest Export Info\n\n\n\n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "tool_inventory/tool_feature_matrix.html",
