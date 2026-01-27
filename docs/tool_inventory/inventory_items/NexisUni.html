@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +104,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -141,6 +186,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
@@ -190,6 +236,16 @@ ul.task-list li input[type="checkbox"] {
 <h1>Overview</h1>
 <p>One of the many LexisNexis <a href="https://www.lexisnexis.com/en-us/products.page">variants (product page link)</a>, alongside Nexis for Development Professionals and Dilligence+, which may be more familiar to prospect researchers.</p>
 <p>Nexis Uni is an affiliate database scoped for college-level research and emphasizes the breadth of its legal sources, making it popular with law libraries. However, given it’s 15,000+ sources, there are a variety of categories, including business.</p>
+</section>
+<section id="section" class="level1">
+<h1></h1>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(filtered_nexisuni)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-8232a3b33cc95673864c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8232a3b33cc95673864c">{"x":{"filter":"none","vertical":false,"data":[["1"],[100],["Nexis Uni"],["Nexis Uni is an affiliate database to LexisNexis and contains select databases found in Lexis, including over 15,000 news and business sources."],["Essentially the same tool as LexisNexis, one of the variants. Law enforcement has their own variant, for example. Nexis Uni is the one scoped for college-level research and emphasizes the breadth of its legal sources. Unlike Nexis for Development Professionals, you cannot look up the personal info of specific people. It may be drawing from many of the same sources as ProQuest for its news articles, though how they stack up against each other has not yet been explored in this toolkit. Nexis Uni is an affiliate database to LexisNexis and contains select databases found in Lexis, including all federal and state case law, regulations, statutes and many legal journals. Nexis Uni also contains over 15,000 news and business sources."],[""],["Utah State University,University of Utah"],["LexisNexis"],[null]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>id<\/th>\n      <th>ToolName<\/th>\n      <th>Tool.Description.Short<\/th>\n      <th>ToolDescription_long<\/th>\n      <th>ToolCompany<\/th>\n      <th>LibraryInstitution<\/th>\n      <th>ParentTool<\/th>\n      <th>URL<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":1},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"id","targets":1},{"name":"ToolName","targets":2},{"name":"Tool.Description.Short","targets":3},{"name":"ToolDescription_long","targets":4},{"name":"ToolCompany","targets":5},{"name":"LibraryInstitution","targets":6},{"name":"ParentTool","targets":7},{"name":"URL","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 </section>
 <section id="limitations" class="level1">
 <h1>Limitations</h1>

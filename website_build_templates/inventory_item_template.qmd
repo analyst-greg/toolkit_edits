@@ -1,10 +1,26 @@
 ---
 title: "inventory item template"
-
-image: /images/tool_logos/nexisuni_logo.png
+image: /images/tool_logos/_logo.png
 categories: [news-database, affiliate-database, library-database]
 description: " "
+execute: 
+  enabled: false
 ---
 ::: {.column-margin}
-![](/images/tool_logos/nexisuni_logo.png)
+![](/images/tool_logos/_logo.png)
 :::
+
+# Overview
+
+```{r}
+library(tidyverse)
+
+#| echo: false
+
+inventory_list <- read.csv("tool_inventory/inventory_exports/library_tool_export.csv", header = TRUE, sep = ",")
+
+filtered_item <- filter(inventory_list, ToolName = "Nexis Uni")
+
+```
+
+

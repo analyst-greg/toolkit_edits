@@ -19,3 +19,32 @@ Unlike Nexis for Development Professionals, you cannot look up the personal info
 
 # Conclusion
 Nexis Uni is a good choice if you are a small shop or individual researcher with access to a public library with a subscription. However, if your team has the resources to pay for Nexis for Development Professionals, it has all of the features of Nexis Uni plus ones more relevant to writing bios, confirming company information, etc.
+
+---
+# Latest Export Info
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(here)
+library(DT)
+
+# Works regardless of where the script is run from within the project
+inventory_list <- read.csv(here::here("tool_inventory", "inventory_exports", "library_tool_export.csv"))
+
+filtered_nexisuni <- inventory_list %>% 
+  filter(ToolName == "Nexis Uni") %>% 
+  select(-id, -ToolDescription_long, -URL)
+
+
+
+```
+
+```{r}
+#| echo: false
+datatable(filtered_nexisuni)
+
+```
