@@ -14,7 +14,7 @@ You know how they say, "there's gold in them thar hills?" - well, I've set out t
 
 Hopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a'clankin'! In the meantime, it's just a hobby project with big dreams.
 
-For more info about the who, what, where, and why...feel free to check out the [About](about.qmd) page.
+For more info about the scope of this project, feel free to check out the [About](about.qmd) page.
 
 Thanks for reading and happy trails.
 

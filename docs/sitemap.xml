@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Tool_reviews/index.html</loc>
-    <lastmod>2026-01-21T04:49:12.573Z</lastmod>
+    <lastmod>2026-01-27T03:21:37.042Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/PRSPCT-L_roundup/index.html</loc>
@@ -26,7 +26,7 @@
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/free_resources_links.html</loc>
-    <lastmod>2026-01-16T00:08:49.256Z</lastmod>
+    <lastmod>2026-01-27T03:33:43.835Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/UsingPowerQuery/index.html</loc>
@@ -54,11 +54,11 @@
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/blog.html</loc>
-    <lastmod>2026-01-21T04:28:35.355Z</lastmod>
+    <lastmod>2026-01-27T03:49:35.445Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_dashboard1.html</loc>
-    <lastmod>2026-01-21T04:35:16.374Z</lastmod>
+    <lastmod>2026-01-27T03:58:27.683Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/about.html</loc>
@@ -70,7 +70,7 @@
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/index.html</loc>
-    <lastmod>2026-01-21T04:27:27.439Z</lastmod>
+    <lastmod>2026-01-27T03:09:10.875Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/FundraisingDataMarketplace.html</loc>
@@ -106,7 +106,7 @@
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/LibraryDatabases/index.html</loc>
-    <lastmod>2026-01-27T02:56:02.253Z</lastmod>
+    <lastmod>2026-01-27T03:20:33.340Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Creating_Jobs_Dataset/index.html</loc>
@@ -114,10 +114,46 @@
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Tool_Incidents/index.html</loc>
-    <lastmod>2026-01-25T05:34:16.567Z</lastmod>
+    <lastmod>2026-01-27T03:49:36.377Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/HelpfulTechDocumentation/index.html</loc>
     <lastmod>2026-01-25T06:02:29.066Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_info/Tool_reviews/index.html</loc>
+    <lastmod>2026-01-27T03:21:37.042Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_info/tool_reviews.html</loc>
+    <lastmod>2026-01-27T03:32:31.374Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_info/tool_feature_matrix.html</loc>
+    <lastmod>2026-01-27T03:49:37.273Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/resources/free_resources_links.html</loc>
+    <lastmod>2026-01-27T03:46:49.482Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/tutorials.html</loc>
+    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/research_templates/templates.html</loc>
+    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_inventory.html</loc>
+    <lastmod>2026-01-27T04:17:02.364Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_reviews.html</loc>
+    <lastmod>2026-01-27T03:32:31.374Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_feature_matrix.html</loc>
+    <lastmod>2026-01-27T03:58:26.355Z</lastmod>
   </url>
 </urlset>

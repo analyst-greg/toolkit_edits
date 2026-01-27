@@ -11,6 +11,7 @@ website:
   site-url:  https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/
   open-graph: true
   back-to-top-navigation: true
+  page-navigation: true
 
   navbar:
     background: secondary
@@ -20,8 +21,8 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
-      - text: "Field Guide"
-
+      
+      
   announcement: 
     content: "**Welcome!** - this website is a work in progress, and some pages/features may be empty, unfinished, or broken. Thank you for your patience!" 
     position: below-navbar 
@@ -30,24 +31,17 @@ website:
 
   reader-mode: false
   page-footer: 
-    left: "Website updated: 10/9/2025"
+    left: " "
 
     
   sidebar:
-    style: "docked"
+    style: "floating"
     search: false
     contents: 
-      - section: "Tools"
-        contents: 
-          - templates.qmd
-          - toolkit_dashboard1.qmd
-      - section: "Education"
-        contents: 
-          - tutorials.qmd
-          - blog.qmd
-      - section: "External Resources"
-        contents:
-          - free_resources_links.qmd
+      section: Maps
+      contents: tool_inventory
+    
+    
 
 format:
   html:
