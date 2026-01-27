@@ -8,7 +8,7 @@ variables:
 website:
   title: "Prospect Research Toolkit"
   description: A prospect research resource library created by Greg Brooks and Apra Utah
-  site-url: https://aprautah.github.io/ProspectResearchToolkit/
+  site-url:  https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/
   open-graph: true
   back-to-top-navigation: true
 
