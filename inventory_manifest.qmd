@@ -1,0 +1,12 @@
+---
+title: "Inventory Manifest"
+listing:
+  contents: tool_inventory/inventory_items
+  type: grid
+  categories: true
+  # table-hover: true
+  sort: "title-desc"
+  grid-columns: 2
+  
+---
+

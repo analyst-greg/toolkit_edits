@@ -1,0 +1,13 @@
+---
+title: "Field Notes"
+format: html
+listing: 
+    contents: field_notes
+    sort: "date desc"
+    type: grid
+    categories: true
+    sort-ui: true
+    filter-ui: true
+    grid-columns: 2
+    image-placeholder: "https://i.postimg.cc/Prsy79cY/campside-sluicebox(1).jpg"
+---

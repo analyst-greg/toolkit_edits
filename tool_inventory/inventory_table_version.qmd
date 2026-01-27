@@ -2,11 +2,9 @@
 title: "Inventory Manifest"
 listing:
   contents: inventory_items
-  type: grid
+  type: table
   categories: true
-  table-hover: true
-  sort: "title-desc"
-  grid-columns: 2
-  
+
+
 ---
 

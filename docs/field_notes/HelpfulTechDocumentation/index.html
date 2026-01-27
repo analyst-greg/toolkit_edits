@@ -9,7 +9,7 @@
 <meta name="author" content="Greg Brooks">
 <meta name="dcterms.date" content="2025-10-04">
 
-<title>unfinished PRSPCT-L Roundup – Prospect Research Toolkit</title>
+<title>Helpful Technical Documentation – Prospect Research Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,6 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-bb13281d9316958a9d6a631a999bd265.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/badge/badge.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="unfinished PRSPCT-L Roundup – Prospect Research Toolkit">
+<meta property="og:title" content="Helpful Technical Documentation – Prospect Research Toolkit">
 <meta property="og:description" content="A prospect research resource library created by Greg Brooks and Apra Utah">
 <meta property="og:site_name" content="Prospect Research Toolkit">
 </head>
@@ -103,6 +104,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../field_notes.html"> 
+<span class="menu-text">Field Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../inventory_manifest.html"> 
+<span class="menu-text">Inventory</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -114,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">unfinished PRSPCT-L Roundup</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Helpful Technical Documentation</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -149,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tool_inventory/inventory_manifest.html" class="sidebar-item-text sidebar-link">
+  <a href="../../tool_inventory/inventory_table_version.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inventory Manifest</span></a>
   </div>
 </li>
@@ -202,14 +211,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prspct-l-roundup" id="toc-prspct-l-roundup" class="nav-link active" data-scroll-target="#prspct-l-roundup">PRSPCT-L Roundup</a>
+  <li><a href="#database-architecture" id="toc-database-architecture" class="nav-link active" data-scroll-target="#database-architecture">Database Architecture</a></li>
+  <li><a href="#vs-code" id="toc-vs-code" class="nav-link" data-scroll-target="#vs-code">VS-Code</a></li>
+  <li><a href="#quarto-extensions" id="toc-quarto-extensions" class="nav-link" data-scroll-target="#quarto-extensions">Quarto Extensions</a>
   <ul class="collapse">
-  <li><a href="#common-questions" id="toc-common-questions" class="nav-link" data-scroll-target="#common-questions">Common Questions</a></li>
+  <li><a href="#visualization-extensions" id="toc-visualization-extensions" class="nav-link" data-scroll-target="#visualization-extensions">Visualization Extensions</a></li>
+  <li><a href="#article-interactivity" id="toc-article-interactivity" class="nav-link" data-scroll-target="#article-interactivity">Article Interactivity</a></li>
+  <li><a href="#embedding" id="toc-embedding" class="nav-link" data-scroll-target="#embedding">Embedding</a></li>
+  <li><a href="#user-experience" id="toc-user-experience" class="nav-link" data-scroll-target="#user-experience">User Experience</a></li>
   </ul></li>
-  <li><a href="#prospect-research-articles-beyond-prspct-l" id="toc-prospect-research-articles-beyond-prspct-l" class="nav-link" data-scroll-target="#prospect-research-articles-beyond-prspct-l">Prospect Research articles beyond PRSPCT-L</a>
-  <ul class="collapse">
-  <li><a href="#the-major-gifts-report" id="toc-the-major-gifts-report" class="nav-link" data-scroll-target="#the-major-gifts-report">The Major Gifts Report</a></li>
-  </ul></li>
+  <li><a href="#example-quarto-sites" id="toc-example-quarto-sites" class="nav-link" data-scroll-target="#example-quarto-sites">Example Quarto Sites</a></li>
   </ul>
 </nav>
     </div>
@@ -218,8 +229,11 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">unfinished PRSPCT-L Roundup</h1>
-</div>
+<h1 class="title">Helpful Technical Documentation</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">website-maintenance</div>
+  </div>
+  </div>
 
 
 
@@ -247,32 +261,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A compilation of some of my favorite resources / comments / things I’ve learned from PRSPCT-L from 2025. (still working on this!)</p>
+<p>This list is mostly for Greg as he maintains this website.</p>
 <hr>
-<section id="prspct-l-roundup" class="level2">
-<h2 class="anchored" data-anchor-id="prspct-l-roundup">PRSPCT-L Roundup</h2>
-<section id="common-questions" class="level3">
-<h3 class="anchored" data-anchor-id="common-questions">Common Questions</h3>
-<hr>
+<section id="database-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="database-architecture">Database Architecture</h2>
+<ul>
+<li><a href="https://ecorepsci.github.io/reproducible-science/rsqlite.html#a-note-on-reproducibility">RSQLite</a></li>
+<li><a href="https://sqliteonline.com/">SQLite mobile editing</a></li>
+<li><a href="https://baserow.io/user-docs/database-api">Baserow docs</a></li>
+</ul>
+</section>
+<section id="vs-code" class="level2">
+<h2 class="anchored" data-anchor-id="vs-code">VS-Code</h2>
+<ul>
+<li><a href="https://markdown-all-in-one.github.io/docs/guide/#features">Markdown All-in-One commands</a></li>
+</ul>
+</section>
+<section id="quarto-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-extensions">Quarto Extensions</h2>
+<ul>
+<li><a href="https://m.canouil.dev/quarto-extensions/">Quarto Extensions and also great example of a quarto website</a></li>
+</ul>
+<section id="visualization-extensions" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-extensions">Visualization Extensions</h3>
+<ul>
+<li><a href="https://github.com/pandoc-ext/diagram">Diagrams</a></li>
+<li><a href="https://quarto-svelte.jamesgoldie.dev/#installation">Svelte components</a></li>
+</ul>
+</section>
+<section id="article-interactivity" class="level3">
+<h3 class="anchored" data-anchor-id="article-interactivity">Article Interactivity</h3>
+<ul>
+<li><a href="https://github.com/quarto-ext/lightbox">Lightboxes</a></li>
+<li><a href="https://github.com/schochastics/quarto-nutshell">expanding “nutshell” notes so people don’t have to switch tabs</a></li>
+</ul>
+</section>
+<section id="embedding" class="level3">
+<h3 class="anchored" data-anchor-id="embedding">Embedding</h3>
+<ul>
+<li><a href="https://quarto-social-embeds.sellorm.com/">social media embeds, easy to embed YouTube</a></li>
+<li><a href="https://jmgirard.github.io/embedpdf/example.html">PDF embeddig</a></li>
+</ul>
+</section>
+<section id="user-experience" class="level3">
+<h3 class="anchored" data-anchor-id="user-experience">User Experience</h3>
+<ul>
+<li><a href="https://shafayetshafee.github.io/downloadthis/example.html">downloading embedded data or images</a></li>
+<li><a href="https://github.com/coatless-quarto/linkate">list of links at end of page</a></li>
+<li><a href="https://m.canouil.dev/quarto-badge/">Quarto badges</a>, lets you make fun stuff like <span class="badge rounded-pill quarto-badge " style="background-color: #9E5829;">this!</span></li>
+</ul>
 </section>
 </section>
-<section id="prospect-research-articles-beyond-prspct-l" class="level2">
-<h2 class="anchored" data-anchor-id="prospect-research-articles-beyond-prspct-l">Prospect Research articles beyond PRSPCT-L</h2>
-<section id="the-major-gifts-report" class="level3">
-<h3 class="anchored" data-anchor-id="the-major-gifts-report">The Major Gifts Report</h3>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section"></h4>
-</section>
-<section id="section-1" class="level4">
-<h4 class="anchored" data-anchor-id="section-1"></h4>
-</section>
-<section id="references" class="level4">
-<h4 class="anchored" data-anchor-id="references">References</h4>
-<p>I’ve included links to the posts, so you can follow the original conversation. Not sure how folks would like me to attribute their contributions, so in lieu of posting names / job titles here, I figure folks can follow the links and log into PRSPCT-L to thank folks directly. In every case, I am transforming the content somehow, not directly quoting.</p>
+<section id="example-quarto-sites" class="level2">
+<h2 class="anchored" data-anchor-id="example-quarto-sites">Example Quarto Sites</h2>
+<ul>
+<li><a href="https://insightsengineering.github.io/tlg-catalog/stable/">good example of webr and download capabilities</a></li>
+</ul>
 
 
-</section>
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

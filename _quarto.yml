@@ -21,7 +21,10 @@ website:
         href: index.qmd
       - text: "About"
         href: about.qmd
-      
+      - text: "Field Notes"
+        href: field_notes.qmd
+      - text: "Inventory"
+        href: inventory_manifest.qmd
       
   announcement: 
     content: "**Welcome!** - this website is a work in progress, and some pages/features may be empty, unfinished, or broken. Thank you for your patience!" 

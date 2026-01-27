@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Greg Brooks">
-<meta name="dcterms.date" content="2025-10-03">
 
-<title>Technical Field Guide – Prospect Research Toolkit</title>
+<title>Inventory Manifest – Prospect Research Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,24 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-bb13281d9316958a9d6a631a999bd265.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-bb13281d9316958a9d6a631a999bd265.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,23 +70,82 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Technical Field Guide – Prospect Research Toolkit">
-<meta property="og:description" content="A prospect research resource library created by Greg Brooks and Apra Utah">
-<meta property="og:image" content="https://i.postimg.cc/ncgQPn6B/cale-s-cover-for-prospectin-in-philanthropy-country.jpg">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Inventory Manifest – Prospect Research Toolkit">
+<meta property="og:image" content="https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/images/tool_logos/nexisuni_logo.png">
 <meta property="og:site_name" content="Prospect Research Toolkit">
+<meta property="og:image:height" content="300">
+<meta property="og:image:width" content="300">
 </head>
 
-<body class="nav-sidebar floating nav-fixed slimcontent quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Prospect Research Toolkit</span>
     </a>
   </div>
@@ -97,12 +156,20 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./field_notes.html"> 
+<span class="menu-text">Field Notes</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./inventory_manifest.html" aria-current="page"> 
+<span class="menu-text">Inventory</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -115,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Technical Field Guide</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Inventory Manifest</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -150,19 +217,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tool_inventory/inventory_manifest.html" class="sidebar-item-text sidebar-link">
+  <a href="./tool_inventory/inventory_table_version.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inventory Manifest</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tool_inventory/tool_feature_matrix.html" class="sidebar-item-text sidebar-link">
+  <a href="./tool_inventory/tool_feature_matrix.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tool Feature Matrix</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tool_inventory/tool_reviews_old.html" class="sidebar-item-text sidebar-link">
+  <a href="./tool_inventory/tool_reviews_old.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tool Reviews</span></a>
   </div>
 </li>
@@ -177,13 +244,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tool_inventory/inventory_items/NexisUni.html" class="sidebar-item-text sidebar-link">
+  <a href="./tool_inventory/inventory_items/NexisUni.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Nexis Uni</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../tool_inventory/inventory_items/ProQuest.html" class="sidebar-item-text sidebar-link">
+  <a href="./tool_inventory/inventory_items/ProQuest.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ProQuest</span></a>
   </div>
 </li>
@@ -199,84 +266,21 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#field-guide-outline-ideas" id="toc-field-guide-outline-ideas" class="nav-link" data-scroll-target="#field-guide-outline-ideas">Field Guide Outline ideas</a>
-  <ul class="collapse">
-  <li><a href="#section-i-getting-started-in-prospect-research" id="toc-section-i-getting-started-in-prospect-research" class="nav-link" data-scroll-target="#section-i-getting-started-in-prospect-research">Section I: Getting Started in Prospect Research</a>
-  <ul class="collapse">
-  <li><a href="#chapter-1-trailheads-career-paths-in-prospect-research" id="toc-chapter-1-trailheads-career-paths-in-prospect-research" class="nav-link" data-scroll-target="#chapter-1-trailheads-career-paths-in-prospect-research">Chapter 1: Trailheads — Career Paths in Prospect Research</a></li>
-  <li><a href="#chapter-2-mapping-the-terrain-tools-of-the-trade" id="toc-chapter-2-mapping-the-terrain-tools-of-the-trade" class="nav-link" data-scroll-target="#chapter-2-mapping-the-terrain-tools-of-the-trade">Chapter 2: Mapping the Terrain — Tools of the Trade</a></li>
-  </ul></li>
-  <li><a href="#section-ii-managing-a-research-shop" id="toc-section-ii-managing-a-research-shop" class="nav-link" data-scroll-target="#section-ii-managing-a-research-shop">Section II: Managing a Research Shop</a>
-  <ul class="collapse">
-  <li><a href="#chapter-3-your-new-shop" id="toc-chapter-3-your-new-shop" class="nav-link" data-scroll-target="#chapter-3-your-new-shop">Chapter 3: Your New Shop</a></li>
-  <li><a href="#chapter-4-hiring-interviews-soft-skills" id="toc-chapter-4-hiring-interviews-soft-skills" class="nav-link" data-scroll-target="#chapter-4-hiring-interviews-soft-skills">Chapter 4: Hiring, Interviews, Soft Skills</a></li>
-  <li><a href="#chapter-5-professional-development" id="toc-chapter-5-professional-development" class="nav-link" data-scroll-target="#chapter-5-professional-development">Chapter 5: Professional Development</a></li>
-  <li><a href="#chapter-6-compliance-legal-landscape" id="toc-chapter-6-compliance-legal-landscape" class="nav-link" data-scroll-target="#chapter-6-compliance-legal-landscape">Chapter 6: Compliance &amp; Legal Landscape</a></li>
-  </ul></li>
-  <li><a href="#section-iii-classic-research-strategies" id="toc-section-iii-classic-research-strategies" class="nav-link" data-scroll-target="#section-iii-classic-research-strategies">Section III: Classic Research Strategies</a>
-  <ul class="collapse">
-  <li><a href="#chapter-7-foundation-research-mining-990s" id="toc-chapter-7-foundation-research-mining-990s" class="nav-link" data-scroll-target="#chapter-7-foundation-research-mining-990s">Chapter 7: Foundation Research — Mining 990s</a></li>
-  <li><a href="#chapter-8-company-research-and-executive-compensation" id="toc-chapter-8-company-research-and-executive-compensation" class="nav-link" data-scroll-target="#chapter-8-company-research-and-executive-compensation">Chapter 8: Company Research and Executive Compensation</a></li>
-  <li><a href="#chapter-9-writing-profiles" id="toc-chapter-9-writing-profiles" class="nav-link" data-scroll-target="#chapter-9-writing-profiles">Chapter 9: Writing Profiles</a></li>
-  <li><a href="#chapter-10-handling-research-requests" id="toc-chapter-10-handling-research-requests" class="nav-link" data-scroll-target="#chapter-10-handling-research-requests">Chapter 10: Handling Research Requests</a></li>
-  </ul></li>
-  <li><a href="#section-iv-software-tools-and-platforms" id="toc-section-iv-software-tools-and-platforms" class="nav-link" data-scroll-target="#section-iv-software-tools-and-platforms">Section IV: Software Tools and Platforms</a>
-  <ul class="collapse">
-  <li><a href="#chapter-11-crms---navigating-the-big-systems" id="toc-chapter-11-crms---navigating-the-big-systems" class="nav-link" data-scroll-target="#chapter-11-crms---navigating-the-big-systems">Chapter 11: CRMs - Navigating the Big Systems</a></li>
-  <li><a href="#chapter-12-prospectin-with-linkedin-sales-navigator" id="toc-chapter-12-prospectin-with-linkedin-sales-navigator" class="nav-link" data-scroll-target="#chapter-12-prospectin-with-linkedin-sales-navigator">Chapter 12: Prospectin’ with LinkedIn Sales Navigator</a></li>
-  <li><a href="#chapter-13-lexis-nexis-deep-dives-into-public-records" id="toc-chapter-13-lexis-nexis-deep-dives-into-public-records" class="nav-link" data-scroll-target="#chapter-13-lexis-nexis-deep-dives-into-public-records">Chapter 13: Lexis Nexis — Deep Dives into Public Records</a></li>
-  <li><a href="#chapter-14-iwave-multi-source-prospecting" id="toc-chapter-14-iwave-multi-source-prospecting" class="nav-link" data-scroll-target="#chapter-14-iwave-multi-source-prospecting">Chapter 14: iWave — Multi-Source Prospecting</a></li>
-  <li><a href="#chapter-15-ai-agents-and-llms-the-new-frontier" id="toc-chapter-15-ai-agents-and-llms-the-new-frontier" class="nav-link" data-scroll-target="#chapter-15-ai-agents-and-llms-the-new-frontier">Chapter 15: AI Agents and LLMs — The New Frontier</a></li>
-  <li><a href="#chapter-16-free-alternatives-for-small-shops-solo-researchers" id="toc-chapter-16-free-alternatives-for-small-shops-solo-researchers" class="nav-link" data-scroll-target="#chapter-16-free-alternatives-for-small-shops-solo-researchers">Chapter 16: Free Alternatives for Small Shops / Solo Researchers</a></li>
-  <li><a href="#chapter-17-building-a-proactive-alerts-driven-observatory" id="toc-chapter-17-building-a-proactive-alerts-driven-observatory" class="nav-link" data-scroll-target="#chapter-17-building-a-proactive-alerts-driven-observatory">Chapter 17: Building a Proactive Alerts-Driven Observatory</a></li>
-  </ul></li>
-  <li><a href="#section-v-data-management-analytics-and-it-infrastructure" id="toc-section-v-data-management-analytics-and-it-infrastructure" class="nav-link" data-scroll-target="#section-v-data-management-analytics-and-it-infrastructure">Section V: Data Management, Analytics, and IT Infrastructure</a>
-  <ul class="collapse">
-  <li><a href="#chapter-18-data-integrity-and-hygiene-keeping-the-camp-clean" id="toc-chapter-18-data-integrity-and-hygiene-keeping-the-camp-clean" class="nav-link" data-scroll-target="#chapter-18-data-integrity-and-hygiene-keeping-the-camp-clean">Chapter 18: Data Integrity and Hygiene — Keeping the Camp Clean</a></li>
-  <li><a href="#chapter-19-information-science-when-youre-the-one-stop-shop" id="toc-chapter-19-information-science-when-youre-the-one-stop-shop" class="nav-link" data-scroll-target="#chapter-19-information-science-when-youre-the-one-stop-shop">Chapter 19: Information Science — When You’re the One-Stop Shop</a></li>
-  <li><a href="#chapter-20-analytics" id="toc-chapter-20-analytics" class="nav-link" data-scroll-target="#chapter-20-analytics">Chapter 20: Analytics</a></li>
-  <li><a href="#chapter-21-personas-and-affinity-scores-profiling-the-donor-landscape" id="toc-chapter-21-personas-and-affinity-scores-profiling-the-donor-landscape" class="nav-link" data-scroll-target="#chapter-21-personas-and-affinity-scores-profiling-the-donor-landscape">Chapter 21: Personas and Affinity Scores — Profiling the Donor Landscape</a></li>
-  </ul></li>
-  <li><a href="#section-vi-case-studies" id="toc-section-vi-case-studies" class="nav-link" data-scroll-target="#section-vi-case-studies">Section VI: Case Studies</a>
-  <ul class="collapse">
-  <li><a href="#chapter-22-higher-education" id="toc-chapter-22-higher-education" class="nav-link" data-scroll-target="#chapter-22-higher-education">Chapter 22: Higher Education</a></li>
-  <li><a href="#chapter-23-healthcare" id="toc-chapter-23-healthcare" class="nav-link" data-scroll-target="#chapter-23-healthcare">Chapter 23: Healthcare</a></li>
-  <li><a href="#chapter-24-other-niches" id="toc-chapter-24-other-niches" class="nav-link" data-scroll-target="#chapter-24-other-niches">Chapter 24: Other Niches</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YWZmaWxpYXRlLWRhdGFiYXNl">affiliate-database <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cy1kYXRhYmFzZQ==">news-database <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Technical Field Guide</h1>
+<h1 class="title">Inventory Manifest</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Greg Brooks </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 3, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -287,227 +291,68 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="no-row-height column-margin column-container"><div class="">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://i.postimg.cc/ncgQPn6B/cale-s-cover-for-prospectin-in-philanthropy-country.jpg" class="img-fluid figure-img"></p>
-<figcaption>…</figcaption>
-</figure>
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-categories="bmV3cy1kYXRhYmFzZQ==" data-listing-file-modified-sort="1769514464597" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<a href="./tool_inventory/inventory_items/ProQuest.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://static.wixstatic.com/media/e3113b_3433a1b76b6542cf956cecc1141f7749~mv2.png/v1/fill/w_560,h_354,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/wiley.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ProQuest
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cy1kYXRhYmFzZQ=='); return false;">news-database</div>
+
 </div>
-</div></div><section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>“There’s gold in them thar hills!” Once a rallying cry for 1800s prospectors, this phrase now fits a new kind of treasure hunt: digging through data for donor insights. First shouted by Dr.&nbsp;Matthew Stephenson (not Twain!), it urged people to look for value right where they stood. Today, prospect researchers do the same…only the hills are spreadsheets, endless tabs, and digitally entangled tools.</p>
-<p>This guide is your scrappy survival kit for the wild world of philanthropic research. Inside: practical tips for multi-platform sleuthing, budget hacks, keyboard wizardry, light scripting, automation, and decoding data brokers. Whether you’re chasing wealth, connections, or clarity, this is your map to finding gold in the data mines (and a way to do so on the cheap).</p>
-<p>You’ll learn how to build donor personas and affinity scores, track engagement across multiple channels, and evaluate executive compensation and company affiliations. We’ll explore how to mine Form 990s and foundation databases, and how to make judgment calls when the data gets fuzzy. You’ll also get a deep dive into the tools of the trade: from CRMs like Salesforce and Blackbaud to platforms like LinkedIn Sales Navigator, Lexis Nexis, iWave, and Kaleidoscope.</p>
-<p>For solo researchers, you may where multiple hats: prospect management, database admin, etc. This guide aims to be comprehensive enough that you could open up a new prospect development division in a non-profit or institution, and have all the tools you need to do it yourself, hire team members, and manage projects. Given the rapidly changing nature of the field, the field guide is intended to be updated annually. The first iteration may be more like a pamphlet with big dreams of being a full book, but we all have to start somewhere, right?</p>
-<hr>
-</section>
-<section id="field-guide-outline-ideas" class="level1">
-<h1>Field Guide Outline ideas</h1>
-<section id="section-i-getting-started-in-prospect-research" class="level2">
-<h2 class="anchored" data-anchor-id="section-i-getting-started-in-prospect-research">Section I: Getting Started in Prospect Research</h2>
-<section id="chapter-1-trailheads-career-paths-in-prospect-research" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-1-trailheads-career-paths-in-prospect-research">Chapter 1: Trailheads — Career Paths in Prospect Research</h3>
-<ul>
-<li>Day-to-day realities</li>
-<li>Entry points and growth paths</li>
-<li>Skills and specializations</li>
-<li>Org charts &amp; responsibilities</li>
-</ul>
-</section>
-<section id="chapter-2-mapping-the-terrain-tools-of-the-trade" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-2-mapping-the-terrain-tools-of-the-trade">Chapter 2: Mapping the Terrain — Tools of the Trade</h3>
-<ul>
-<li>Overview of key platforms</li>
-<li>Free vs.&nbsp;paid resources</li>
-<li>Workflow impact</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="section-ii-managing-a-research-shop" class="level2">
-<h2 class="anchored" data-anchor-id="section-ii-managing-a-research-shop">Section II: Managing a Research Shop</h2>
-<section id="chapter-3-your-new-shop" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-3-your-new-shop">Chapter 3: Your New Shop</h3>
-<ul>
-<li>Prospect management vs.&nbsp;Prospect research vs.&nbsp;Data team</li>
-<li>Project management + project management systems</li>
-</ul>
-</section>
-<section id="chapter-4-hiring-interviews-soft-skills" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-4-hiring-interviews-soft-skills">Chapter 4: Hiring, Interviews, Soft Skills</h3>
-<ul>
-<li>Hiring</li>
-<li>Technical interviews</li>
-<li>Communication</li>
-</ul>
-</section>
-<section id="chapter-5-professional-development" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-5-professional-development">Chapter 5: Professional Development</h3>
-<ul>
-<li>Training</li>
-<li>Professional associations and conferences</li>
-<li>Certs and degrees</li>
-</ul>
-</section>
-<section id="chapter-6-compliance-legal-landscape" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-6-compliance-legal-landscape">Chapter 6: Compliance &amp; Legal Landscape</h3>
-<ul>
-<li>For different niches</li>
-<li>Ethics</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="section-iii-classic-research-strategies" class="level2">
-<h2 class="anchored" data-anchor-id="section-iii-classic-research-strategies">Section III: Classic Research Strategies</h2>
-<section id="chapter-7-foundation-research-mining-990s" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-7-foundation-research-mining-990s">Chapter 7: Foundation Research — Mining 990s</h3>
-<ul>
-<li>Understanding Form 990s</li>
-<li>Using Foundation Directory Online and similar tools</li>
-<li>Identifying institutional giving trends</li>
-<li>Evaluating foundation capacity and priorities</li>
-</ul>
-</section>
-<section id="chapter-8-company-research-and-executive-compensation" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-8-company-research-and-executive-compensation">Chapter 8: Company Research and Executive Compensation</h3>
-<ul>
-<li>Public vs.&nbsp;private company data</li>
-<li>Sources for executive pay and equity holdings</li>
-<li>Evaluating corporate affiliations and influence</li>
-<li>Red flags and wealth indicators</li>
-</ul>
-</section>
-<section id="chapter-9-writing-profiles" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-9-writing-profiles">Chapter 9: Writing Profiles</h3>
-<ul>
-<li>…</li>
-</ul>
-</section>
-<section id="chapter-10-handling-research-requests" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-10-handling-research-requests">Chapter 10: Handling Research Requests</h3>
-<ul>
-<li>…</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="section-iv-software-tools-and-platforms" class="level2">
-<h2 class="anchored" data-anchor-id="section-iv-software-tools-and-platforms">Section IV: Software Tools and Platforms</h2>
-<section id="chapter-11-crms---navigating-the-big-systems" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-11-crms---navigating-the-big-systems">Chapter 11: CRMs - Navigating the Big Systems</h3>
-<ul>
-<li>Salesforce, Blackbaud, Ellucian</li>
-<li>Integrating research data</li>
-<li>Reporting and collaboration</li>
-</ul>
-</section>
-<section id="chapter-12-prospectin-with-linkedin-sales-navigator" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-12-prospectin-with-linkedin-sales-navigator">Chapter 12: Prospectin’ with LinkedIn Sales Navigator</h3>
-<ul>
-<li>Donor discovery strategies</li>
-<li>Persona building by title, geography, seniority</li>
-<li>Limitations and practical tips</li>
-</ul>
-</section>
-<section id="chapter-13-lexis-nexis-deep-dives-into-public-records" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-13-lexis-nexis-deep-dives-into-public-records">Chapter 13: Lexis Nexis — Deep Dives into Public Records</h3>
-<ul>
-<li>Wealth indicators</li>
-<li>Legal and business data</li>
-<li>Ethical considerations</li>
-</ul>
-</section>
-<section id="chapter-14-iwave-multi-source-prospecting" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-14-iwave-multi-source-prospecting">Chapter 14: iWave — Multi-Source Prospecting</h3>
-<ul>
-<li>Capacity ratings</li>
-<li>Real estate, donations, and affiliations</li>
-<li>Custom scoring models</li>
-</ul>
-</section>
-<section id="chapter-15-ai-agents-and-llms-the-new-frontier" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-15-ai-agents-and-llms-the-new-frontier">Chapter 15: AI Agents and LLMs — The New Frontier</h3>
-<ul>
-<li>Use of generative AI in research</li>
-<li>Automating tasks and summarization</li>
-<li>Risks, accuracy, and ethical use</li>
-</ul>
-</section>
-<section id="chapter-16-free-alternatives-for-small-shops-solo-researchers" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-16-free-alternatives-for-small-shops-solo-researchers">Chapter 16: Free Alternatives for Small Shops / Solo Researchers</h3>
-<ul>
-<li>Open-source software</li>
-<li>Limitations and opportunities</li>
-</ul>
-</section>
-<section id="chapter-17-building-a-proactive-alerts-driven-observatory" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-17-building-a-proactive-alerts-driven-observatory">Chapter 17: Building a Proactive Alerts-Driven Observatory</h3>
-<ul>
-<li>Platform-specific alerts</li>
-<li>Sifting strategies</li>
-<li>Workflow, alert management</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="section-v-data-management-analytics-and-it-infrastructure" class="level2">
-<h2 class="anchored" data-anchor-id="section-v-data-management-analytics-and-it-infrastructure">Section V: Data Management, Analytics, and IT Infrastructure</h2>
-<section id="chapter-18-data-integrity-and-hygiene-keeping-the-camp-clean" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-18-data-integrity-and-hygiene-keeping-the-camp-clean">Chapter 18: Data Integrity and Hygiene — Keeping the Camp Clean</h3>
-<ul>
-<li>Common data issues</li>
-<li>Maintenance workflows</li>
-<li>Governance and documentation</li>
-</ul>
-</section>
-<section id="chapter-19-information-science-when-youre-the-one-stop-shop" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-19-information-science-when-youre-the-one-stop-shop">Chapter 19: Information Science — When You’re the One-Stop Shop</h3>
-<ul>
-<li>Organizing and retrieving data</li>
-<li>Metadata and taxonomy basics</li>
-<li>Building internal knowledge systems</li>
-<li>IT systems</li>
-</ul>
-</section>
-<section id="chapter-20-analytics" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-20-analytics">Chapter 20: Analytics</h3>
-<ul>
-<li>Dashboards</li>
-<li>Metrics</li>
-</ul>
-</section>
-<section id="chapter-21-personas-and-affinity-scores-profiling-the-donor-landscape" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-21-personas-and-affinity-scores-profiling-the-donor-landscape">Chapter 21: Personas and Affinity Scores — Profiling the Donor Landscape</h3>
-<ul>
-<li>Affinity score construction</li>
-<li>Donor personas and use cases</li>
-<li>Data challenges and edge cases</li>
-<li>Experiential, communication, philanthropic, volunteer categories</li>
-<li>Turning engagement into insights</li>
-<li>Data engineering challenges</li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="section-vi-case-studies" class="level2">
-<h2 class="anchored" data-anchor-id="section-vi-case-studies">Section VI: Case Studies</h2>
-<section id="chapter-22-higher-education" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-22-higher-education">Chapter 22: Higher Education</h3>
-</section>
-<section id="chapter-23-healthcare" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-23-healthcare">Chapter 23: Healthcare</h3>
-</section>
-<section id="chapter-24-other-niches" class="level3">
-<h3 class="anchored" data-anchor-id="chapter-24-other-niches">Chapter 24: Other Niches</h3>
+<div class="card-text listing-description delink">
+<p>ProQuest is a global information-content and technology company that provides academic libraries and researchers with access to a massive collection of digitized…</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bmV3cy1kYXRhYmFzZSUyQ2FmZmlsaWF0ZS1kYXRhYmFzZQ==" data-listing-file-modified-sort="1769514465721" data-listing-reading-time-sort="1" data-listing-word-count-sort="182">
+<a href="./tool_inventory/inventory_items/NexisUni.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./images/tool_logos/nexisuni_logo.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Nexis Uni
+</h5>
+<div class="listing-categories">
 
-</section>
-</section>
-</section>
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cy1kYXRhYmFzZQ=='); return false;">news-database</div>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<div class="listing-category" onclick="window.quartoListingCategory('YWZmaWxpYXRlLWRhdGFiYXNl'); return false;">affiliate-database</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Nexis Uni contains 15,000+ news and business sources.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
