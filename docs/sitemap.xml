@@ -1,60 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Tool_reviews/index.html</loc>
-    <lastmod>2026-01-27T03:21:37.042Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/HelpfulTechDocumentation/index.html</loc>
+    <lastmod>2026-01-27T05:49:42.467Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/PRSPCT-L_roundup/index.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Tool_Incidents/index.html</loc>
+    <lastmod>2026-01-27T04:58:09.373Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Creating_Jobs_Dataset/index.html</loc>
+    <lastmod>2026-01-21T04:23:42.639Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/LibraryDatabases/index.html</loc>
+    <lastmod>2026-01-27T03:20:33.340Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/inventory_manifest.html</loc>
+    <lastmod>2026-01-27T05:52:43.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_reviews_old.html</loc>
+    <lastmod>2026-01-27T05:52:51.662Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/inventory_items/ProQuest.html</loc>
+    <lastmod>2026-01-27T06:04:41.529Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/resources/education/fundraising_flashcards/fundraising_learning.html</loc>
     <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/datacontracts/index.html</loc>
-    <lastmod>2026-01-21T04:27:16.579Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/technical_field_guide/index.html</loc>
-    <lastmod>2026-01-21T07:26:13.325Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tools.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/resources/education/free_external/index.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/free_resources_links.html</loc>
-    <lastmod>2026-01-27T03:33:43.835Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/UsingPowerQuery/index.html</loc>
     <lastmod>2026-01-16T00:08:49.260Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/readme.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/tutorials.html</loc>
+    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/database/firebase_scripts/firebase_read.html</loc>
+    <lastmod>2026-01-27T05:49:22.002Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/readme.html</loc>
     <lastmod>2026-01-16T00:08:49.196Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/database/gregs_mermaid_db_experiment.html</loc>
-    <lastmod>2026-01-16T00:08:49.180Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/CMAP/readme.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/CMAP/figure_4.html</loc>
     <lastmod>2026-01-16T00:08:49.192Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/CMAP/cleanCMAP_dataset/readme.html</loc>
-    <lastmod>2026-01-16T00:08:49.192Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/NA_donation_sample.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/FundraisingDataMarketplace.html</loc>
     <lastmod>2026-01-16T00:08:49.180Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/blog.html</loc>
-    <lastmod>2026-01-27T04:58:27.865Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/index.html</loc>
+    <lastmod>2026-01-27T03:09:10.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/website_build_templates/yaml_header_templates.html</loc>
+    <lastmod>2026-01-27T05:49:17.634Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_dashboard1.html</loc>
@@ -65,119 +73,67 @@
     <lastmod>2026-01-27T04:58:08.521Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tutorials.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/website_build_templates/article_content_templates.html</loc>
+    <lastmod>2026-01-27T05:49:16.682Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/index.html</loc>
-    <lastmod>2026-01-27T03:09:10.875Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/blog.html</loc>
+    <lastmod>2026-01-27T04:58:27.865Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/FundraisingDataMarketplace.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/NA_donation_sample.html</loc>
     <lastmod>2026-01-16T00:08:49.180Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/CMAP/figure_4.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/CMAP/cleanCMAP_dataset/readme.html</loc>
     <lastmod>2026-01-16T00:08:49.192Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/readme.html</loc>
-    <lastmod>2026-01-16T00:08:49.196Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/industry_data/job_titles/CMAP/readme.html</loc>
+    <lastmod>2026-01-16T00:08:49.192Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/database/firebase_scripts/firebase_read.html</loc>
-    <lastmod>2026-01-23T06:04:47.095Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/database/gregs_mermaid_db_experiment.html</loc>
+    <lastmod>2026-01-16T00:08:49.180Z</lastmod>
+  </url>
+  <url>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/data/readme.html</loc>
+    <lastmod>2026-01-16T00:08:49.196Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/toolkit_templates/obsidian_toolkit/readme.html</loc>
     <lastmod>2026-01-16T00:08:49.260Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/CodeBlockTesting/index.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/resources/education/fundraising_flashcards/fundraising_learning.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/templates.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/LibraryDatabases/index.html</loc>
-    <lastmod>2026-01-27T03:20:33.340Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Creating_Jobs_Dataset/index.html</loc>
-    <lastmod>2026-01-21T04:23:42.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/Tool_Incidents/index.html</loc>
-    <lastmod>2026-01-27T04:58:09.373Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/HelpfulTechDocumentation/index.html</loc>
-    <lastmod>2026-01-25T06:02:29.066Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_info/Tool_reviews/index.html</loc>
-    <lastmod>2026-01-27T03:21:37.042Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_info/tool_reviews.html</loc>
-    <lastmod>2026-01-27T03:32:31.374Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_info/tool_feature_matrix.html</loc>
-    <lastmod>2026-01-27T03:49:37.273Z</lastmod>
-  </url>
-  <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/resources/free_resources_links.html</loc>
     <lastmod>2026-01-27T03:46:49.482Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_tutorials/tutorials.html</loc>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/resources/education/free_external/index.html</loc>
     <lastmod>2026-01-16T00:08:49.260Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/research_templates/templates.html</loc>
-    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_inventory.html</loc>
-    <lastmod>2026-01-27T05:32:01.722Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_reviews.html</loc>
-    <lastmod>2026-01-27T03:32:31.374Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/inventory_items/NexisUni.html</loc>
+    <lastmod>2026-01-27T06:03:50.577Z</lastmod>
   </url>
   <url>
     <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_feature_matrix.html</loc>
     <lastmod>2026-01-27T03:58:26.355Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/inventory_items/NexisUni.html</loc>
-    <lastmod>2026-01-27T05:41:13.899Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/research_templates/templates.html</loc>
+    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/inventory_items/ProQuest.html</loc>
-    <lastmod>2026-01-27T05:41:26.791Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/technical_field_guide/index.html</loc>
+    <lastmod>2026-01-21T07:26:13.325Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/tool_reviews_old.html</loc>
-    <lastmod>2026-01-27T03:32:31.374Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/datacontracts/index.html</loc>
+    <lastmod>2026-01-21T04:27:16.579Z</lastmod>
   </url>
   <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/website_build_templates/yaml_header_templates.html</loc>
-    <lastmod>2026-01-27T05:41:11.150Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/website_build_templates/article_content_templates.html</loc>
-    <lastmod>2026-01-27T05:13:40.404Z</lastmod>
-  </url>
-  <url>
-    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/tool_inventory/inventory_manifest.html</loc>
-    <lastmod>2026-01-27T05:47:38.865Z</lastmod>
+    <loc>https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/toolkit_blog/PRSPCT-L_roundup/index.html</loc>
+    <lastmod>2026-01-16T00:08:49.260Z</lastmod>
   </url>
 </urlset>

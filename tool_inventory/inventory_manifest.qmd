@@ -5,6 +5,8 @@ listing:
   type: grid
   categories: true
   table-hover: true
+  sort: "title-desc"
+  grid-columns: 2
   
 ---
 

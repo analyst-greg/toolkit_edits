@@ -2,9 +2,20 @@
 title: "Nexis Uni"
 format: html
 image: /images/tool_logos/nexisuni_logo.png
-categories: [news-database]
-description: "Nexis Uni is an affiliate database to LexisNexis. 15,000+ news and business sources."
+categories: [news-database, affiliate-database]
+description: "Nexis Uni contains 15,000+ news and business sources."
 ---
 ::: {.column-margin}
 ![""](/images/tool_logos/nexisuni_logo.png)
 :::
+
+# Overview
+One of the many LexisNexis [variants (product page link)](https://www.lexisnexis.com/en-us/products.page), alongside Nexis for Development Professionals and Dilligence+, which may be more familiar to prospect researchers. 
+
+Nexis Uni is an affiliate database scoped for college-level research and emphasizes the breadth of its legal sources, making it popular with law libraries. However, given it's 15,000+ sources, there are a variety of categories, including business.
+
+# Limitations
+Unlike Nexis for Development Professionals, you cannot look up the personal info of specific people. It's a good choice, otherwise students may be looking up other students, or professors. It may be drawing from many of the same sources as ProQuest for its news articles, though how they stack up against each other has not yet been explored in this toolkit. 
+
+# Conclusion
+Nexis Uni is a good choice if you are a small shop or individual researcher with access to a public library with a subscription. However, if your team has the resources to pay for Nexis for Development Professionals, it has all of the features of Nexis Uni plus ones more relevant to writing bios, confirming company information, etc.
