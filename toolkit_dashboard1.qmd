@@ -1,8 +1,8 @@
 ---
-title: Toolkit Dashboard
+title: Inventory Dashboard
 format: dashboard
 execute: 
-  enabled: false
+  enabled: true
 ---
 ```{r, setup}
 #| include: false
@@ -16,12 +16,24 @@ library(htmlwidgets)
 
 ```
 
-# Software Comparison
+# Jan 2026 Update
+
 
 ## Row
 
 ```{r}
-#| title: Comparison table
+#| echo: false
+
+jan26_library_export <- read.csv("tool_inventory/inventory_exports/library_tool_export.csv", header = TRUE, sep = ",") %>% 
+  group_by(LibraryInstitution)
+
+```
+
+```{r}
+datatable(
+  jan26_library_export
+)
+
 
 
 ```

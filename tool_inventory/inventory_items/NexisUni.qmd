@@ -2,7 +2,7 @@
 title: "Nexis Uni"
 format: html
 image: /images/tool_logos/nexisuni_logo.png
-categories: [news-database, affiliate-database]
+categories: [news-database, affiliate-database, library-database]
 description: "Nexis Uni contains 15,000+ news and business sources."
 ---
 ::: {.column-margin}

@@ -1,0 +1,10 @@
+---
+title: "inventory item template"
+
+image: /images/tool_logos/nexisuni_logo.png
+categories: [news-database, affiliate-database, library-database]
+description: " "
+---
+::: {.column-margin}
+![](/images/tool_logos/nexisuni_logo.png)
+:::
