@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/tool_inventory/inventory_table_version.html",
-    "items": [
-      "/tool_inventory/inventory_items/NexisUni.html",
-      "/tool_inventory/inventory_items/Pitchbook.html",
-      "/tool_inventory/inventory_items/ProQuest.html"
-    ]
-  },
-  {
-    "listing": "/website_build_templates/yaml_header_templates.html",
-    "items": []
-  },
-  {
     "listing": "/field_notes.html",
     "items": [
       "/field_notes/Tool_Incidents/index.html",
@@ -19,8 +7,15 @@
       "/field_notes/datacontracts/index.html",
       "/field_notes/Creating_Jobs_Dataset/index.html",
       "/field_notes/PRSPCT-L_roundup/index.html",
-      "/field_notes/HelpfulTechDocumentation/index.html",
-      "/field_notes/technical_field_guide/index.html"
+      "/field_notes/HelpfulTechDocumentation/index.html"
+    ]
+  },
+  {
+    "listing": "/tool_inventory/inventory_table_version.html",
+    "items": [
+      "/tool_inventory/inventory_items/NexisUni.html",
+      "/tool_inventory/inventory_items/Pitchbook.html",
+      "/tool_inventory/inventory_items/ProQuest.html"
     ]
   },
   {
@@ -33,14 +28,6 @@
       "/tool_inventory/inventory_items/NexisUni.html",
       "/tool_inventory/inventory_items/Pitchbook.html",
       "/tool_inventory/inventory_items/ProQuest.html"
-    ]
-  },
-  {
-    "listing": "/inventory_manifest.html",
-    "items": [
-      "/tool_inventory/inventory_items/Pitchbook.html",
-      "/tool_inventory/inventory_items/ProQuest.html",
-      "/tool_inventory/inventory_items/NexisUni.html"
     ]
   }
 ]

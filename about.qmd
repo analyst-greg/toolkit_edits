@@ -1,14 +1,11 @@
 ---
 title: "About"
-filters: 
-  - linkate
 ---
+
 # Overview
 The prospect research toolkit is an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals.
 
 There are plenty of excellent paid resources available: Apra, private consultant firms, subscription tools, books...but not everyone has the budget to access them. This toolkit was created to bridge that gap, or supplement what's already out there, and create original content that is interactive. The goal is to keep it simple, fun, open-source, community-driven, regularly updated, and always free.
-
----
 
 # Short-term Goals
 - Keep adding to the toolkit database and website structure
@@ -16,18 +13,15 @@ There are plenty of excellent paid resources available: Apra, private consultant
 - focus on interactive elements
 - Software tool comparisons in dashboard format
 
-
-***
 # Long-term Goals
 - Create AI Prompt library and use-cases, as well as "helper files" for creating stronger research posture without having to initialize an entire agent
 - Extensions or add-ins, or community plugins (potentially starting with Obsidian or Excel)
 - Collaboration with other Apra chapters and Apra International
 
-***
 # FAQ
 
 ## How accurate is this website?
-There will be an entire write-up explaining how I source pricing information, but generally speaking, the prices on this website will be prone to errors and should be understood as estimates. The incidents, however, given their public nature, are a more reliable metric to contribute to the overall rating scheme of the software tools. I am most confident, of course, in the subjective articles and tutorials. However, since I am not an advanced data engineer or devops guy - there are almost certainly easier ways to gather, clean, and filter the data I'm sharing on this website. For website bugs or accuracy questions, feel free to open a new issue on the Github project page! (add link here, Greg)
+There will be an entire write-up explaining how I source pricing information, but generally speaking, the prices on this website will be prone to errors and should be understood as estimates. The incidents, however, given their public nature, are a more reliable metric to contribute to the overall rating scheme of the software tools.
 
 In order of most to least accuracy (probably): 
 
@@ -45,7 +39,6 @@ I come from a psychology background and am largely self-taught in data analytics
 
 In small ways, frequently! You can read the [latest release notes](https://github.com/ProspectResearchToolkit/ProspectResearchToolkit/releases/tag/v01.2-alpha) for some of the technical details.
 
----
 # Contributors
 
 This toolkit is maintained by [Greg Brooks](https://github.com/analyst-greg/){.external} in collaboration with [Apra Utah](https://aprautah.wildapricot.org/){.external}.
