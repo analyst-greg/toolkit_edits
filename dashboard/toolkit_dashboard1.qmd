@@ -1,0 +1,48 @@
+---
+title: Toolkit Dashboard
+format: dashboard
+execute: 
+  enabled: true
+---
+# following this tutorial: https://medium.com/data-science-collective/simple-and-effective-python-dashboards-with-quarto-dbfc8e7add21
+# and this code: https://github.com/kensuke0529/Tool_Kit/blob/main/dashboard/tools_dashboard.py
+
+```{python}
+#| label: setup
+#| include: false
+
+import pandas as pd
+# https://quarto.org/docs/blog/posts/2024-07-02-beautiful-tables-in-typst/examples/pandas-acting-on-data
+
+import panel as pn
+# https://panel.holoviz.org/tutorials/basic/build_dashboard.html
+
+import hvplot.pandas
+# https://hvplot.holoviz.org/en/docs/latest/tutorials/getting_started_pandas.html
+
+from pathlib import Path
+# https://docs.python.org/3/library/pathlib.html
+
+import numpy as np
+# https://numpy.org/doc/stable/user/absolute_beginners.html
+
+from scipy import stats
+# https://docs.scipy.org/doc/scipy/tutorial/stats.html
+
+import re
+# https://docs.python.org/3/library/re.html
+
+pn.extension('tabulator', sizing_mode='stretch_width')
+# https://panel.holoviz.org/reference/widgets/Tabulator.html
+
+```
+
+```{python}
+#| label: data loading and preprocessing
+#| include: false
+
+data_dir = Path('../data/baserow_api/baserow_data/baserow_snaps')
+tools_df = pd.read_json(data_dir / 'tools.json')
+
+```
+
