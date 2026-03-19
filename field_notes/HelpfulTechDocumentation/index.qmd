@@ -11,6 +11,9 @@ This list is mostly for Greg as he maintains this website.
 
 # Quarto Tips
 
+## Quarto guides
+- [Practical Quarto](https://quarto-tdg.org/websites.html)
+
 ## Website Maintenance
 - Use the [drafts feature](https://quarto.org/docs/websites/website-drafts.html) to preview and plan content
 - Learn how to use the profiles feature
