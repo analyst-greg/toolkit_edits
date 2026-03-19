@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render: 
+  - "*.qmd"
+  - "!dashboard/toolkit_dashboard1.qmd"
 
 execute:
   freeze: auto
@@ -28,8 +31,6 @@ website:
         href: field_notes.qmd
       - text: "A-Z List"
         href: inventory_table_version.qmd
-      - text: "Dashboard"
-        href: toolkit_dashboard1.qmd
       
   reader-mode: false
   page-footer: 
