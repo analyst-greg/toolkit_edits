@@ -1,0 +1,26 @@
+---
+title: "Intentional Philanthropy @ $1k or Less"
+author: Greg Brooks
+date: 03-23-2026
+format: revealjs
+categories:
+    - Social Impact
+    - Philanthropy
+draft: true
+---
+
+# Philanthropy & Fundraising Industry Overview
+
+## Macro-trends in Charitable Giving
+- Small-dollar donor participation is in steep decline (economy, wealth concentration, etc)
+- Similarly, total number of donors is going down (more high-dollar donors everyone is chasing after)
+- 
+
+## The Prospect Research Niche + Greg's Background
+- My opinions about fundraising are coming from a small niche: prospect research
+- 
+
+## References
+- [Community Foundation of Utah DAFs](https://utahcf.org/give/explore/donor-advised-funds)
+- [Brooklyn Org - DAFs and Community Impact](https://brooklyn.org/funds/)
+- [Funraise's state of fundraising 2026](https://www.funraise.org/blog/the-state-of-the-nonprofit-sector)

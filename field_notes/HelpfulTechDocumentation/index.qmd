@@ -93,6 +93,8 @@ Remove or comment out the `render: - "!scripts/**"` line
 
 ## Quarto Extensions
 - [Quarto Extensions and also great example of a quarto website](https://m.canouil.dev/quarto-extensions/)
+- [embedio](https://github.com/coatless-quarto/embedio/blob/main/README.md) for presentations embedded in a Quarto website
+- [editable reveal js](https://emilhvitfeldt.github.io/quarto-revealjs-editable/) lets you do some basic editing within revealjs presentations themselves, and then save it back to your QMD, which makes for a nice workflow similar to working in powerpoint
 
 ### Visualization Extensions
 - [Diagrams](https://github.com/pandoc-ext/diagram)
