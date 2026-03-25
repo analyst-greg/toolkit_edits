@@ -3,9 +3,6 @@ title: "UVU Philanthropy Workshop"
 author: Greg Brooks
 date: 03-23-2026
 format: revealjs
-    scroll-view: true
-    slide-number: true
-    show-slide-number: print
 categories:
     - Social Impact
     - Philanthropy
