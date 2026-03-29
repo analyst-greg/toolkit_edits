@@ -3,11 +3,16 @@ title: "Field Notes"
 format: html
 listing: 
     contents: field_notes
+    type: default
     sort: "date desc"
-    type: grid
-    grid-columns: 2
+    # The 'Clean' Look
+    image-align: right
+    image-height: "0px" # Effectively hides the image placeholder
+    fields: [date, title, reading-time, categories]
+    field-display-names:
+      title: "Observation"
+      date: "Logged"
     categories: true
     sort-ui: true
     filter-ui: true
-
 ---

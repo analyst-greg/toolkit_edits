@@ -1,0 +1,39 @@
+---
+title: External Fundraising Resources Dashboard
+format: dashboard
+execute: 
+  enabled: true
+draft: true
+---
+
+
+```{ojs}
+// 1. Load Data
+data = FileAttachment("../../data/industry_data/fundraising_orgs.csv").csv()
+
+// 2. Create the Dropdown Filter based on the "Organization" field
+viewof orgFilter = Inputs.select(
+  [null].concat(
+    Array.from(new Set(data.map(d => d["Organization"])))
+      .filter(d => d !== null && d !== "") // Clean up any empty rows
+      .sort()
+  ), 
+  {
+    label: "Filter by Organization:", 
+    format: d => d === null ? "Show All" : d
+  }
+)
+
+// 3. Filter the data based on the selection
+// We check if the row's Organization matches the selection
+filteredData = data.filter(d => 
+  orgFilter === null || d["Organization"] === orgFilter
+)
+
+// 4. Display the Table
+Inputs.table(filteredData, {
+  rows: 15,
+  sort: "Organization",
+  layout: "auto"
+})
+```

@@ -1,10 +1,12 @@
 ---
-title: "Brokers & Sources"
+title: "Brokers & Sources - part 1"
 author: Greg Brooks
-date: 02-27-2026
-draft: true
+date: 03-28-2026
+draft: false
 categories:
     - Industry Commentary
+mermaid: 
+  theme: neutral
 ---
 
 # Brokers & Sources
@@ -16,6 +18,8 @@ This post is simple about understanding the river.
 
 We'll talk about sources in general, before we dive into data brokerages.
 
+## 
+
 ## Sources
 
 ### Primary sources
@@ -23,13 +27,13 @@ We'll talk about sources in general, before we dive into data brokerages.
 
 Primary sources are a rich vein, and highly prized. Front-line fundraisers are often some of the most effective prospect researchers of all, because they are actively cultivating primary sources. Not every primary source translates into a gift, per se, but the wise fundraiser knows that disqualifying prospects clears the field and helps focus the mission. A prospect researcher's favorite kind of fundraiser is one that is appropriately detailed in their contact reports, or in their research requests, and provides whatever they have already found or been given (e.g. phone number). Research that relies on primary source information as the foundation 
 
-From ChatGPT:
-
-Here is the **same breakdown of the relationship between data brokers, financial intelligence services, and niche fundraising tools** — with a **References section including plaintext URLs** at the end so you can follow the sources yourself.
-
 ---
 
 # Overview: Data Flow and Actors
+
+## Flowchart
+A work-in-progress...
+{{< include ../../diagrams/pr_info_flow_birdseye.qmd >}}
 
 ## **1. Data Brokers**
 
@@ -125,7 +129,7 @@ These platforms often **license or embed multiple broker data feeds** to enrich 
 
 ---
 
-# **References (with plaintext URLs)**
+# **References **
 
 **About Data Brokers**
 
@@ -158,8 +162,6 @@ These platforms often **license or embed multiple broker data feeds** to enrich 
 
 ---
 
-If you want, I can **expand this into a visual data lineage diagram** or show **specific examples of data passed from brokers into ResearchPoint profiles** with sample attributes.
-
 [1]: https://en.wikipedia.org/wiki/Data_broker?utm_source=chatgpt.com "Data broker"
 [2]: https://arxiv.org/abs/2303.04810?utm_source=chatgpt.com "A Survey of Data Pricing for Data Marketplaces"
 [3]: https://egmontgroup.org/wp-content/uploads/2023/07/202302-IEWG-Report-Use-of-OSINT-in-FIU-Operational-and-Strategic-Analysis-Sanitized-Version_FINAL3.pdf?utm_source=chatgpt.com "USE OF OPEN SOURCE IN FIUS’ OPERATIONAL & STRATEGIC ANALYSIS"
@@ -167,3 +169,7 @@ If you want, I can **expand this into a visual data lineage diagram** or show **
 [5]: https://www.livealumni.com/?utm_source=chatgpt.com "LiveAlumni | Verified Donor & Alumni Data | Seattle, Washington"
 [6]: https://en.wikipedia.org/wiki/Open-source_intelligence?utm_source=chatgpt.com "Open-source intelligence"
 [7]: https://www.blackbaud.com/products/blackbaud-researchpoint?utm_source=chatgpt.com "u2028Prospect Research Software | Blackbaud ResearchPoint™u2028"
+
+
+
+{{< var ai_disclaimer >}}

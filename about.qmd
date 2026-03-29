@@ -5,8 +5,6 @@ title: "About"
 # Overview
 The prospect research toolkit is an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals.
 
-There are plenty of excellent paid resources already available: Apra, private consultant firms, subscription tools, books...but not everyone has the budget to access them. This toolkit was created to bridge that gap, or supplement what's already out there, and create original content that is interactive. The goal is to keep it simple, fun, open-source, community-driven, regularly updated, and always free.
-
 # Short-term Goals
 - Keep adding to the toolkit database and website structure
 - Automate the ETL process so the website can be regularly updated directly from the database

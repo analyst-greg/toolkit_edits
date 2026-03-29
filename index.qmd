@@ -8,9 +8,9 @@ title: "Prospect Research Toolkit"
 ***
 Howdy, partner. Welcome to camp!
 
-You know how they say, "there's gold in them thar hills?" - well, I've set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice. 
+This is the Prospect Research Toolkit, a free resource for prospect research professionals. This ecclectic blog aims to create a regularly updated repository of information about fundraising software tools, data sources, research methodology, and industry analysis. I originally envisioned it as a comprehensive one-stop-shop, but there are much smarter people than me out there creating excellent content, so I will be focusing on interactive elements and original research that interests me.
 
-Hopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a'clankin'! In the meantime, it's just a hobby project with big dreams.
+---
 
 For more info about the scope of this project, feel free to check out the [About](about.qmd) page. Some unpolished [Field Notes](field_notes.qmd) are available, but the tool comparison dashboard and other more interesting things are still in development.
 

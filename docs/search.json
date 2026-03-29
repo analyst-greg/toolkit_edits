@@ -91,41 +91,6 @@
     "text": "Placeholder: Explain how prospect research and development teams can use data contracts to ensure donor data consistency and reliability across CRM, wealth screening tools, and analytics platforms.\nOne obstacle when writing profiles is getting accurate information from your own institution. If you have many internal boards, the chairs and members of those boards are always in flux, and there isn’t necessarily accurate information in the database or websites to verify the reality on the ground. In theory, it makes sense to have board memberships strictly tracked in your CRM. But like with anything, it all depends on the people responsible for maintaining and providing the data in the first place.\nOld or inacurrate information in your internal systems is a constant battle, and there may be some areas where you know the information tends to be more inaccurate than others, a “quirk of the system” that you’ve just learned to deal with, and one where a fix is not necessarily going to happen soon.\nHowever, if you are ever in the position to try and fix some of these data problems, at a director-level, you can advocate for creating internal data contracts specifically to benefit your prospect development and research teams.\nWith the board membership example, a strong internal data contract that provides accurate, timely board information means that profiles get done faster, obvious mistakes are avoided, and researchers can spend less time spinning their wheels trying to find information that the institution already knows. Ideally, the goal of a prospect research team should be to get the most efficient process possible for highly accurate profiles, so there is more time for proactive research and expanding the prospect pool. The amount of money that is lost every year is staggering: any given team is being paid for their time, and expanding the prospect pool actually increases campaign revenues, while fiddling around with verifications can run counter to the overall momentum needed to meet fundraising goals.\nOf course, if you aren’t tracking your efficiency, then it would be hard to know for sure."
   },
   {
-    "objectID": "field_notes/Tool_Incidents/index.html",
-    "href": "field_notes/Tool_Incidents/index.html",
-    "title": "Tool & Company Incidents",
-    "section": "",
-    "text": "Incidents include events like data breaches, service outages, and any press about abandoned features. This website gathers ad hoc data reported publicly online, focused primarily on fundraising software relating to prospect research. As far as I’m aware, this is the first repository of fundraising software niche information of its kind - intended to be a transparent and independent collation of incidents for research purposes. These incidents contribute to the rating of any given software tool, with more severe incidents having a bigger impact on the score. The methodology for the tool ratings will be published in a different blog post.\nThe goal is to make this incident reporting useful especially for shops that are evaluating new tools, so they can make an educated decision on where they place their budgetary resources."
-  },
-  {
-    "objectID": "field_notes/Tool_Incidents/index.html#data-breaches",
-    "href": "field_notes/Tool_Incidents/index.html#data-breaches",
-    "title": "Tool & Company Incidents",
-    "section": "Data breaches",
-    "text": "Data breaches\n…"
-  },
-  {
-    "objectID": "field_notes/Tool_Incidents/index.html#service-outages",
-    "href": "field_notes/Tool_Incidents/index.html#service-outages",
-    "title": "Tool & Company Incidents",
-    "section": "Service Outages",
-    "text": "Service Outages\n…"
-  },
-  {
-    "objectID": "field_notes/Tool_Incidents/index.html#feature-timeline-issues",
-    "href": "field_notes/Tool_Incidents/index.html#feature-timeline-issues",
-    "title": "Tool & Company Incidents",
-    "section": "Feature Timeline issues",
-    "text": "Feature Timeline issues\n…"
-  },
-  {
-    "objectID": "field_notes/Tool_Incidents/index.html#privacy-and-transparency",
-    "href": "field_notes/Tool_Incidents/index.html#privacy-and-transparency",
-    "title": "Tool & Company Incidents",
-    "section": "Privacy and Transparency",
-    "text": "Privacy and Transparency\nDonors also have a right to know about the logistics of fundraising, in detail, so they can make decisions about where they place their money and more to the point: their information. A foundation’s choice of software is relevant to the overall mission of philanthropy, and is part of the ongoing conversation about how fundraising resources are deployed in service of the institution’s mission.\nFor some countries, like those in the European Union, there are laws that help protect citizens from incidents like data breaches. However, this Prospect Research Toolkit is focused on the USA, where the laws vary by state, and tech companies are given wide leeway to innovate - occasionally at the cost of user safety.\nThe tech world moves fast, and the engineers are not always on the same page as their front line sales people. Rapid changes in the industry can alter the feature catalog, the data storage, structure, and dissemination practices of any given tool. It would be an impossible and tangential task for any given prospect dev shop to try and keep up with it all on their own.\nSimilarly, fundraising institutions do not share pricing information with each other and many fundraising-niche software companies are highly secretive about pricing tiers - preferring to negotiate with clients individually. However, I believe that transparency can actually drive prices down while improving quality of service - which is why these incidents are carefully evaluated to make sure they are accurate."
-  },
-  {
     "objectID": "field_notes/LibraryDatabases/index.html",
     "href": "field_notes/LibraryDatabases/index.html",
     "title": "Library Databases for Prospect Dev Analysts",
@@ -179,7 +144,7 @@
     "href": "field_notes.html",
     "title": "Field Notes",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nTool & Company Incidents\n\n\n\nIndustry Commentary\n\nTool Reviews\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUVU Philanthropy Workshop\n\n\n\nSocial Impact\n\nPhilanthropy\n\n\n\n\n\n\n\nGreg Brooks\n\n\nMar 23, 2026\n\n\n\n\n\n\n\n\n\n\n\nLibrary Databases for Prospect Dev Analysts\n\n\n\nFree tools\n\n\n\n\n\n\n\nGreg Brooks\n\n\nJan 30, 2026\n\n\n\n\n\n\n\n\n\n\n\nInternal Data Contracts\n\n\n\nResearch Strategy\n\nProspect Dev Management\n\nIndustry Commentary\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 14, 2025\n\n\n\n\n\n\n\n\n\n\n\nHelpful Technical Documentation\n\n\n\nwebsite-maintenance\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 4, 2025\n\n\n\n\n\n\n\n\n\n\n\nUsing PowerQuery\n\n\n\nPaid tool\n\nExcel\n\nTutorials\n\n\n\n\n\n\n\nGreg Brooks\n\n\nOct 3, 2025\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Observation\n      \n      \n        Logged - Oldest\n      \n      \n        Logged - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\nExternal Fundraising Resources Dashboard\n\n\n\n\n1 min\n\n\n\n\n\n\nBrokers & Sources - part 1\n\n\n\nIndustry Commentary\n\n\n\n\n\n\nMar 28, 2026\n\n6 min\n\n\n\n\n\n\nLibrary Databases for Prospect Dev Analysts\n\n\n\nFree tools\n\n\n\n\n\n\nJan 30, 2026\n\n3 min\n\n\n\n\n\n\nInternal Data Contracts\n\n\n\nResearch Strategy\n\nProspect Dev Management\n\nIndustry Commentary\n\n\n\n\n\n\nOct 14, 2025\n\n5 min\n\n\n\n\n\n\nUsing PowerQuery\n\n\n\nPaid tool\n\nExcel\n\nTutorials\n\n\n\n\n\n\nOct 3, 2025\n\n7 min\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "data/database/gregs_mermaid_db_experiment.html",
@@ -193,7 +158,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "The prospect research toolkit is an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals.\nThere are plenty of excellent paid resources already available: Apra, private consultant firms, subscription tools, books…but not everyone has the budget to access them. This toolkit was created to bridge that gap, or supplement what’s already out there, and create original content that is interactive. The goal is to keep it simple, fun, open-source, community-driven, regularly updated, and always free."
+    "text": "The prospect research toolkit is an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals."
   },
   {
     "objectID": "about.html#how-accurate-is-this-website",
@@ -243,69 +208,6 @@
     "title": "Overview: Data Flow and Actors",
     "section": "3. Niche Fundraising Tools (e.g., ResearchPoint & LiveAlumni)",
     "text": "3. Niche Fundraising Tools (e.g., ResearchPoint & LiveAlumni)\nThese products are end-user applications built for nonprofit development, advancement, and alumni relations. They consume data from brokers and other sources to help fundraising professionals prioritize prospects and manage engagement.\n\nBlackbaud ResearchPoint\n\nA donor prospect research platform that integrates multiple data feeds (including wealth, philanthropic history, biographical, and asset data). (Blackbaud Help)\nIt supports bulk lists, wealth screening, and rich prospect profiles used to guide major gift fundraising. (Blackbaud Help)\n\n\n\nLiveAlumni\n\nA niche provider focused on verified alumni and donor employment data, job changes, industry and employer details. (LiveAlumni)\nUseful in fundraising to identify job changes, matching gift eligibility, and engagement signals.\n\nThese platforms often license or embed multiple broker data feeds to enrich constituent records and analytics."
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html",
-    "href": "field_notes/HelpfulTechDocumentation/index.html",
-    "title": "Helpful Technical Documentation",
-    "section": "",
-    "text": "This list is mostly for Greg as he maintains this website."
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#quarto-guides",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#quarto-guides",
-    "title": "Helpful Technical Documentation",
-    "section": "Quarto guides",
-    "text": "Quarto guides\n\nPractical Quarto\nQuarto presentations"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#website-maintenance",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#website-maintenance",
-    "title": "Helpful Technical Documentation",
-    "section": "Website Maintenance",
-    "text": "Website Maintenance\n\nUse the drafts feature to preview and plan content\nLearn how to use the profiles feature\nPrevent all unnecessary folders and files from rendering to the website (how?)\nlearn incremental render\n\nYes, you can preview .qmd files inside an excluded folder like scripts/ without moving them, but it requires a bit of manual action because Quarto won’t render them automatically during your site build.\nHere’s how to do it:"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#how-to-preview-.qmd-files-in-excluded-folders-without-moving-them",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#how-to-preview-.qmd-files-in-excluded-folders-without-moving-them",
-    "title": "Helpful Technical Documentation",
-    "section": "How to preview .qmd files in excluded folders without moving them",
-    "text": "How to preview .qmd files in excluded folders without moving them\n\n1. Render them manually, one at a time\nFrom your project root, run:\nquarto render scripts/your_file.qmd\n\nThis renders just that file (ignores your site’s render exclusion)\nOutput goes to _output folder by default (not your website’s docs/)\nYou can open the generated HTML in your browser to preview\n\n\n\n\n2. Use the quarto preview command for that file\nquarto preview scripts/your_file.qmd\n\nOpens a local preview server with live reload for that file\nHandy for iterative editing and testing\n\n\n\n\n3. Use VS Code Quarto extension to preview\nIf you have the Quarto extension in VS Code:\n\nOpen scripts/your_file.qmd\nUse “Preview” button in editor (usually top right or right-click menu)\nThis previews the current file regardless of site config\n\n\n\n\n4. Temporarily disable the exclusion (if you want full site preview)\nRemove or comment out the render: - \"!scripts/**\" line\n\nRun quarto render to include those files\nPreview site with those pages included\nRe-enable exclusion when done"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#summary",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#summary",
-    "title": "Helpful Technical Documentation",
-    "section": "Summary",
-    "text": "Summary\n\n\n\n\n\n\n\n\nMethod\nPros\nCons\n\n\n\n\nquarto render file.qmd\nFast, manual render\nManual, one file at a time\n\n\nquarto preview file.qmd\nLive reload, interactive\nOne file only\n\n\nVS Code Quarto preview\nIntegrated, easy\nRequires VS Code & extension\n\n\nDisable exclusion temporarily\nFull site preview\nChanges site config temporarily"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#database-architecture",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#database-architecture",
-    "title": "Helpful Technical Documentation",
-    "section": "Database Architecture",
-    "text": "Database Architecture\n\nRSQLite\nSQLite mobile editing\nBaserow docs"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#vs-code",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#vs-code",
-    "title": "Helpful Technical Documentation",
-    "section": "VS-Code",
-    "text": "VS-Code\n\nMarkdown All-in-One commands"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#quarto-extensions",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#quarto-extensions",
-    "title": "Helpful Technical Documentation",
-    "section": "Quarto Extensions",
-    "text": "Quarto Extensions\n\nQuarto Extensions and also great example of a quarto website\nembedio for presentations embedded in a Quarto website\neditable reveal js lets you do some basic editing within revealjs presentations themselves, and then save it back to your QMD, which makes for a nice workflow similar to working in powerpoint\n\n\nVisualization Extensions\n\nDiagrams\nSvelte components\n\n\n\nArticle Interactivity\n\nLightboxes\nexpanding “nutshell” notes so people don’t have to switch tabs\n\n\n\nEmbedding\n\nsocial media embeds, easy to embed YouTube\nPDF embedding\n\n\n\nUser Experience\n\ndownloading embedded data or images\nlist of links at end of page\nQuarto badges, lets you make fun stuff like this!"
-  },
-  {
-    "objectID": "field_notes/HelpfulTechDocumentation/index.html#example-quarto-sites",
-    "href": "field_notes/HelpfulTechDocumentation/index.html#example-quarto-sites",
-    "title": "Helpful Technical Documentation",
-    "section": "Example Quarto Sites",
-    "text": "Example Quarto Sites\n\ngood example of webr and download capabilities"
   },
   {
     "objectID": "field_notes/UsingPowerQuery/index.html",
@@ -473,7 +375,7 @@
     "href": "index.html",
     "title": "Prospect Research Toolkit",
     "section": "",
-    "text": "…\n\n\n\nHowdy, partner. Welcome to camp!\nYou know how they say, “there’s gold in them thar hills?” - well, I’ve set out to create the resource I always wish existed: a free, community-driven library of tools for the scrappy fundraising prospector, along with a field guide to put all of them into practice.\nHopefully this toolkit will expand to be an invaluable resource for those splashing through the data streams, Excel sluice boxes and CRM picks a’clankin’! In the meantime, it’s just a hobby project with big dreams.\nFor more info about the scope of this project, feel free to check out the About page. Some unpolished Field Notes are available, but the tool comparison dashboard and other more interesting things are still in development.\nThanks for reading and happy trails.\n\n\nVersion: 0.1.2-alpha\n\n\n\n Back to top"
+    "text": "…\n\n\n\nHowdy, partner. Welcome to camp!\nThis is the Prospect Research Toolkit, a free and open-source resource for prospect research professionals. The goal of this project is to create a regularly updated repository of information about fundraising software tools, data sources, research methodology, and industry analysis.\nThere are plenty of excellent paid resources already available. Apra, private consultant firms, subscription tools, books…but not everyone has the budget to access them. This toolkit was created to bridge that gap, or supplement what’s already out there. The goal is to create a comprehensive resource, but an ecclectic one - not a one-stop-shop, just an interesting hole-in-the-wall.\n\nFor more info about the scope of this project, feel free to check out the About page. Some unpolished Field Notes are available, but the tool comparison dashboard and other more interesting things are still in development.\nThanks for reading and happy trails.\n\n\nVersion: 0.1.2-alpha\n\n\n\n Back to top"
   },
   {
     "objectID": "resources/education/free_external/index.html",
@@ -656,5 +558,131 @@
     "title": "UVU Philanthropy Workshop",
     "section": "Philanthropy at the Student Scale",
     "text": "Philanthropy at the Student Scale\n\nLess than, say, $1000 or less over ~5 years\nThe Brooklyn Org example, micro DAF 2\nGiving Days at the U example, some mini drives led by students + matching programs\nMatching gifts and Microsoft rewards 3\n\n\n\nEven more than making a private, small donation - a program/project/non-profit may appreciate you organizing a small drive or campaign on their behalf. Some jobs, for example, will match your donation to a list of approved non-profits, which makes your money stretch farther and have more impact. Your coworkers may not know about the matching program, so organizing a small office drive to take advantage of the matching (which is often limited by time) doesn’t require a bigger donation from you, just a bit more time.\nOrganizing a small campaign like this is something you can also put on your resume, if you are applying for fundraising positions as a graphic designer, data analyst, event planner, prospect researcher, and more. There are ways to donate money without pulling directly from your wallet: for example, if you use Bing for a few search engine queries every month, you can donate the Microsoft Reward points to many causes: including UVU! When I worked at UVU, I had a job that required me to search online constantly for information, and I ended up raising $50+ for the University’s general fund. Not a huge amount, but I did not have to dip into my own finances for that particular donation.\nThere are other programs like this out there, and for a student on a budget (vs. a wealthy philanthropist) they are a simple way to contribute smaller one-time gifts to causes you want to support, but can’t justify using your own limited resources.\nBrooklyn Org: what’s a DAF? Why is the Brooklyn Org interesting?\ndue dilligence is exhausting, so sometimes it’s nice to have an org that does it for you"
+  },
+  {
+    "objectID": "data/database/sqlite_toolkit/old_sqlite_items/gregs_mermaid_db_experiment.html",
+    "href": "data/database/sqlite_toolkit/old_sqlite_items/gregs_mermaid_db_experiment.html",
+    "title": "Database ERD draft",
+    "section": "",
+    "text": "Database ERD draft\n2025-12-9 Mermaid documentation for ERDs\n\n\n\n\n\n---\ntitle: Prospect Research Toolkit ERD\n---\nerDiagram\n\n%% ===TOOLS===\n  tools{\n    int id PK\n    str name\n    str type\n    int cost\n    str integrations\n    str notes\n    int company_id FK\n    numeric created_at\n  }\n  companies{}\n  university_tools{}\n  universities{}\n\n\n\n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html",
+    "href": "field_notes/Brokers_and_Sources/index.html",
+    "title": "Brokers & Sources - part 1",
+    "section": "",
+    "text": "Gold flakes (useful information) flows into the prospect research’s pan alongside countless useless grains of silt that you have to filter out. This process can be as simple as finding a source you trust, and riding with that for a while for specific situations - or something more complex, like evaluating and buying tools for mass data point validation. The dirty secret of prospect research is that there are massive gaps between what the researcher trusts and what is available, because data brokers and their downstream clients that build fundraising research tools are casting a wide net. The depth and breadth of this net often runs into ethical concerns from the public, which is something this toolkit will discuss in a different blog post.\nThis post is simple about understanding the river.\nWe’ll talk about sources in general, before we dive into data brokerages.\n\n\n\n\n\n\n\n\nPrimary sources are a rich vein, and highly prized. Front-line fundraisers are often some of the most effective prospect researchers of all, because they are actively cultivating primary sources. Not every primary source translates into a gift, per se, but the wise fundraiser knows that disqualifying prospects clears the field and helps focus the mission. A prospect researcher’s favorite kind of fundraiser is one that is appropriately detailed in their contact reports, or in their research requests, and provides whatever they have already found or been given (e.g. phone number). Research that relies on primary source information as the foundation"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#intro",
+    "href": "field_notes/Brokers_and_Sources/index.html#intro",
+    "title": "Brokers & Sources - part 1",
+    "section": "",
+    "text": "Gold flakes (useful information) flows into the prospect research’s pan alongside countless useless grains of silt that you have to filter out. This process can be as simple as finding a source you trust, and riding with that for a while for specific situations - or something more complex, like evaluating and buying tools for mass data point validation. The dirty secret of prospect research is that there are massive gaps between what the researcher trusts and what is available, because data brokers and their downstream clients that build fundraising research tools are casting a wide net. The depth and breadth of this net often runs into ethical concerns from the public, which is something this toolkit will discuss in a different blog post.\nThis post is simple about understanding the river.\nWe’ll talk about sources in general, before we dive into data brokerages."
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#sources",
+    "href": "field_notes/Brokers_and_Sources/index.html#sources",
+    "title": "Brokers & Sources - part 1",
+    "section": "",
+    "text": "Primary sources are a rich vein, and highly prized. Front-line fundraisers are often some of the most effective prospect researchers of all, because they are actively cultivating primary sources. Not every primary source translates into a gift, per se, but the wise fundraiser knows that disqualifying prospects clears the field and helps focus the mission. A prospect researcher’s favorite kind of fundraiser is one that is appropriately detailed in their contact reports, or in their research requests, and provides whatever they have already found or been given (e.g. phone number). Research that relies on primary source information as the foundation"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#data-brokers",
+    "href": "field_notes/Brokers_and_Sources/index.html#data-brokers",
+    "title": "Brokers & Sources - part 1",
+    "section": "1. Data Brokers",
+    "text": "1. Data Brokers\nWhat they are: Data brokers collect, clean, link, standardize, and resell data about people and businesses to third parties. They pull from public records, commercial databases, and other sources and package the information for clients. (Wikipedia)\nWhat they provide:\n\nAggregated datasets\nIdentity attributes\nEmployment histories\nWealth proxies\nProprietary linkages used for analytics Clients include marketers, compliance teams, financial institutions, and software vendors. (Wikipedia)\n\nAcademic perspective: Studies on data marketplaces show how brokers function as intermediaries in commoditized information markets, pricing and trading data between owners and consumers. (arXiv)"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#financial-intelligence-services-fius-private-finint-vendors",
+    "href": "field_notes/Brokers_and_Sources/index.html#financial-intelligence-services-fius-private-finint-vendors",
+    "title": "Brokers & Sources - part 1",
+    "section": "2. Financial Intelligence Services (FIUs & Private FININT Vendors)",
+    "text": "2. Financial Intelligence Services (FIUs & Private FININT Vendors)\nWhat they are: Financial intelligence services include government Financial Intelligence Units (FIUs) and private FININT vendors that analyze data for purposes such as anti–money-laundering (AML), sanctions screening, risk assessment, and compliance.\nHow they use data: They ingest:\n\nTransaction records\nWatchlists\nProprietary and open source intelligence\nBroker data\n\nto produce actionable intelligence. Open-source intelligence (OSINT) — including public records and some broker data — is explicitly used to support investigations. (Egmont Group)\nFIUs and OSINT: The Egmont Group, which coordinates global FIU collaboration, reports that OSINT contributes to operational and strategic analysis by helping identify links, patterns, and risks not visible in transaction data alone. (Egmont Group)"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#niche-fundraising-tools-e.g.-researchpoint-livealumni",
+    "href": "field_notes/Brokers_and_Sources/index.html#niche-fundraising-tools-e.g.-researchpoint-livealumni",
+    "title": "Brokers & Sources - part 1",
+    "section": "3. Niche Fundraising Tools (e.g., ResearchPoint & LiveAlumni)",
+    "text": "3. Niche Fundraising Tools (e.g., ResearchPoint & LiveAlumni)\nThese products are end-user applications built for nonprofit development, advancement, and alumni relations. They consume data from brokers and other sources to help fundraising professionals prioritize prospects and manage engagement.\n\nBlackbaud ResearchPoint\n\nA donor prospect research platform that integrates multiple data feeds (including wealth, philanthropic history, biographical, and asset data). (Blackbaud Help)\nIt supports bulk lists, wealth screening, and rich prospect profiles used to guide major gift fundraising. (Blackbaud Help)\n\n\n\nLiveAlumni\n\nA niche provider focused on verified alumni and donor employment data, job changes, industry and employer details. (LiveAlumni)\nUseful in fundraising to identify job changes, matching gift eligibility, and engagement signals.\n\nThese platforms often license or embed multiple broker data feeds to enrich constituent records and analytics."
+  },
+  {
+    "objectID": "field_notes/tool_reviews/index.html#factiva",
+    "href": "field_notes/tool_reviews/index.html#factiva",
+    "title": "Tool Reviews Staging Ground",
+    "section": "Factiva",
+    "text": "Factiva\nFactiva could be a great place to hit first when researching a company, but may be less useful the deeper your research project goes and the more private the company happens to be. The company snapshot looks familiar because it is using the same data that many other tools use. However, I appreciate that Factiva often includes its source in any given module. Its weaknesses are shared by many other platforms that rely on data brokers: public data just rerendered, not necessarily any original research being done on the platform, which means many other services have the same exact data. Factivity’s main strength is its simplicity. Factiva makes SEC data clean enough that it may be an alternative to unwieldy EDGAR searches, depending on the use-case.\n\nFactiva Features\n\nCompany Snapshot\nNews\n\nLatest News\nWeb News\n\nSignals\nKey Developments\nPeer Comparison\n\nLots of options here, with spreadsheet export\nYou can see similar companies based on sales, employee count, or market cap\nPotentially useful when brainstorming proactive research, since you can see the top 10 most similar companies, the names attached to those companies may also be relevant to your project.\n\nCorporate Family\n\nOne of the best features, in my opinion, very simple rendering of Dun & Bradstreet information but with some nice additional touches\nThey have developed different symbols to indicate parent vs. primary subsidiary vs. regular subsidiary vs. branch location\nYou can see all branch and subsidiary names and locations\n\nFinancial Results\n\nMost of this category is not relevant for prospect research,\n\nOwnership\n\nInstead of digging through SEC filings to find insiders who own stock, Factiva has the top 10 within a couple clicks, which could save time\n\nAnalysis and Profiles\n\nGeared more toward investment advice, but provides some useful or interesting context about a company when you look at the most recent financials. The Wright Quality rating, for example, gives you an at-a-glance letter grade to consider when evaluating the company’s charitability, and could be a useful small infographic to include in a report from a prospect researcher.\n\nReports\n\nThe “company report” stitches together almost all of the individual pieces into one PDF or html, and seems like the most comprehensive, but most is potentially irrelevant to a prospect research\n\nChrome/Edge Browser Extension\n\nHaven’t tested it yet, but it functions as an additional way to search during your workflow\n\n\n\n\nUse-cases\n\n3-source verify: Factiva is a quick place to verify public information about companies, especially the relationship between parent or holding companies and their subsidiaries.\nWrangling Corporate Sprawl: When deep diving in on companies, mapping out the parents and subsidiaries is only the beginning. Factiva provides a concise, sourced, and reliable source of industry information that can help understand big companies and their so-called sprawl sometimes across several markets.\nC-Suite Searching: In the subjects on the right side of the News module, you can click “Senior Level Management” and it will bring up the latest news regarding senior management. One of the unique sources there: “The Official Board” which is sometimes behind a pay wall"
+  },
+  {
+    "objectID": "field_notes/tool_reviews/index.html#the-official-board",
+    "href": "field_notes/tool_reviews/index.html#the-official-board",
+    "title": "Tool Reviews Staging Ground",
+    "section": "The Official Board",
+    "text": "The Official Board\nA website that is largely behind a paywall, but it also has some education on job titles that is particularly relevant. Mostly useful for big company org charts."
+  },
+  {
+    "objectID": "field_notes/tool_reviews/index.html#library-consortiums",
+    "href": "field_notes/tool_reviews/index.html#library-consortiums",
+    "title": "Tool Reviews Staging Ground",
+    "section": "Library Consortiums",
+    "text": "Library Consortiums\n“Quick pattern summary & tips for out-of-state access\nMost statewide consortia restrict remote access to residents or to people who hold a participating library/school account. (Examples above show Geo-IP or library-card authentication is common.)\n\nWorkarounds that often work in practice:\n\nVisit a member library in person — public/academic libraries usually allow on-site access to licensed business databases for any visitor using library terminals. (This is the most reliable route.)\n\n\nGet a guest card or temporary pass — some state libraries or public libraries offer short-term passes (e.g., 10-day NC LIVE pass) or guest cards; check the local library’s “e-resources” or access/FAQ pages.\nInterlibrary loan or research visits — for academic research, contact the consortium or a member university library to ask about visiting scholar policies or ILL/document delivery.\nLocal public libraries’ reciprocal agreements — some public library systems participate in reciprocal programs (statewide cards, TexShare card, Access PA), so if you live nearby one state border check cross-state agreements.”"
+  },
+  {
+    "objectID": "field_notes/Tool_Incidents/index.html",
+    "href": "field_notes/Tool_Incidents/index.html",
+    "title": "Tool & Company Incidents",
+    "section": "",
+    "text": "Incidents include events like data breaches, service outages, and any press about abandoned features. This website gathers ad hoc data reported publicly online, focused primarily on fundraising software relating to prospect research. As far as I’m aware, this is the first repository of fundraising software niche information of its kind - intended to be a transparent and independent collation of incidents for research purposes. These incidents contribute to the rating of any given software tool, with more severe incidents having a bigger impact on the score. The methodology for the tool ratings will be published in a different blog post.\nThe goal is to make this incident reporting useful especially for shops that are evaluating new tools, so they can make an educated decision on where they place their budgetary resources."
+  },
+  {
+    "objectID": "field_notes/Tool_Incidents/index.html#data-breaches",
+    "href": "field_notes/Tool_Incidents/index.html#data-breaches",
+    "title": "Tool & Company Incidents",
+    "section": "Data breaches",
+    "text": "Data breaches\n…"
+  },
+  {
+    "objectID": "field_notes/Tool_Incidents/index.html#service-outages",
+    "href": "field_notes/Tool_Incidents/index.html#service-outages",
+    "title": "Tool & Company Incidents",
+    "section": "Service Outages",
+    "text": "Service Outages\n…"
+  },
+  {
+    "objectID": "field_notes/Tool_Incidents/index.html#feature-timeline-issues",
+    "href": "field_notes/Tool_Incidents/index.html#feature-timeline-issues",
+    "title": "Tool & Company Incidents",
+    "section": "Feature Timeline issues",
+    "text": "Feature Timeline issues\n…"
+  },
+  {
+    "objectID": "field_notes/Tool_Incidents/index.html#privacy-and-transparency",
+    "href": "field_notes/Tool_Incidents/index.html#privacy-and-transparency",
+    "title": "Tool & Company Incidents",
+    "section": "Privacy and Transparency",
+    "text": "Privacy and Transparency\nDonors also have a right to know about the logistics of fundraising, in detail, so they can make decisions about where they place their money and more to the point: their information. A foundation’s choice of software is relevant to the overall mission of philanthropy, and is part of the ongoing conversation about how fundraising resources are deployed in service of the institution’s mission.\nFor some countries, like those in the European Union, there are laws that help protect citizens from incidents like data breaches. However, this Prospect Research Toolkit is focused on the USA, where the laws vary by state, and tech companies are given wide leeway to innovate - occasionally at the cost of user safety.\nThe tech world moves fast, and the engineers are not always on the same page as their front line sales people. Rapid changes in the industry can alter the feature catalog, the data storage, structure, and dissemination practices of any given tool. It would be an impossible and tangential task for any given prospect dev shop to try and keep up with it all on their own.\nSimilarly, fundraising institutions do not share pricing information with each other and many fundraising-niche software companies are highly secretive about pricing tiers - preferring to negotiate with clients individually. However, I believe that transparency can actually drive prices down while improving quality of service - which is why these incidents are carefully evaluated to make sure they are accurate."
+  },
+  {
+    "objectID": "diagrams/pr_info_flow_birdseye.html",
+    "href": "diagrams/pr_info_flow_birdseye.html",
+    "title": "Prospect Research Toolkit",
+    "section": "",
+    "text": "flowchart LR\n    %% DATA SOURCES\n    subgraph DataSources[\"Upstream Data (Types)\"]\n        R[Real Estate & Property Data] --&gt; B[Business & Employment Data]\n        B &lt;--&gt; D[Social Media & Digital Footprint]\n        D &lt;--&gt; G[Government & Public Records]\n        G &lt;--&gt; N[News & Media Mentions]\n        N &lt;--&gt; C[Contact Info, Family & Biographical Data]\n        C &lt;--&gt; F[Financial, Philanthropic & Wealth Data]\n        F &lt;--&gt; I[Open Internet]\n    end\n\n    %% FUNDRAISING PLATFORMS\n    subgraph Platforms[\"Fundraising Platforms\"]\n        V1[Prospect Research Tools] &lt;--&gt; V3[Wealth Screening Services]\n    end\n\n    %% DATA BROKERS\n    subgraph Brokers[\"Data Brokers\"]\n        DB[Data Brokers]\n    end\n\n    %% END USER\n    subgraph EndUser[\"End User\"]\n        PR[Prospect Researcher]\n    end\n\n    %% CONNECTIONS\n    DataSources --&gt; Platforms\n    DataSources --&gt; Brokers\n    Brokers --&gt; Platforms\n    Platforms --&gt; EndUser\n    DataSources --&gt; EndUser\n\n%% STYLING NODES\n    classDef source fill:#0277bd,stroke:#01579b,stroke-width:2px,color:#fff;\n    classDef platform fill:#ef6c00,stroke:#e65100,stroke-width:2px,color:#fff;\n    classDef broker fill:#8e24aa,stroke:#4a148c,stroke-width:2px,color:#fff;\n    classDef user fill:#2e7d32,stroke:#1b5e20,stroke-width:3px,color:#fff;\n\n    class R,B,D,G,N,C,F,I source;\n    class V1,V3 platform;\n    class DB broker;\n    class PR user;\n\n    %% STYLING SUBGRAPH TITLES\n    style DataSources color:#fff,font-weight:bold\n    style Platforms color:#fff,font-weight:bold\n    style Brokers color:#fff,font-weight:bold\n    style EndUser color:#fff,font-weight:bold\n\n    \n\n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#overview-data-flow-and-actors",
+    "href": "field_notes/Brokers_and_Sources/index.html#overview-data-flow-and-actors",
+    "title": "Brokers & Sources - part 1",
+    "section": "",
+    "text": "flowchart LR\n\n%% DATA TYPES\nsubgraph DataSources[\"Upstream Data (Types)\"]\n    W[Wealth & Financial Indicators]\n    P[Philanthropic Giving History]\n    R[Real Estate & Property Data]\n    B[Business & Employment Data]\n    S[Social / Network / Affinity Data]\n    G[Government & Public Records]\nend\n\n%% FUNDRAISING PLATFORMS\nsubgraph Platforms[\"Fundraising Platforms\"]\n\n    subgraph CRM[\"Enterprise CRM Systems\"]\n        CRM1[Donor CRM]\n        CRM2[Advancement CRM]\n        CRM3[Healthcare CRM]\n    end\n\n    subgraph Vendors[\"Specialized / Point Solutions\"]\n        V1[Prospect Research Tools]\n        V2[Engagement / Alumni Platforms]\n        V3[Wealth Screening Services]\n    end\n\nend\n\n%% END USER\nsubgraph EndUser[\"End User\"]\n    PR[Prospect Researcher]\nend\n\n%% GENERAL INTERNET SHORTCUT\nI[General Internet / Open Web Sources]\n\n%% FLOWS: DATA → PLATFORMS\nW --&gt; CRM1\nP --&gt; CRM1\nR --&gt; CRM1\n\nB --&gt; CRM2\nS --&gt; CRM2\nG --&gt; CRM2\n\nW --&gt; V1\nP --&gt; V1\nR --&gt; V3\nB --&gt; V1\nS --&gt; V2\nG --&gt; V1\n\n%% INTERNAL PLATFORM FLOWS\nV1 --&gt; CRM1\nV3 --&gt; CRM1\nV2 --&gt; CRM2\n\n%% PLATFORM → USER\nCRM1 --&gt; PR\nCRM2 --&gt; PR\nV1 --&gt; PR\nV2 --&gt; PR\nV3 --&gt; PR\n\n%% INTERNET SHORTCUT → USER\nI --&gt; PR"
+  },
+  {
+    "objectID": "field_notes/Brokers_and_Sources/index.html#flowchart",
+    "href": "field_notes/Brokers_and_Sources/index.html#flowchart",
+    "title": "Brokers & Sources - part 1",
+    "section": "Flowchart",
+    "text": "Flowchart\nA work-in-progress…\n\n\n\n\n\nflowchart LR\n    %% DATA SOURCES\n    subgraph DataSources[\"Upstream Data (Types)\"]\n        R[Real Estate & Property Data] --&gt; B[Business & Employment Data]\n        B &lt;--&gt; D[Social Media & Digital Footprint]\n        D &lt;--&gt; G[Government & Public Records]\n        G &lt;--&gt; N[News & Media Mentions]\n        N &lt;--&gt; C[Contact Info, Family & Biographical Data]\n        C &lt;--&gt; F[Financial, Philanthropic & Wealth Data]\n        F &lt;--&gt; I[Open Internet]\n    end\n\n    %% FUNDRAISING PLATFORMS\n    subgraph Platforms[\"Fundraising Platforms\"]\n        V1[Prospect Research Tools] &lt;--&gt; V3[Wealth Screening Services]\n    end\n\n    %% DATA BROKERS\n    subgraph Brokers[\"Data Brokers\"]\n        DB[Commercial Data Providers]\n    end\n\n    %% END USER\n    subgraph EndUser[\"End User\"]\n        PR[Prospect Researcher]\n    end\n\n    %% CONNECTIONS\n    DataSources --&gt; Platforms\n    DataSources --&gt; Brokers\n    Brokers --&gt; Platforms\n    Platforms --&gt; EndUser\n    DataSources --&gt; EndUser\n\n%% STYLING NODES\n    classDef source fill:#0277bd,stroke:#01579b,stroke-width:2px,color:#fff;\n    classDef platform fill:#ef6c00,stroke:#e65100,stroke-width:2px,color:#fff;\n    classDef broker fill:#8e24aa,stroke:#4a148c,stroke-width:2px,color:#fff;\n    classDef user fill:#2e7d32,stroke:#1b5e20,stroke-width:3px,color:#fff;\n\n    class R,B,D,G,N,C,F,I source;\n    class V1,V3 platform;\n    class DB broker;\n    class PR user;\n\n    %% STYLING SUBGRAPH TITLES\n    style DataSources color:#fff,font-weight:bold\n    style Platforms color:#fff,font-weight:bold\n    style Brokers color:#fff,font-weight:bold\n    style EndUser color:#fff,font-weight:bold\n\n    %% STYLING ARROWS (Darker and Thicker)\n    %% stroke-width:3px makes them thick; stroke:#333 makes them dark charcoal\n    linkStyle 0,1,2,3,4 stroke:#222,stroke-width:3px;"
   }
 ]

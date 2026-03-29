@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tool Feature Matrix – Prospect Research Toolkit</title>
+<title>pr_info_flow_birdseye – Prospect Research Toolkit</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,10 +68,13 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Tool Feature Matrix – Prospect Research Toolkit">
+<meta property="og:title" content="Prospect Research Toolkit">
 <meta property="og:site_name" content="Prospect Research Toolkit">
 </head>
 
@@ -123,30 +126,74 @@ ul.task-list li input[type="checkbox"] {
         
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Tool Feature Matrix</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">software-comparisons</div>
-  </div>
-  </div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page">
+
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    %% DATA SOURCES
+    subgraph DataSources["Upstream Data (Types)"]
+        R[Real Estate &amp; Property Data] --&gt; B[Business &amp; Employment Data]
+        B &lt;--&gt; D[Social Media &amp; Digital Footprint]
+        D &lt;--&gt; G[Government &amp; Public Records]
+        G &lt;--&gt; N[News &amp; Media Mentions]
+        N &lt;--&gt; C[Contact Info, Family &amp; Biographical Data]
+        C &lt;--&gt; F[Financial, Philanthropic &amp; Wealth Data]
+        F &lt;--&gt; I[Open Internet]
+    end
+
+    %% FUNDRAISING PLATFORMS
+    subgraph Platforms["Fundraising Platforms"]
+        V1[Prospect Research Tools] &lt;--&gt; V3[Wealth Screening Services]
+    end
+
+    %% DATA BROKERS
+    subgraph Brokers["Data Brokers"]
+        DB[Data Brokers]
+    end
+
+    %% END USER
+    subgraph EndUser["End User"]
+        PR[Prospect Researcher]
+    end
+
+    %% CONNECTIONS
+    DataSources --&gt; Platforms
+    DataSources --&gt; Brokers
+    Brokers --&gt; Platforms
+    Platforms --&gt; EndUser
+    DataSources --&gt; EndUser
+
+%% STYLING NODES
+    classDef source fill:#0277bd,stroke:#01579b,stroke-width:2px,color:#fff;
+    classDef platform fill:#ef6c00,stroke:#e65100,stroke-width:2px,color:#fff;
+    classDef broker fill:#8e24aa,stroke:#4a148c,stroke-width:2px,color:#fff;
+    classDef user fill:#2e7d32,stroke:#1b5e20,stroke-width:3px,color:#fff;
+
+    class R,B,D,G,N,C,F,I source;
+    class V1,V3 platform;
+    class DB broker;
+    class PR user;
+
+    %% STYLING SUBGRAPH TITLES
+    style DataSources color:#fff,font-weight:bold
+    style Platforms color:#fff,font-weight:bold
+    style Brokers color:#fff,font-weight:bold
+    style EndUser color:#fff,font-weight:bold
 
     
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
 
