@@ -3,9 +3,14 @@ title: "About"
 ---
 
 # Overview
-The prospect research toolkit is an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals.
+These prospect research field notes are an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals.
 
 There are plenty of excellent paid resources already available: Apra, private consultant firms, subscription tools, books...but not everyone has the budget to access them. This toolkit was created to bridge that gap, or supplement what's already out there, and create original content that is interactive. The goal is to keep it simple, fun, open-source, community-driven, regularly updated, and always free.
+
+For transparency, I try to include this AI disclaimer in the references section where appropriate: 
+{{< var ai_disclaimer >}}
+
+I also try to do the sketches myself, in case you were wondering if I told AI to make "clumsy line drawings." Mostly because I hate AI images for blog posts and would rather look at my own bad art instead.
 
 # Short-term Goals
 - Keep adding to the toolkit database and website structure
@@ -21,6 +26,16 @@ There are plenty of excellent paid resources already available: Apra, private co
 - Refine a synthetic donor dataset for training, examples, and presentations
 
 # FAQ
+
+### Who is this for?
+Prospect research analysts, prospect dev folk at large, maybe a few managers. This is an independent source of information from an industry insider, so I hope to speak frankly about things like fundraising software, methodology, and research obstacles, similar to the conversations on PRSPCT-L.
+
+The rest of this website is primarily to corral my tendency to fall down rabbit holes, and try to actually learn some new things.
+
+### What's the catch?
+I am not an expert (yet), and none of these posts reflect the opinions of my employers, so take everything here with a hearty grain of salt - and some forgiveness in your heart for website bugs I haven't learned how to fix.
+
+This blog will remain free, though I may develop some datasets or software that will fall within the "pay-what-you-want" model.
 
 ## How accurate is this website?
 There will be an entire write-up explaining how I source pricing information, but generally speaking, the prices on this website will be prone to errors and should be understood as estimates. The incidents, however, given their public nature, are a more reliable metric to contribute to the overall rating scheme of the software tools.
@@ -41,7 +56,7 @@ In small ways, frequently! You can read the [latest release notes](https://githu
 
 # Contributors
 
-This toolkit is maintained by [Greg Brooks](https://github.com/analyst-greg/){.external} in collaboration with [Apra Utah](https://aprautah.wildapricot.org/){.external}.
+This blog was launched by [Greg Brooks](https://github.com/analyst-greg/){.external} as part of an education initiative while he served on the board of [Apra Utah](https://aprautah.wildapricot.org/){.external}.
 
 Other contributors include: Kensuke Uma.
 

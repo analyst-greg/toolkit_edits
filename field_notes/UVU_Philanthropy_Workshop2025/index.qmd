@@ -8,7 +8,7 @@ format:
 categories:
     - Social Impact
     - Philanthropy
-draft: false
+draft: true
 ---
 
 # Philanthropy Overview

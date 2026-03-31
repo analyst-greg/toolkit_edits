@@ -1,16 +1,17 @@
 ---
-title: "Using PowerQuery"
+title: "Using PowerQuery (part 1)"
 author: Greg Brooks
 date: 10/3/2025
 categories:
     - Paid tool
-    - Excel
     - Tutorials
 ---
+![](../../images/powerquery.jpg){width=25%}
 
 ## What is PowerQuery?
 
 **Power Query** is a data connection technology in Excel that allows users to connect, combine, and refine data from various sources. 
+
 
 ### Key Features
 
@@ -36,7 +37,7 @@ In essence, Power Query simplifies data preparation, enabling users to focus on 
 ## Use-cases
 Your workflow may not require PowerQuery, it may be overkill. But given how much fiddling with Excel formulas can happen, and how that can eat up time, PowerQuery honestly seems like it should be more standard in our field - especially because of how reproducible any given process is - the steps being recorded automatically so they could be reused or made into a template.
 
-### Abstrqct Example
+### Abstract Example
 You have data in your CRM that you want to combine with another dataset you've found or created. For example, perhaps you've created a custom list of individuals who have won awards, but have not updated each of their individual profiles in the database yet. So you are looking to add this supplemental info to help segment a list in an interesting way.
 
 ### Steps to Achieve This
@@ -144,3 +145,6 @@ in
 ### Summary
 This script dynamically loads keyword lists and applies consistent filtering across multiple datasets. It improves maintainability and scalability by avoiding hardcoded values.
 
+***
+# References
+- {{< var ai_disclaimer >}}

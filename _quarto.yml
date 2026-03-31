@@ -12,8 +12,8 @@ variables:
   author_default: Greg Brooks
 
 website:
-  title: "Prospect Research Toolkit"
-  description: A prospect research resource library created by Greg Brooks and Apra Utah
+  title: "A Prospect Dev Field Notebook"
+  description: Insider notes and analysis on prospect dev, management, and research
   site-url:  https://prospectresearchtoolkit.github.io/ProspectResearchToolkit/
   open-graph: true
   back-to-top-navigation: true
@@ -29,8 +29,6 @@ website:
         href: about.qmd
       - text: "Field Notes"
         href: field_notes.qmd
-      - text: "A-Z List"
-        href: inventory_table_version.qmd
       
   reader-mode: false
   page-footer: 

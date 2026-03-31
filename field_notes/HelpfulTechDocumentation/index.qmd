@@ -3,11 +3,16 @@ title: "Helpful Technical Documentation"
 author: Greg Brooks
 date: 10-4-2025
 categories: [website-maintenance]
+draft: true
 execute: 
     freeze: true
 ---
 
 This list is mostly for Greg as he maintains this website.
+
+# Useful snippets
+- {{< var ai_disclaimer >}}
+- [alt text](../../images/soilsample_sketch.jpg){width=50%}
 
 # Quarto Tips
 
