@@ -6,6 +6,8 @@ categories:
     - Free tools
 ---
 
+![](../../images/librarybooks.jpg){width=50%}
+
 # Expanding Our Research Toolkit
 
 University libraries often pay for access to powerful databases and research platforms—many of which are underutilized by fundraising and advancement teams. These resources can provide valuable insights for prospect research, verification, and strategic decision-making. This post explores how we can better leverage these tools, understand their data sources, and even automate workflows to make research more efficient.
@@ -61,6 +63,7 @@ Companies like **Xapien** already do advanced versions of this using custom algo
 
 We’re building a spreadsheet with links and feature comparisons for all tools under review. This will serve as a reference for choosing the right tool for the right research problem.
 
----
+***
 
-{{< var ai_disclaimer >}}
+# References
+- {{< var ai_disclaimer >}}

@@ -7,8 +7,9 @@ categories:
     - Prospect Dev Management
     - Industry Commentary
 ---
+[alt text](../../images/internaldata.jpg){width=50%}
 
-# Creating Internal Data Contracts: A Practical Guide
+# Creating Internal Data Contracts: A Theoretical Guide
 
 ## Introduction
 As organizations grow, data becomes increasingly complex and distributed across multiple teams and systems. Without clear agreements on how data is structured, maintained, and shared, teams risk miscommunication, broken pipelines, and unreliable analytics. **Internal data contracts** solve this problem by formalizing expectations between data producers and consumers—similar to API contracts, but for data.
@@ -135,4 +136,6 @@ With the board membership example, a strong internal data contract that provides
 
 Of course, if you aren't tracking your efficiency, then it would be hard to know for sure.
 
----
+***
+# References
+- 

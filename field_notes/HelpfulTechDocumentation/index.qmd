@@ -13,6 +13,7 @@ This list is mostly for Greg as he maintains this website.
 # Useful snippets
 - {{< var ai_disclaimer >}}
 - [alt text](../../images/soilsample_sketch.jpg){width=50%}
+- use *** instead of triple hyphen to avoid rendering errors (occasional, but annoying)
 
 # Quarto Tips
 

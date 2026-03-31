@@ -1,23 +1,22 @@
 ---
 title: "About"
+sidebar:
+  - type: image
+    file: "images/sketches.jpg"
+    width: 150px
 ---
 
+
 # Overview
-These prospect research field notes are an independently maintained repository of fundraising industry analysis, software information, and research methodology. This is a hobby coding project, first and foremost, but projects are refined based on conversations with development professionals.
+These prospect research field notes are an independently maintained repository of fundraising industry analysis, software information, and research methodology. This also functions as a hobby coding and research project. 
 
 There are plenty of excellent paid resources already available: Apra, private consultant firms, subscription tools, books...but not everyone has the budget to access them. This toolkit was created to bridge that gap, or supplement what's already out there, and create original content that is interactive. The goal is to keep it simple, fun, open-source, community-driven, regularly updated, and always free.
 
-For transparency, I try to include this AI disclaimer in the references section where appropriate: 
-{{< var ai_disclaimer >}}
-
-I also try to do the sketches myself, in case you were wondering if I told AI to make "clumsy line drawings." Mostly because I hate AI images for blog posts and would rather look at my own bad art instead.
+![](images/sketches.jpg){fig-align="center" width=25%}
 
 # Short-term Goals
-- Keep adding to the toolkit database and website structure
-- Automate the ETL process so the website can be regularly updated directly from the database
 - Create software/tool comparison dashboard and tool reviews
 - Keep building prospect dev jobs dataset and create data visualizations highlighting salary trends
-- focus on interactive elements
 
 # Long-term Goals
 - Create AI Prompt library and use-cases, as well as "helper files" for creating stronger research posture without having to initialize an entire agent

@@ -44,8 +44,7 @@ format:
   html:
     page-layout: full
     respect-user-color-scheme: true
-    theme: simplex
-
+    theme: sandstone
     css: styles.css
     toc: true
 

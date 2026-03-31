@@ -13,7 +13,7 @@ First conceived as a fully comprehensive, open-source toolkit, I've finally come
 ### My Tale of Woe
 I have been frustrated in the past with the lack of widely-accepted methodology or cross-industry comparisons in prospect research. It often feels like webinars are heavy on vendor advertisements and light on technical details. Everything lives behind a paywall - or are geared for leadership, not those of us in the trenches.
 
-![](images/snakenugget.jpg){width=35%}
+![](images/snakenugget.jpg){width=45%}
 
 So this is me attempting to document my journey: reviewing tools, mapping out research obstacles or skills, and trying to find anything that helps make the day-to-day work in prospect dev both easier and higher quality. 
 
