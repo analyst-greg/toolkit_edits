@@ -257,5 +257,68 @@
     "title": "Tool Feature Matrix",
     "section": "",
     "text": "Back to top"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html",
+    "href": "field_notes/HelpfulTechDocumentation/index.html",
+    "title": "Helpful Technical Documentation",
+    "section": "",
+    "text": "This list is mostly for Greg as he maintains this website."
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#quarto-guides",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#quarto-guides",
+    "title": "Helpful Technical Documentation",
+    "section": "Quarto guides",
+    "text": "Quarto guides\n\nPractical Quarto\nQuarto presentations"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#website-maintenance",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#website-maintenance",
+    "title": "Helpful Technical Documentation",
+    "section": "Website Maintenance",
+    "text": "Website Maintenance\n\nUse the drafts feature to preview and plan content\nLearn how to use the profiles feature\nPrevent all unnecessary folders and files from rendering to the website (how?)\nlearn incremental render\n\nYes, you can preview .qmd files inside an excluded folder like scripts/ without moving them, but it requires a bit of manual action because Quarto won’t render them automatically during your site build.\nHere’s how to do it:"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#how-to-preview-.qmd-files-in-excluded-folders-without-moving-them",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#how-to-preview-.qmd-files-in-excluded-folders-without-moving-them",
+    "title": "Helpful Technical Documentation",
+    "section": "How to preview .qmd files in excluded folders without moving them",
+    "text": "How to preview .qmd files in excluded folders without moving them\n\n1. Render them manually, one at a time\nFrom your project root, run:\nquarto render scripts/your_file.qmd\n\nThis renders just that file (ignores your site’s render exclusion)\nOutput goes to _output folder by default (not your website’s docs/)\nYou can open the generated HTML in your browser to preview\n\n\n\n\n2. Use the quarto preview command for that file\nquarto preview scripts/your_file.qmd\n\nOpens a local preview server with live reload for that file\nHandy for iterative editing and testing\n\n\n\n\n3. Use VS Code Quarto extension to preview\nIf you have the Quarto extension in VS Code:\n\nOpen scripts/your_file.qmd\nUse “Preview” button in editor (usually top right or right-click menu)\nThis previews the current file regardless of site config\n\n\n\n\n4. Temporarily disable the exclusion (if you want full site preview)\nRemove or comment out the render: - \"!scripts/**\" line\n\nRun quarto render to include those files\nPreview site with those pages included\nRe-enable exclusion when done"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#summary",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#summary",
+    "title": "Helpful Technical Documentation",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\n\n\n\n\nMethod\nPros\nCons\n\n\n\n\nquarto render file.qmd\nFast, manual render\nManual, one file at a time\n\n\nquarto preview file.qmd\nLive reload, interactive\nOne file only\n\n\nVS Code Quarto preview\nIntegrated, easy\nRequires VS Code & extension\n\n\nDisable exclusion temporarily\nFull site preview\nChanges site config temporarily"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#database-architecture",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#database-architecture",
+    "title": "Helpful Technical Documentation",
+    "section": "Database Architecture",
+    "text": "Database Architecture\n\nRSQLite\nSQLite mobile editing\nBaserow docs"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#vs-code",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#vs-code",
+    "title": "Helpful Technical Documentation",
+    "section": "VS-Code",
+    "text": "VS-Code\n\nMarkdown All-in-One commands"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#quarto-extensions",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#quarto-extensions",
+    "title": "Helpful Technical Documentation",
+    "section": "Quarto Extensions",
+    "text": "Quarto Extensions\n\nQuarto Extensions and also great example of a quarto website\nembedio for presentations embedded in a Quarto website\neditable reveal js lets you do some basic editing within revealjs presentations themselves, and then save it back to your QMD, which makes for a nice workflow similar to working in powerpoint\n\n\nVisualization Extensions\n\nDiagrams\nSvelte components\n\n\n\nArticle Interactivity\n\nLightboxes\nexpanding “nutshell” notes so people don’t have to switch tabs\n\n\n\nEmbedding\n\nsocial media embeds, easy to embed YouTube\nPDF embedding\n\n\n\nUser Experience\n\ndownloading embedded data or images\nlist of links at end of page\nQuarto badges, lets you make fun stuff like this!"
+  },
+  {
+    "objectID": "field_notes/HelpfulTechDocumentation/index.html#example-quarto-sites",
+    "href": "field_notes/HelpfulTechDocumentation/index.html#example-quarto-sites",
+    "title": "Helpful Technical Documentation",
+    "section": "Example Quarto Sites",
+    "text": "Example Quarto Sites\n\ngood example of webr and download capabilities"
   }
 ]

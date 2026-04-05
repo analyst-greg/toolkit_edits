@@ -1,0 +1,44 @@
+---
+title: "Prospect Dev Salary Snapshot 2025"
+author: Greg Brooks
+date: 04/25/2026
+draft: true
+categories:
+    - Industry Commentary
+---
+
+This is my unofficial salary research for prospect dev roles, a snapshot revolving around 2025 numbers. 
+
+***
+
+# Overview
+## The Bad News
+This is a substantially worse version of the [Apra International Salary Survey](https://aprahome.org/Resources/Salary-Survey){target="_blank"}. If you want stronger methodology, more comprehensive data (e.g. demographics), and mild abuse of the "3d" effect for bar charts (yuck) - the report they commission from the Smithbucklin corp. has got you covered. Though, if my math is right, we won't see another survey from them until 2027.[^paywall] 
+
+## The Good News
+My little snapshot is free to explore via dashboard on this blog, or download as .csv. This was a natural extension to my research on prospect dev job descriptions, and it fits with my mission to be an independent source of information about my field. I also think my analyses potentially pull in data that is publicly available, but was not gathered by the Apra Survey. 
+
+For example, if someone started a new job in 2024, say, as a prospect researcher for a new university, they may have been more focused on the transition than filling out an optional survey. Others just missed the email. Some of those people still have salary information available, for those crazy enough to try and hunt it down. Similar to the Apra survey, however, I am aggregating data but keeping individuals anonymous.
+
+# Intro
+Given the 14%-31% response rate of the Apra survey, I figured I might be able to dig up salaries that are publicly posted (e.g. by government websites) that potentially don't get collected within the Apra survey. It should make for interesting comparison, at the very least.
+
+## Scope
+My research is decidedly more narrow in scope, placing a priority on run-of-the-mill analyst jobs in prospect dev. Focusing less on management and other fundraising operations. 
+
+### Sample Size & Industry Details
+Last year, I pulled 430 fundraising-related job titles from the [CMAP dataset](../../field_notes/Creating_Jobs_Dataset/index.qmd), and at least 150 prospect dev job titles as a subset. So my independent analyses are actually not far off from the scale of the Apra Survey, in terms of sample size. If we combine the "Relationship / Prospect Managment" and "Prospect Research" respondents of Apra's 2024 report, we end up with ~446 people - which is a good benchmark. 
+
+Sadly, as cool as that CMAP dataset is as a proof of concept: the LinkedIn data those researchers used is very old (2017). But that actually makes those numbers look even better: the 2018 Apra survey had 668 participants, which means the 2017 CMAP data covered potentially about 64% of the jobs along the same time frame. Obviously there are a million caveats to that - I'm guessing my filtering of CMAP maybe cut out some of the jobs, and there's no guarantee that there was substantial overlap between those two datasets. That's a rabbit hole for another day.
+
+And that's just job titles, for salary and other data, my sample size continued to be winnowed down. When we look at AFP and Apra Membership numbers, we have at least 25,000 people, of which there is some mystery percentage that are full-time prospect dev professionals. And the even more mysterious percentage are those who aren't among the hundreds of prospect dev job title variants I've identified, but who potentially should still be included in this research based on skills or job description. Yet another rabbit hole for another day. Geeze.
+
+
+
+***
+
+
+# References
+
+
+[^paywall]: I'm also curious who actually pays the $275 non-member fee to access the salary survey...which seems too steep to be realistic as an actual product people would buy. I'm guessing that number was chosen to make the Professional Membership benefits seem all that more attractive, a [psychological pricing technique](https://www.advergize.com/glossary/psychological-pricing/){target="_blank"} that nudges users toward the ongoing subscription. Presumably, though, there are some folks in prospect dev who don't have access to the Professional Membership, which is another reason to have independent and free data for all.
