@@ -61,7 +61,21 @@ table  # this will render inline
 
 ```
 
+***
+# Additional Methodology
 
+## Salary Sourcing & Pre-processing
+
+### Bulk Data
+I made a data request to the National Labor Exchange (NLx) Research Hub, to try and get access to a larger corpus of online job adds, occupation codes, tools, salaries, etc. However, I don't think my research case is as compelling as the guys at Loyola who trained an [entire model](https://github.com/Job-Ad-Research-at-QSB-LUC/JAAT) on billions of data points to make very slick job analysis modules in Python. Luckily, their Job Ad Analysis Toolkit will help me with my unstructured text problem - which has been building up as I grab job descriptions and other data from LinkedIn. However, their giant corpus, as far as I know, is under an agreement with NLx that may specify what they can or can't publish. 
+
+I need the job-level data so I can filter for prospect dev roles, and I'm tempted to email them to ask for a subset of their corpus, but again, the NLx agreement may prevent that.
+
+National bulk data for prospect dev roles remains out of reach, for now, so I had to do a state-by-state approach, starting with large public universities.
+
+### Large Public Universities
+- 
+- Started with the biggest public universities in every state, then went to the open data portal for bulk downloads of salary data. Found name of university foundation or development department, filter
 
 
 ***
@@ -69,13 +83,19 @@ table  # this will render inline
 # My reading list to learn more
 - [Performance-Based Salary Distribution in Universities Using Extreme Gradient Boosting with Particle Swarm Optimization](https://ieeexplore.ieee.org/abstract/document/11341436)
 - [Education vs. Earnings: An Analytical Perspective on Fields of Study and Salaries Using Python](https://link.springer.com/chapter/10.1007/978-3-031-95652-2_31)
-- 
+- [Extracting O*NET Features from the NLx Corpus to Build Public Use Aggregate Labor Market Data](https://arxiv.org/abs/2510.01470)
 
 ***
 
 # References & Sources
+For a full list of sources, see (this file)[] on the repo
+
 - OpenGovPay.com
 - GovSalaries.com
+- Regional Apra chapter job postings
+- Indeed
+- Fiscal salary schedules from annual reports & supplements (PDFs usually)
+- Bulk downloads from places like the Indiana Gateway for Government Units, Utah Open Data, etc
 - LinkedIn Job Alerts
 - Subhani, S., Memon, S.A. & AlShebli, B. CMap: a database for mapping job titles, sector specialization, and promotions across 24 sectors. Sci Data 12, 1214 (2025). https://doi.org/10.1038/s41597-025-05526-3
 
