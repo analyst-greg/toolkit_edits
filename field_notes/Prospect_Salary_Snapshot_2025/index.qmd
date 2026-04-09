@@ -16,10 +16,10 @@ Salary research for prospect dev roles curated from LinkedIn, public databases, 
 ![](cash2.jpg){width=50%}
 
 # Overview
-This is exactly what it sounds like: a little snapshot of industry data, independently curated. I'm not trying to compete with the [Apra International Salary Survey](https://aprahome.org/Resources/Salary-Survey){target="_blank"}, and I doubt any of my findings will be all that surprising to those who have read any of the 100+ pages of that report.
+This is exactly what it sounds like: a little snapshot of industry data, independently curated. I'm not trying to compete with the [Apra International Salary Survey](https://aprahome.org/Resources/Salary-Survey){target="_blank"}.
 
 #### The Good News
-The data I have gathered is free to explore and download - instead of being locked down in a PDF, or behind a paywall.
+The data I have gathered is free to explore and download.
 
 #### The Bad News
 If you want stronger methodology, more data across sectors beyond higher education, broader scope, and mild abuse of the "3d" effect for bar charts...you'll have to wait until the next Apra Salary Survey comes out in 2027.[^paywall] I limited myself to public information, which as any prospect researcher will tell you, can sometimes be prone to massive gaps.
@@ -83,8 +83,7 @@ I need the job-level data so I can filter for prospect dev roles, and I'm tempte
 National bulk data for prospect dev roles remains out of reach, for now, so I had to do a state-by-state approach, starting with large public universities.
 
 ### Large Public Universities
-- 
-- Started with the biggest public universities in every state, then went to the open data portal for bulk downloads of salary data. Found name of university foundation or development department, filter
+- Started with the biggest public universities in every state, then went to the open data portal for bulk downloads of salary data. Found name of university foundation or development department, filtered for...
 
 
 ***
