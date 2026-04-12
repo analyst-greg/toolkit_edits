@@ -18,6 +18,12 @@ This list is mostly for Greg as he maintains this website.
 - internal links: 
 
 # Quarto Tips
+## Extensions
+
+### DownloadThis
+- DownloadThis button example: {{< downloadthis file.png dname=coolfile label="Download me!" >}}
+- [DownloadThis website](https://shafayetshafee.github.io/downloadthis/example.html)
+
 
 ## Quarto guides
 - [Practical Quarto](https://quarto-tdg.org/websites.html)
